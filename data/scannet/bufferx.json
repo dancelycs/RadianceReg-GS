@@ -1,0 +1,1188 @@
+{
+  "schema_version": 2,
+  "method": "BUFFER-X-3DMatch + common Sim(3) solver",
+  "implementation": "official MIT-SPARK/BUFFER-X commit b56af186cdfef30b",
+  "protocol": {
+    "dataset": "ScanNet-GSReg official test",
+    "gaussians_per_map": 4500,
+    "input_to_method": "source_means and target_means only",
+    "transform": "source-to-target Sim(3)",
+    "gt_used_for_registration": false,
+    "gt_opened_only_after_pose_frozen": true,
+    "all_attempted_pairs_remain_in_denominator": true,
+    "strict_gate": "RRE < 10 deg, RTE/target_extent < 0.10, RSE < 10%",
+    "loose_gate": "RRE < 15 deg, RTE/target_extent < 0.30, RSE < 20%",
+    "parameters": {
+      "checkpoint": "Hyungtae-Lim/BUFFER-X snapshot/threedmatch/{Desc,Pose}/best.pth",
+      "canonical_extent_m": 4.0,
+      "map_normalization": "independent robust 5--95% extent",
+      "final_solver": "closed-form Sim(3) Umeyama on official cross-scale consensus matches",
+      "num_scales": 3,
+      "num_fps": 1500,
+      "seed": 20260914
+    }
+  },
+  "attempted_pairs": 24,
+  "valid_pairs": 24,
+  "failed_pairs": 0,
+  "strict_successes": 0,
+  "successes": 1,
+  "median_rre_deg": 129.12225566425036,
+  "median_rte_extent": 1.917014221236546,
+  "median_rse_percent": 24.44122126781394,
+  "median_elapsed_seconds": 0.34610129299835535,
+  "rows": [
+    {
+      "status": "ok",
+      "pair": "reserve_036_scene0305_00",
+      "overlap": 0.42733333333333334,
+      "elapsed_seconds": 0.5915082449937472,
+      "estimated_scale": 0.7205135505671799,
+      "estimated_rotation": [
+        [
+          -0.017879385065722203,
+          0.5218601637158359,
+          0.8528436533832867
+        ],
+        [
+          0.0045271751498441315,
+          -0.8529290029894445,
+          0.5220072993211823
+        ],
+        [
+          0.9998299016706961,
+          0.013194142105980078,
+          0.012887293713302606
+        ]
+      ],
+      "estimated_translation": [
+        -2.154329168623071,
+        -5.3271034802737045,
+        5.123447831744418
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0269,
+      "bufferx_sphericity": 0.18967598339630728,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 2868,
+      "target_points_after_voxelization": 3148,
+      "official_ransac_inliers_diagnostic": 52,
+      "mutual_correspondences": 938,
+      "sim3_correspondences": 4,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 57.26203021962838,
+      "rte_extent": 1.936463456025947,
+      "rse_percent": 36.150764580309016,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_037_scene0267_00",
+      "overlap": 0.396,
+      "elapsed_seconds": 0.3479124790028436,
+      "estimated_scale": 0.6332957308620951,
+      "estimated_rotation": [
+        [
+          -0.5574522935497818,
+          -0.140609546665741,
+          0.8182150669613358
+        ],
+        [
+          -0.6909981879045914,
+          -0.4677077269070227,
+          -0.5511542311404644
+        ],
+        [
+          0.46018305567312934,
+          -0.8726273188354354,
+          0.16356380312716154
+        ]
+      ],
+      "estimated_translation": [
+        3.5338397458992707,
+        7.321168642708699,
+        0.6190361479915109
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0234,
+      "bufferx_sphericity": 0.11085163952320126,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3381,
+      "target_points_after_voxelization": 3728,
+      "official_ransac_inliers_diagnostic": 131,
+      "mutual_correspondences": 850,
+      "sim3_correspondences": 3,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 161.71420861840446,
+      "rte_extent": 3.662960139210199,
+      "rse_percent": 15.904845841878101,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_038_scene0646_01",
+      "overlap": 0.24822222222222223,
+      "elapsed_seconds": 0.34682796300330665,
+      "estimated_scale": 0.8357597713701304,
+      "estimated_rotation": [
+        [
+          -0.32444427893979483,
+          0.6894712230820248,
+          0.6475842357601167
+        ],
+        [
+          -0.8834511807127643,
+          0.023767390165599478,
+          -0.46791999579195087
+        ],
+        [
+          -0.33800875899961424,
+          -0.7239230233294796,
+          0.6014029723347291
+        ]
+      ],
+      "estimated_translation": [
+        2.4630550461050924,
+        7.35615155313711,
+        7.320982200692039
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0272,
+      "bufferx_sphericity": 0.29710224595204815,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3384,
+      "target_points_after_voxelization": 3598,
+      "official_ransac_inliers_diagnostic": 120,
+      "mutual_correspondences": 925,
+      "sim3_correspondences": 3,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 116.74840410269171,
+      "rte_extent": 4.115409909582182,
+      "rse_percent": 25.587633769942776,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_039_scene0256_02",
+      "overlap": 0.426,
+      "elapsed_seconds": 0.35120010600076057,
+      "estimated_scale": 1.2029743726330464,
+      "estimated_rotation": [
+        [
+          -0.7905589582683741,
+          -0.5536543375901555,
+          0.26169334720093623
+        ],
+        [
+          0.029869032923368344,
+          0.3919641014305153,
+          0.9194955051885747
+        ],
+        [
+          -0.6116570725282641,
+          0.7347319359177031,
+          -0.293333612067861
+        ]
+      ],
+      "estimated_translation": [
+        5.219844401067689,
+        0.9931213188677419,
+        2.703788107481363
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.024,
+      "bufferx_sphericity": 0.24512483849154043,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3830,
+      "target_points_after_voxelization": 3648,
+      "official_ransac_inliers_diagnostic": 58,
+      "mutual_correspondences": 849,
+      "sim3_correspondences": 3,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 154.31889158806248,
+      "rte_extent": 3.0925710547506156,
+      "rse_percent": 13.861953397559867,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_040_scene0073_02",
+      "overlap": 0.28,
+      "elapsed_seconds": 0.3527472419955302,
+      "estimated_scale": 0.3689209547993653,
+      "estimated_rotation": [
+        [
+          0.37729258342625427,
+          0.8573921057557194,
+          0.35004154536185683
+        ],
+        [
+          0.6432941981549778,
+          0.02926605847638747,
+          -0.7650595221558916
+        ],
+        [
+          -0.6662003310654288,
+          0.5138309788335369,
+          -0.5405135003672737
+        ]
+      ],
+      "estimated_translation": [
+        3.071509665315388,
+        1.7583054644727392,
+        1.4761819071090898
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.022,
+      "bufferx_sphericity": 0.19377731716195234,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3854,
+      "target_points_after_voxelization": 3897,
+      "official_ransac_inliers_diagnostic": 129,
+      "mutual_correspondences": 987,
+      "sim3_correspondences": 5,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 149.67364052333326,
+      "rte_extent": 1.0179248650465254,
+      "rse_percent": 29.005289924156465,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_041_scene0247_01",
+      "overlap": 0.4,
+      "elapsed_seconds": 0.34693140399758704,
+      "estimated_scale": 1.0210804609200845,
+      "estimated_rotation": [
+        [
+          0.8416059270249492,
+          0.4406001097723207,
+          0.3123635812080111
+        ],
+        [
+          0.40244920980217036,
+          -0.12589605060590806,
+          -0.9067440752337139
+        ],
+        [
+          -0.36018619785616957,
+          0.8888316644395908,
+          -0.2832740283955855
+        ]
+      ],
+      "estimated_translation": [
+        4.9028473493609255,
+        7.3446855557025295,
+        -2.4825712644156672
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.027,
+      "bufferx_sphericity": 0.3026270872250602,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3561,
+      "target_points_after_voxelization": 3867,
+      "official_ransac_inliers_diagnostic": 135,
+      "mutual_correspondences": 829,
+      "sim3_correspondences": 3,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 169.45481265522986,
+      "rte_extent": 2.1809305607592693,
+      "rse_percent": 40.57214620667544,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_042_scene0279_02",
+      "overlap": 0.09933333333333333,
+      "elapsed_seconds": 0.3488371779967565,
+      "estimated_scale": 0.4166567062311182,
+      "estimated_rotation": [
+        [
+          0.6426018552519382,
+          0.5089394735483693,
+          -0.5727507903888712
+        ],
+        [
+          0.08129075424450777,
+          0.6980158371463054,
+          0.7114532341393219
+        ],
+        [
+          0.7618757568666473,
+          -0.5037405119277689,
+          0.40717419827590107
+        ]
+      ],
+      "estimated_translation": [
+        3.756408282234118,
+        6.408471047272956,
+        3.330069766380354
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0228,
+      "bufferx_sphericity": 0.14222449240600463,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3569,
+      "target_points_after_voxelization": 3752,
+      "official_ransac_inliers_diagnostic": 55,
+      "mutual_correspondences": 886,
+      "sim3_correspondences": 3,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 169.88548291280833,
+      "rte_extent": 1.4346091116749051,
+      "rse_percent": 23.294808765685104,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_043_scene0442_00",
+      "overlap": 0.2813333333333333,
+      "elapsed_seconds": 0.35527035100676585,
+      "estimated_scale": 0.6137622229758252,
+      "estimated_rotation": [
+        [
+          0.23728997359094434,
+          0.20843948034965387,
+          0.9488131804864303
+        ],
+        [
+          0.4623356175707488,
+          -0.8832317126818225,
+          0.07840611225286559
+        ],
+        [
+          0.8543648197103405,
+          0.420065143453609,
+          -0.3059510256505373
+        ]
+      ],
+      "estimated_translation": [
+        2.938002530106882,
+        7.342772791194147,
+        0.41970821236716577
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.011,
+      "bufferx_sphericity": 0.03792090816764318,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3943,
+      "target_points_after_voxelization": 4082,
+      "official_ransac_inliers_diagnostic": 22,
+      "mutual_correspondences": 959,
+      "sim3_correspondences": 4,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 138.30176659617894,
+      "rte_extent": 1.0911858734690245,
+      "rse_percent": 14.321126924144355,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_044_scene0166_01",
+      "overlap": 0.7162222222222222,
+      "elapsed_seconds": 0.3397491439973237,
+      "estimated_scale": 2.594094617699462,
+      "estimated_rotation": [
+        [
+          -0.6482933607261425,
+          0.7599988435671301,
+          -0.04601604301794324
+        ],
+        [
+          0.7455422241679434,
+          0.6459055527884505,
+          0.16423400640477043
+        ],
+        [
+          0.15453967264466378,
+          0.07216491289866231,
+          -0.9853475097270041
+        ]
+      ],
+      "estimated_translation": [
+        -5.366622174064065,
+        2.3677390433841454,
+        1.2397343601154016
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0267,
+      "bufferx_sphericity": 0.1896506640752026,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3419,
+      "target_points_after_voxelization": 3511,
+      "official_ransac_inliers_diagnostic": 112,
+      "mutual_correspondences": 873,
+      "sim3_correspondences": 3,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 150.51284603729198,
+      "rte_extent": 1.7091612192913443,
+      "rse_percent": 111.78192719406769,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_045_scene0647_01",
+      "overlap": 0.9271111111111111,
+      "elapsed_seconds": 0.3402131110051414,
+      "estimated_scale": 2.89456042633797,
+      "estimated_rotation": [
+        [
+          0.6006246424185299,
+          -0.062233910024957095,
+          -0.7971053753191096
+        ],
+        [
+          -0.03527926662802783,
+          -0.9980578992192823,
+          0.05134007355060193
+        ],
+        [
+          -0.7987524098654111,
+          -0.002714820251554173,
+          -0.6016537355366456
+        ]
+      ],
+      "estimated_translation": [
+        12.070753289525776,
+        19.481943924656672,
+        13.05287089748548
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.023,
+      "bufferx_sphericity": 0.10979618405591901,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3087,
+      "target_points_after_voxelization": 3565,
+      "official_ransac_inliers_diagnostic": 73,
+      "mutual_correspondences": 806,
+      "sim3_correspondences": 4,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 119.9427447323218,
+      "rte_extent": 4.0173091639281155,
+      "rse_percent": 139.94403511474718,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_046_scene0177_02",
+      "overlap": 0.3622222222222222,
+      "elapsed_seconds": 0.33765348899760284,
+      "estimated_scale": 0.9745962901794275,
+      "estimated_rotation": [
+        [
+          -0.2183229089257569,
+          -0.40246224015469156,
+          -0.8890215141872904
+        ],
+        [
+          -0.7630635319244212,
+          0.6382932845487909,
+          -0.10156637803399443
+        ],
+        [
+          0.6083330943531046,
+          0.6562056294711158,
+          -0.44645830506912154
+        ]
+      ],
+      "estimated_translation": [
+        4.8252584621239105,
+        -0.8772327228246661,
+        -0.511263764761889
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0275,
+      "bufferx_sphericity": 0.28887120566387103,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3346,
+      "target_points_after_voxelization": 3331,
+      "official_ransac_inliers_diagnostic": 19,
+      "mutual_correspondences": 831,
+      "sim3_correspondences": 3,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 157.75921677261366,
+      "rte_extent": 2.365847496868701,
+      "rse_percent": 49.218441964614776,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_047_scene0395_00",
+      "overlap": 0.4726666666666667,
+      "elapsed_seconds": 0.3380315919930581,
+      "estimated_scale": 0.5859871061763914,
+      "estimated_rotation": [
+        [
+          -0.12506622178730967,
+          -0.353794996705999,
+          -0.9269236972230511
+        ],
+        [
+          0.7790285049981346,
+          -0.6135584197704926,
+          0.12907615554046603
+        ],
+        [
+          -0.6143883369402603,
+          -0.7059569149987397,
+          0.3523518207661824
+        ]
+      ],
+      "estimated_translation": [
+        3.2832295398739193,
+        9.178297942001107,
+        -2.992985498867724
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0305,
+      "bufferx_sphericity": 0.2853701208077872,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3244,
+      "target_points_after_voxelization": 3442,
+      "official_ransac_inliers_diagnostic": 128,
+      "mutual_correspondences": 927,
+      "sim3_correspondences": 3,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 177.58523595728613,
+      "rte_extent": 1.8692887693464224,
+      "rse_percent": 13.996705784054653,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_048_scene0475_01",
+      "overlap": 0.23133333333333334,
+      "elapsed_seconds": 0.3359405610099202,
+      "estimated_scale": 1.247489353811615,
+      "estimated_rotation": [
+        [
+          -0.9909949137469682,
+          0.0022460326757899607,
+          -0.13388067920674054
+        ],
+        [
+          -0.05348185922995907,
+          -0.9232795101431737,
+          0.3803874825531048
+        ],
+        [
+          -0.12275492520035908,
+          0.3841222481020867,
+          0.9150854205220698
+        ]
+      ],
+      "estimated_translation": [
+        14.851560737857106,
+        -7.272648574425602,
+        -9.921330476775225
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0187,
+      "bufferx_sphericity": 0.07219797764866877,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3283,
+      "target_points_after_voxelization": 2724,
+      "official_ransac_inliers_diagnostic": 44,
+      "mutual_correspondences": 736,
+      "sim3_correspondences": 3,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 87.13426079618475,
+      "rte_extent": 3.6232072078432247,
+      "rse_percent": 22.273560101114498,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_049_scene0092_02",
+      "overlap": 0.36644444444444446,
+      "elapsed_seconds": 0.345580968001741,
+      "estimated_scale": 1.2259871407549197,
+      "estimated_rotation": [
+        [
+          0.09098050480086133,
+          -0.9680646545941457,
+          -0.23360944388379967
+        ],
+        [
+          -0.7610060488353931,
+          -0.21889266432707705,
+          0.6107010685595182
+        ],
+        [
+          -0.6423335125790375,
+          0.12221630836067351,
+          -0.7566180229075734
+        ]
+      ],
+      "estimated_translation": [
+        2.0669548547762435,
+        7.777640899735774,
+        -2.602425670677607
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0217,
+      "bufferx_sphericity": 0.056824241328323255,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3794,
+      "target_points_after_voxelization": 3293,
+      "official_ransac_inliers_diagnostic": 84,
+      "mutual_correspondences": 887,
+      "sim3_correspondences": 3,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 111.82276172282307,
+      "rte_extent": 2.6430946294877184,
+      "rse_percent": 71.46887711296843,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_050_scene0054_00",
+      "overlap": 0.116,
+      "elapsed_seconds": 0.3379099919984583,
+      "estimated_scale": 0.6801017835951934,
+      "estimated_rotation": [
+        [
+          -0.018386245240803623,
+          -0.9137007516489802,
+          0.40597152907812895
+        ],
+        [
+          0.24455841171694437,
+          -0.3978161989968567,
+          -0.8842700125381265
+        ],
+        [
+          0.9694602257155426,
+          0.08302534704403203,
+          0.23076755080337336
+        ]
+      ],
+      "estimated_translation": [
+        2.6463146861206694,
+        1.2515029438733234,
+        3.0618169285552064
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0274,
+      "bufferx_sphericity": 0.4155688685719102,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3569,
+      "target_points_after_voxelization": 3082,
+      "official_ransac_inliers_diagnostic": 11,
+      "mutual_correspondences": 840,
+      "sim3_correspondences": 4,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 159.49027359703,
+      "rte_extent": 1.333397118153002,
+      "rse_percent": 37.967487098284835,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_051_scene0095_01",
+      "overlap": 0.29777777777777775,
+      "elapsed_seconds": 0.3407858260034118,
+      "estimated_scale": 1.4523803612105055,
+      "estimated_rotation": [
+        [
+          -0.7196015350501932,
+          0.42450968042385523,
+          -0.5495135685129549
+        ],
+        [
+          0.6932714470869166,
+          0.3943731339024784,
+          -0.6031952684744385
+        ],
+        [
+          -0.039348842516877106,
+          -0.8150223079660908,
+          -0.5780919529886295
+        ]
+      ],
+      "estimated_translation": [
+        7.48713288139529,
+        -8.29750659814042,
+        1.5115937226446086
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0207,
+      "bufferx_sphericity": 0.0787011557097831,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3487,
+      "target_points_after_voxelization": 3435,
+      "official_ransac_inliers_diagnostic": 108,
+      "mutual_correspondences": 837,
+      "sim3_correspondences": 4,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 101.86306368768284,
+      "rte_extent": 3.0126137754251414,
+      "rse_percent": 44.852206983251634,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_052_scene0666_00",
+      "overlap": 0.18222222222222223,
+      "elapsed_seconds": 0.3466216179949697,
+      "estimated_scale": 0.7417826060087325,
+      "estimated_rotation": [
+        [
+          0.7320127819275835,
+          -0.6808017691685553,
+          0.02581159025719438
+        ],
+        [
+          -0.46898341502230206,
+          -0.5310183321753568,
+          -0.7057436413654191
+        ],
+        [
+          0.4941779472302049,
+          0.5045081584976278,
+          -0.7079969452481227
+        ]
+      ],
+      "estimated_translation": [
+        0.5064342437016696,
+        6.967664790898171,
+        -0.3440722926405281
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.028,
+      "bufferx_sphericity": 0.17505752978912226,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3746,
+      "target_points_after_voxelization": 3838,
+      "official_ransac_inliers_diagnostic": 51,
+      "mutual_correspondences": 807,
+      "sim3_correspondences": 3,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 169.12209124588242,
+      "rte_extent": 2.8071222911982976,
+      "rse_percent": 1.6178497744880116,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_053_scene0404_01",
+      "overlap": 0.482,
+      "elapsed_seconds": 0.3490436509891879,
+      "estimated_scale": 0.6634370261522431,
+      "estimated_rotation": [
+        [
+          0.10411334109820186,
+          -0.725789994833586,
+          -0.6799921290756483
+        ],
+        [
+          -0.9796040855623913,
+          0.04331046698222123,
+          -0.19621426808275982
+        ],
+        [
+          0.1718611292725633,
+          0.6865515908140084,
+          -0.7064776467772452
+        ]
+      ],
+      "estimated_translation": [
+        1.2381069245656466,
+        -0.36318706181146654,
+        -0.18782000178789748
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0308,
+      "bufferx_sphericity": 0.6558805294762757,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3428,
+      "target_points_after_voxelization": 3740,
+      "official_ransac_inliers_diagnostic": 85,
+      "mutual_correspondences": 860,
+      "sim3_correspondences": 3,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 40.102014020570444,
+      "rte_extent": 0.9387459508770752,
+      "rse_percent": 26.328090389477232,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_054_scene0550_00",
+      "overlap": 0.266,
+      "elapsed_seconds": 0.3368254649976734,
+      "estimated_scale": 0.5581909496048917,
+      "estimated_rotation": [
+        [
+          0.7512191878779144,
+          -0.659151657458594,
+          0.03447933052765223
+        ],
+        [
+          0.40189821928141845,
+          0.41534631498629954,
+          -0.8160669457622498
+        ],
+        [
+          0.5235910170185051,
+          0.6269023297906055,
+          0.5769279988010964
+        ]
+      ],
+      "estimated_translation": [
+        1.491396624767454,
+        -0.3131133751746449,
+        -0.8256235009575841
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0321,
+      "bufferx_sphericity": 0.20183268052682532,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3236,
+      "target_points_after_voxelization": 2585,
+      "official_ransac_inliers_diagnostic": 53,
+      "mutual_correspondences": 868,
+      "sim3_correspondences": 4,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 22.00120304746594,
+      "rte_extent": 0.3261220545410044,
+      "rse_percent": 4.306511970832849,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_055_scene0520_00",
+      "overlap": 0.29333333333333333,
+      "elapsed_seconds": 0.3309753159992397,
+      "estimated_scale": 1.0744419471991937,
+      "estimated_rotation": [
+        [
+          -0.26544211915560695,
+          -0.8630966575068486,
+          0.42965642224769257
+        ],
+        [
+          0.764747740636271,
+          -0.4598639478515195,
+          -0.45131590118024195
+        ],
+        [
+          0.5871127443429407,
+          0.20878052894588095,
+          0.7821184796200504
+        ]
+      ],
+      "estimated_translation": [
+        5.230562391470611,
+        -1.810440685039672,
+        -1.3595521965229804
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.022,
+      "bufferx_sphericity": 0.08220997151804167,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3286,
+      "target_points_after_voxelization": 2590,
+      "official_ransac_inliers_diagnostic": 152,
+      "mutual_correspondences": 864,
+      "sim3_correspondences": 5,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 109.62390824778149,
+      "rte_extent": 1.8975649864471447,
+      "rse_percent": 14.68420294651308,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_056_scene0197_02",
+      "overlap": 0.39311111111111113,
+      "elapsed_seconds": 0.34880188800161704,
+      "estimated_scale": 0.9739695567006441,
+      "estimated_rotation": [
+        [
+          0.17109471865194859,
+          0.418443924893958,
+          0.891981658426198
+        ],
+        [
+          -0.9706883909576813,
+          0.22669013395387458,
+          0.07984754741357059
+        ],
+        [
+          -0.16879172050014316,
+          -0.8794977344412633,
+          0.4449641448513435
+        ]
+      ],
+      "estimated_translation": [
+        3.1767912419744606,
+        0.02280625992275942,
+        0.34619051633193787
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0254,
+      "bufferx_sphericity": 0.19433890851569885,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3751,
+      "target_points_after_voxelization": 3904,
+      "official_ransac_inliers_diagnostic": 153,
+      "mutual_correspondences": 941,
+      "sim3_correspondences": 3,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 67.8527719172769,
+      "rte_extent": 1.8299223041560073,
+      "rse_percent": 2.913861206658308,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_057_scene0033_00",
+      "overlap": 0.41355555555555557,
+      "elapsed_seconds": 0.3443187789962394,
+      "estimated_scale": 0.6341235146566851,
+      "estimated_rotation": [
+        [
+          0.45247066806436875,
+          -0.7617029749382893,
+          0.4637659673925453
+        ],
+        [
+          0.890114788146837,
+          0.4175102340626185,
+          -0.18270431953101007
+        ],
+        [
+          -0.05446061387549214,
+          0.49547329133177,
+          0.8669142166980353
+        ]
+      ],
+      "estimated_translation": [
+        2.4319846178247455,
+        -0.8414929900668286,
+        0.522556309033873
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0125,
+      "bufferx_sphericity": 0.040751855822328355,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3698,
+      "target_points_after_voxelization": 3447,
+      "official_ransac_inliers_diagnostic": 136,
+      "mutual_correspondences": 781,
+      "sim3_correspondences": 7,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 14.887259802555231,
+      "rte_extent": 0.1900925087248239,
+      "rse_percent": 17.99778412064623,
+      "strict_success": false,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_058_scene0412_01",
+      "overlap": 0.20866666666666667,
+      "elapsed_seconds": 0.3346338800038211,
+      "estimated_scale": 0.8333949082363376,
+      "estimated_rotation": [
+        [
+          0.3231617297952805,
+          0.3873631166898801,
+          -0.8634328649200377
+        ],
+        [
+          -0.4285119395867384,
+          0.8733894502195927,
+          0.23144845187801372
+        ],
+        [
+          0.8437677488665547,
+          0.29519600958248077,
+          0.4482357659750573
+        ]
+      ],
+      "estimated_translation": [
+        1.752047599161338,
+        -0.5964173641065655,
+        0.17825980959605636
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0269,
+      "bufferx_sphericity": 0.19766839590088972,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3394,
+      "target_points_after_voxelization": 3192,
+      "official_ransac_inliers_diagnostic": 127,
+      "mutual_correspondences": 876,
+      "sim3_correspondences": 8,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 5.147071125129554,
+      "rte_extent": 0.41985173592328195,
+      "rse_percent": 20.551633906596866,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_059_scene0325_01",
+      "overlap": 0.14044444444444446,
+      "elapsed_seconds": 0.3466595580102876,
+      "estimated_scale": 0.2837264840242514,
+      "estimated_rotation": [
+        [
+          0.15615912133534368,
+          0.9581012001739745,
+          0.24011751091697697
+        ],
+        [
+          -0.8450483938688245,
+          0.25545319396365307,
+          -0.4697199992692329
+        ],
+        [
+          -0.5113780801359146,
+          -0.1295598545806494,
+          0.8495332266824811
+        ]
+      ],
+      "estimated_translation": [
+        5.294593961337559,
+        5.448059380994399,
+        1.1495450300378516
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0225,
+      "bufferx_sphericity": 0.14077835682787632,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3347,
+      "target_points_after_voxelization": 3693,
+      "official_ransac_inliers_diagnostic": 170,
+      "mutual_correspondences": 796,
+      "sim3_correspondences": 6,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 159.562969961079,
+      "rte_extent": 2.38791015737607,
+      "rse_percent": 56.941532974445174,
+      "strict_success": false,
+      "success": false
+    }
+  ]
+}

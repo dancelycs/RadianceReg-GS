@@ -1,0 +1,462 @@
+{
+  "wilson_95pct": {
+    "scannet": {
+      "strict": [
+        0.24467602609811764,
+        0.6116533413477124
+      ],
+      "relaxed": [
+        0.5083230633550337,
+        0.8508535180303913
+      ]
+    },
+    "objaverse": {
+      "strict": [
+        0.6668604907890041,
+        0.9862895787574435
+      ],
+      "relaxed": [
+        0.6668604907890041,
+        0.9862895787574435
+      ]
+    },
+    "eth3d": {
+      "strict": [
+        0.6243452472967093,
+        0.9447952836146585
+      ],
+      "relaxed": [
+        0.6860591728889099,
+        0.9706414397011299
+      ]
+    }
+  },
+  "paired_exact_mcnemar": {
+    "scannet": {
+      "icp": {
+        "strict": {
+          "wins": 10,
+          "losses": 0,
+          "p_value": 0.001953125,
+          "holm_p_value": 0.03515625
+        },
+        "relaxed": {
+          "wins": 17,
+          "losses": 0,
+          "p_value": 1.52587890625e-05,
+          "holm_p_value": 0.00091552734375
+        }
+      },
+      "fpfh_ransac": {
+        "strict": {
+          "wins": 10,
+          "losses": 0,
+          "p_value": 0.001953125,
+          "holm_p_value": 0.03515625
+        },
+        "relaxed": {
+          "wins": 17,
+          "losses": 0,
+          "p_value": 1.52587890625e-05,
+          "holm_p_value": 0.00091552734375
+        }
+      },
+      "fcgf": {
+        "strict": {
+          "wins": 10,
+          "losses": 0,
+          "p_value": 0.001953125,
+          "holm_p_value": 0.03515625
+        },
+        "relaxed": {
+          "wins": 17,
+          "losses": 0,
+          "p_value": 1.52587890625e-05,
+          "holm_p_value": 0.00091552734375
+        }
+      },
+      "predator": {
+        "strict": {
+          "wins": 10,
+          "losses": 0,
+          "p_value": 0.001953125,
+          "holm_p_value": 0.03515625
+        },
+        "relaxed": {
+          "wins": 17,
+          "losses": 0,
+          "p_value": 1.52587890625e-05,
+          "holm_p_value": 0.00091552734375
+        }
+      },
+      "cofinet": {
+        "strict": {
+          "wins": 10,
+          "losses": 0,
+          "p_value": 0.001953125,
+          "holm_p_value": 0.03515625
+        },
+        "relaxed": {
+          "wins": 17,
+          "losses": 0,
+          "p_value": 1.52587890625e-05,
+          "holm_p_value": 0.00091552734375
+        }
+      },
+      "geotransformer": {
+        "strict": {
+          "wins": 10,
+          "losses": 0,
+          "p_value": 0.001953125,
+          "holm_p_value": 0.03515625
+        },
+        "relaxed": {
+          "wins": 16,
+          "losses": 0,
+          "p_value": 3.0517578125e-05,
+          "holm_p_value": 0.00146484375
+        }
+      },
+      "splatreg": {
+        "strict": {
+          "wins": 10,
+          "losses": 0,
+          "p_value": 0.001953125,
+          "holm_p_value": 0.03515625
+        },
+        "relaxed": {
+          "wins": 17,
+          "losses": 0,
+          "p_value": 1.52587890625e-05,
+          "holm_p_value": 0.00091552734375
+        }
+      },
+      "parenet": {
+        "strict": {
+          "wins": 10,
+          "losses": 0,
+          "p_value": 0.001953125,
+          "holm_p_value": 0.03515625
+        },
+        "relaxed": {
+          "wins": 17,
+          "losses": 0,
+          "p_value": 1.52587890625e-05,
+          "holm_p_value": 0.00091552734375
+        }
+      },
+      "bufferx": {
+        "strict": {
+          "wins": 10,
+          "losses": 0,
+          "p_value": 0.001953125,
+          "holm_p_value": 0.03515625
+        },
+        "relaxed": {
+          "wins": 16,
+          "losses": 0,
+          "p_value": 3.0517578125e-05,
+          "holm_p_value": 0.00146484375
+        }
+      },
+      "randpcr": {
+        "strict": {
+          "wins": 10,
+          "losses": 0,
+          "p_value": 0.001953125,
+          "holm_p_value": 0.03515625
+        },
+        "relaxed": {
+          "wins": 17,
+          "losses": 0,
+          "p_value": 1.52587890625e-05,
+          "holm_p_value": 0.00091552734375
+        }
+      },
+      "refreshreg": {
+        "strict": {
+          "wins": 10,
+          "losses": 0,
+          "p_value": 0.001953125,
+          "holm_p_value": 0.03515625
+        },
+        "relaxed": {
+          "wins": 17,
+          "losses": 0,
+          "p_value": 1.52587890625e-05,
+          "holm_p_value": 0.00091552734375
+        }
+      }
+    },
+    "objaverse": {
+      "icp": {
+        "strict": {
+          "wins": 12,
+          "losses": 0,
+          "p_value": 0.00048828125,
+          "holm_p_value": 0.0166015625
+        },
+        "relaxed": {
+          "wins": 12,
+          "losses": 0,
+          "p_value": 0.00048828125,
+          "holm_p_value": 0.0166015625
+        }
+      },
+      "fpfh_ransac": {
+        "strict": {
+          "wins": 12,
+          "losses": 0,
+          "p_value": 0.00048828125,
+          "holm_p_value": 0.0166015625
+        },
+        "relaxed": {
+          "wins": 12,
+          "losses": 0,
+          "p_value": 0.00048828125,
+          "holm_p_value": 0.0166015625
+        }
+      },
+      "fcgf": {
+        "strict": {
+          "wins": 12,
+          "losses": 0,
+          "p_value": 0.00048828125,
+          "holm_p_value": 0.0166015625
+        },
+        "relaxed": {
+          "wins": 12,
+          "losses": 0,
+          "p_value": 0.00048828125,
+          "holm_p_value": 0.0166015625
+        }
+      },
+      "predator": {
+        "strict": {
+          "wins": 12,
+          "losses": 0,
+          "p_value": 0.00048828125,
+          "holm_p_value": 0.0166015625
+        },
+        "relaxed": {
+          "wins": 12,
+          "losses": 0,
+          "p_value": 0.00048828125,
+          "holm_p_value": 0.0166015625
+        }
+      },
+      "cofinet": {
+        "strict": {
+          "wins": 12,
+          "losses": 0,
+          "p_value": 0.00048828125,
+          "holm_p_value": 0.0166015625
+        },
+        "relaxed": {
+          "wins": 12,
+          "losses": 0,
+          "p_value": 0.00048828125,
+          "holm_p_value": 0.0166015625
+        }
+      },
+      "geotransformer": {
+        "strict": {
+          "wins": 11,
+          "losses": 0,
+          "p_value": 0.0009765625,
+          "holm_p_value": 0.021484375
+        },
+        "relaxed": {
+          "wins": 11,
+          "losses": 0,
+          "p_value": 0.0009765625,
+          "holm_p_value": 0.021484375
+        }
+      },
+      "splatreg": {
+        "strict": {
+          "wins": 12,
+          "losses": 0,
+          "p_value": 0.00048828125,
+          "holm_p_value": 0.0166015625
+        },
+        "relaxed": {
+          "wins": 12,
+          "losses": 0,
+          "p_value": 0.00048828125,
+          "holm_p_value": 0.0166015625
+        }
+      }
+    },
+    "eth3d": {
+      "icp": {
+        "strict": {
+          "wins": 14,
+          "losses": 0,
+          "p_value": 0.0001220703125,
+          "holm_p_value": 0.0047607421875
+        },
+        "relaxed": {
+          "wins": 15,
+          "losses": 0,
+          "p_value": 6.103515625e-05,
+          "holm_p_value": 0.00262451171875
+        }
+      },
+      "fpfh_ransac": {
+        "strict": {
+          "wins": 16,
+          "losses": 0,
+          "p_value": 3.0517578125e-05,
+          "holm_p_value": 0.00146484375
+        },
+        "relaxed": {
+          "wins": 17,
+          "losses": 0,
+          "p_value": 1.52587890625e-05,
+          "holm_p_value": 0.00091552734375
+        }
+      },
+      "fcgf": {
+        "strict": {
+          "wins": 15,
+          "losses": 0,
+          "p_value": 6.103515625e-05,
+          "holm_p_value": 0.00262451171875
+        },
+        "relaxed": {
+          "wins": 12,
+          "losses": 1,
+          "p_value": 0.00341796875,
+          "holm_p_value": 0.03515625
+        }
+      },
+      "predator": {
+        "strict": {
+          "wins": 16,
+          "losses": 0,
+          "p_value": 3.0517578125e-05,
+          "holm_p_value": 0.00146484375
+        },
+        "relaxed": {
+          "wins": 17,
+          "losses": 0,
+          "p_value": 1.52587890625e-05,
+          "holm_p_value": 0.00091552734375
+        }
+      },
+      "cofinet": {
+        "strict": {
+          "wins": 6,
+          "losses": 1,
+          "p_value": 0.125,
+          "holm_p_value": 0.375
+        },
+        "relaxed": {
+          "wins": 3,
+          "losses": 1,
+          "p_value": 0.625,
+          "holm_p_value": 1.0
+        }
+      },
+      "geotransformer": {
+        "strict": {
+          "wins": 13,
+          "losses": 0,
+          "p_value": 0.000244140625,
+          "holm_p_value": 0.009033203125
+        },
+        "relaxed": {
+          "wins": 9,
+          "losses": 1,
+          "p_value": 0.021484375,
+          "holm_p_value": 0.107421875
+        }
+      },
+      "splatreg": {
+        "strict": {
+          "wins": 13,
+          "losses": 0,
+          "p_value": 0.000244140625,
+          "holm_p_value": 0.009033203125
+        },
+        "relaxed": {
+          "wins": 9,
+          "losses": 0,
+          "p_value": 0.00390625,
+          "holm_p_value": 0.03515625
+        }
+      },
+      "parenet": {
+        "strict": {
+          "wins": 14,
+          "losses": 1,
+          "p_value": 0.0009765625,
+          "holm_p_value": 0.021484375
+        },
+        "relaxed": {
+          "wins": 13,
+          "losses": 1,
+          "p_value": 0.0018310546875,
+          "holm_p_value": 0.0347900390625
+        }
+      },
+      "cast": {
+        "strict": {
+          "wins": 15,
+          "losses": 0,
+          "p_value": 6.103515625e-05,
+          "holm_p_value": 0.00262451171875
+        },
+        "relaxed": {
+          "wins": 15,
+          "losses": 0,
+          "p_value": 6.103515625e-05,
+          "holm_p_value": 0.00262451171875
+        }
+      },
+      "bufferx": {
+        "strict": {
+          "wins": 8,
+          "losses": 1,
+          "p_value": 0.0390625,
+          "holm_p_value": 0.15625
+        },
+        "relaxed": {
+          "wins": 3,
+          "losses": 1,
+          "p_value": 0.625,
+          "holm_p_value": 1.0
+        }
+      },
+      "randpcr": {
+        "strict": {
+          "wins": 16,
+          "losses": 0,
+          "p_value": 3.0517578125e-05,
+          "holm_p_value": 0.00146484375
+        },
+        "relaxed": {
+          "wins": 17,
+          "losses": 0,
+          "p_value": 1.52587890625e-05,
+          "holm_p_value": 0.00091552734375
+        }
+      },
+      "refreshreg": {
+        "strict": {
+          "wins": 14,
+          "losses": 0,
+          "p_value": 0.0001220703125,
+          "holm_p_value": 0.0047607421875
+        },
+        "relaxed": {
+          "wins": 13,
+          "losses": 0,
+          "p_value": 0.000244140625,
+          "holm_p_value": 0.009033203125
+        }
+      }
+    }
+  }
+}

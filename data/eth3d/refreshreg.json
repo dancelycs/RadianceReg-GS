@@ -1,0 +1,785 @@
+{
+  "schema_version": 2,
+  "method": "RefreshReg best-effort reconstruction + common Sim(3) solver",
+  "implementation": "official xiwanghuolight/RefreshReg commit 99cedc6 with reconstructed training/inference",
+  "protocol": {
+    "dataset": "ScanNet-GSReg official test",
+    "gaussians_per_map": 4500,
+    "input_to_method": "source_means and target_means only",
+    "transform": "source-to-target Sim(3)",
+    "gt_used_for_registration": false,
+    "gt_opened_only_after_pose_frozen": true,
+    "all_attempted_pairs_remain_in_denominator": true,
+    "strict_gate": "RRE < 10 deg, RTE/target_extent < 0.10, RSE < 10%",
+    "loose_gate": "RRE < 15 deg, RTE/target_extent < 0.30, RSE < 20%",
+    "parameters": {
+      "checkpoint": "locally reconstructed RefreshReg parameters",
+      "training_step": 5000,
+      "initialization": {
+        "kind": "PREDATOR public 3DMatch shape-compatible backbone",
+        "checkpoint": "../PREDATOR/weights/indoor.pth",
+        "keys": 50,
+        "parameters": 5129074
+      },
+      "canonical_extent_m": 4.0,
+      "map_normalization": "independent robust 5--95% extent",
+      "normal_estimation": "released 3DMatch radius=0.1, max_nn=30 from XYZ means",
+      "multi_level_filter": "released at-least-two-level nearest-neighbor agreement",
+      "correspondence_solver": "fixed 50000-iteration scored Sim(3) RANSAC + Umeyama",
+      "inlier_threshold_over_target_extent": 0.04,
+      "seed": 20260914
+    }
+  },
+  "attempted_pairs": 19,
+  "valid_pairs": 19,
+  "failed_pairs": 0,
+  "strict_successes": 2,
+  "successes": 4,
+  "median_rre_deg": 83.5919535326065,
+  "median_rte_extent": 0.3410286000616317,
+  "median_rse_percent": 55.20166348477629,
+  "median_elapsed_seconds": 4.040246493997984,
+  "rows": [
+    {
+      "status": "ok",
+      "pair": "eth3d_botanical_garden",
+      "overlap": 0.8408888888888889,
+      "elapsed_seconds": 4.3697735000023386,
+      "estimated_scale": 0.23120268282631617,
+      "estimated_rotation": [
+        [
+          0.30204281657915444,
+          0.9441938671705499,
+          -0.1314080596860525
+        ],
+        [
+          -0.33766008055171437,
+          -0.022946194567089875,
+          -0.9409883857714183
+        ],
+        [
+          -0.8914907778293284,
+          0.32859003842540824,
+          0.31188584400842523
+        ]
+      ],
+      "estimated_translation": [
+        -1.9241662639996473,
+        -2.120335614284067,
+        0.4647626533589846
+      ],
+      "multi_level_correspondences": 857,
+      "three_way_agreements": 60,
+      "sim3_ransac_inliers": 95,
+      "source_robust_extent": 18.735118605313076,
+      "target_robust_extent": 18.736249175270157,
+      "rre_deg": 60.41205500005723,
+      "rte_extent": 0.3769653342076564,
+      "rse_percent": 73.17684435830516,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_boulders",
+      "overlap": 0.9282222222222222,
+      "elapsed_seconds": 3.8762968450027984,
+      "estimated_scale": 1.0744182515062186,
+      "estimated_rotation": [
+        [
+          -0.4762195853584255,
+          -0.5476744887749503,
+          -0.6879444460609786
+        ],
+        [
+          0.8295592396234766,
+          -0.02035248310289406,
+          -0.5580477079846007
+        ],
+        [
+          0.291627115468313,
+          -0.8364439196841851,
+          0.46402068353359793
+        ]
+      ],
+      "estimated_translation": [
+        -7.75077028548289,
+        8.19693470897621,
+        -29.843516252599052
+      ],
+      "multi_level_correspondences": 690,
+      "three_way_agreements": 42,
+      "sim3_ransac_inliers": 120,
+      "source_robust_extent": 35.71360176709913,
+      "target_robust_extent": 46.431759297842774,
+      "rre_deg": 14.296465460752458,
+      "rte_extent": 0.1960981018725556,
+      "rse_percent": 3.010030599165592,
+      "strict_success": false,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_bridge",
+      "overlap": 0.9431111111111111,
+      "elapsed_seconds": 3.798924041999271,
+      "estimated_scale": 0.5490403280039157,
+      "estimated_rotation": [
+        [
+          -0.10090182481991346,
+          -0.585534533907339,
+          -0.8043432919779506
+        ],
+        [
+          0.053472202243070664,
+          0.8041091412189296,
+          -0.5920719657232824
+        ],
+        [
+          0.9934583762469807,
+          -0.10275114894769466,
+          -0.04982625868596807
+        ]
+      ],
+      "estimated_translation": [
+        8.199763901058748,
+        -2.5112859489436943,
+        30.53241426745135
+      ],
+      "multi_level_correspondences": 719,
+      "three_way_agreements": 64,
+      "sim3_ransac_inliers": 88,
+      "source_robust_extent": 36.13319372231913,
+      "target_robust_extent": 30.156679575548246,
+      "rre_deg": 174.63947623371655,
+      "rte_extent": 1.4333235118826684,
+      "rse_percent": 26.08740842115068,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_courtyard",
+      "overlap": 0.9357777777777778,
+      "elapsed_seconds": 3.854020494996803,
+      "estimated_scale": 0.39396690365705883,
+      "estimated_rotation": [
+        [
+          0.1118370715517544,
+          0.36009436768949343,
+          -0.9261881643516252
+        ],
+        [
+          0.9562279109852839,
+          -0.29261801525395936,
+          0.0016968799469779805
+        ],
+        [
+          -0.2704083054927284,
+          -0.8858367476612932,
+          -0.37705782688258
+        ]
+      ],
+      "estimated_translation": [
+        -4.2438076725582174,
+        -9.523228255774374,
+        8.117141026212737
+      ],
+      "multi_level_correspondences": 659,
+      "three_way_agreements": 40,
+      "sim3_ransac_inliers": 55,
+      "source_robust_extent": 32.44194428219091,
+      "target_robust_extent": 35.692330464919976,
+      "rre_deg": 26.166617328957685,
+      "rte_extent": 0.36863127052660655,
+      "rse_percent": 65.07956887498926,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_delivery_area",
+      "overlap": 0.9075555555555556,
+      "elapsed_seconds": 3.876445279995096,
+      "estimated_scale": 0.4738018467028357,
+      "estimated_rotation": [
+        [
+          0.9497624774395896,
+          -0.03348551419934148,
+          -0.31117512237745015
+        ],
+        [
+          -0.1506442718466464,
+          -0.9204170608401403,
+          -0.3607474705028334
+        ],
+        [
+          -0.27433107699932435,
+          0.389501161042178,
+          -0.8792219888851658
+        ]
+      ],
+      "estimated_translation": [
+        8.49032231969673,
+        1.2175676559731627,
+        -10.134291470475775
+      ],
+      "multi_level_correspondences": 647,
+      "three_way_agreements": 31,
+      "sim3_ransac_inliers": 82,
+      "source_robust_extent": 27.976403271015815,
+      "target_robust_extent": 34.68814436140587,
+      "rre_deg": 145.05378442098146,
+      "rte_extent": 0.7367511896491866,
+      "rse_percent": 59.348119333168526,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_electro",
+      "overlap": 0.8753333333333333,
+      "elapsed_seconds": 4.08187829599774,
+      "estimated_scale": 0.6878423951575333,
+      "estimated_rotation": [
+        [
+          -0.4291040389283301,
+          0.6354926330018437,
+          -0.6418869348847795
+        ],
+        [
+          0.7725665323813459,
+          0.6264076218834718,
+          0.10370363682415405
+        ],
+        [
+          0.4679857656164945,
+          -0.4514007140520239,
+          -0.7597543803978137
+        ]
+      ],
+      "estimated_translation": [
+        -10.028962469349993,
+        -14.095913651415445,
+        -8.603921933548481
+      ],
+      "multi_level_correspondences": 778,
+      "three_way_agreements": 38,
+      "sim3_ransac_inliers": 63,
+      "source_robust_extent": 66.32975117833567,
+      "target_robust_extent": 47.66737133902666,
+      "rre_deg": 30.12218760469607,
+      "rte_extent": 0.22551350337607523,
+      "rse_percent": 6.2384637352879135,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_exhibition_hall",
+      "overlap": 0.8706666666666667,
+      "elapsed_seconds": 4.373770751000848,
+      "estimated_scale": 0.26890761139966446,
+      "estimated_rotation": [
+        [
+          -0.30204721796589284,
+          -0.6113606136213501,
+          0.7314408234652965
+        ],
+        [
+          0.8580303263733421,
+          -0.5086880589408951,
+          -0.07085490607290765
+        ],
+        [
+          0.41539311157350745,
+          0.6061968812221576,
+          0.6782137598529011
+        ]
+      ],
+      "estimated_translation": [
+        2.7932294847767265,
+        -4.990772754660477,
+        2.6604449622518875
+      ],
+      "multi_level_correspondences": 842,
+      "three_way_agreements": 32,
+      "sim3_ransac_inliers": 44,
+      "source_robust_extent": 37.08417839446638,
+      "target_robust_extent": 25.400779584488546,
+      "rre_deg": 136.43766041376313,
+      "rte_extent": 0.2656008166992457,
+      "rse_percent": 62.58697882165889,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_facade",
+      "overlap": 0.8673333333333333,
+      "elapsed_seconds": 4.156595372987795,
+      "estimated_scale": 0.1517894235027914,
+      "estimated_rotation": [
+        [
+          0.5990300570179775,
+          -0.6335195016917214,
+          -0.48971015076809643
+        ],
+        [
+          -0.17346240957769118,
+          0.49438885994057474,
+          -0.8517572703711775
+        ],
+        [
+          0.7817120846274159,
+          0.5951745089828124,
+          0.1862619676813514
+        ]
+      ],
+      "estimated_translation": [
+        18.411935612241393,
+        -28.290003739396752,
+        10.888891338608136
+      ],
+      "multi_level_correspondences": 919,
+      "three_way_agreements": 73,
+      "sim3_ransac_inliers": 175,
+      "source_robust_extent": 92.59213017667632,
+      "target_robust_extent": 129.08904923868386,
+      "rre_deg": 130.32636083813622,
+      "rte_extent": 0.20098109731341238,
+      "rse_percent": 78.12274362119079,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_kicker",
+      "overlap": 0.7695555555555555,
+      "elapsed_seconds": 4.1116800290037645,
+      "estimated_scale": 0.18513897748417701,
+      "estimated_rotation": [
+        [
+          -0.9304763983620084,
+          -0.3514954384265215,
+          -0.10326968992212845
+        ],
+        [
+          -0.01430977570079367,
+          -0.2468007845069657,
+          0.9689605787059343
+        ],
+        [
+          -0.36607226391883074,
+          0.9030727155285412,
+          0.22461248419722385
+        ]
+      ],
+      "estimated_translation": [
+        -3.6864541808900206,
+        -3.286210296456171,
+        -0.2458352594764702
+      ],
+      "multi_level_correspondences": 819,
+      "three_way_agreements": 42,
+      "sim3_ransac_inliers": 75,
+      "source_robust_extent": 12.238424665697464,
+      "target_robust_extent": 8.919238361891939,
+      "rre_deg": 162.34474108263552,
+      "rte_extent": 1.011092772175979,
+      "rse_percent": 76.92689945722418,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_lecture_room",
+      "overlap": 0.9406666666666667,
+      "elapsed_seconds": 3.8502641030063387,
+      "estimated_scale": 0.6788643719663761,
+      "estimated_rotation": [
+        [
+          0.8331419884038125,
+          0.31015221737627235,
+          0.457908319661395
+        ],
+        [
+          0.15595715955692036,
+          -0.9261064285056098,
+          0.3435174631128965
+        ],
+        [
+          0.5306145413965567,
+          -0.2147847413974389,
+          -0.8199486101710014
+        ]
+      ],
+      "estimated_translation": [
+        11.36657981886567,
+        5.185240393911718,
+        -1.754564273520188
+      ],
+      "multi_level_correspondences": 719,
+      "three_way_agreements": 37,
+      "sim3_ransac_inliers": 112,
+      "source_robust_extent": 12.447492609877195,
+      "target_robust_extent": 23.33770986755593,
+      "rre_deg": 175.70734490148405,
+      "rte_extent": 1.493871317587867,
+      "rse_percent": 55.20166348477629,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_living_room",
+      "overlap": 0.738,
+      "elapsed_seconds": 4.005789635004476,
+      "estimated_scale": 0.9111028064715271,
+      "estimated_rotation": [
+        [
+          -0.7777619697426394,
+          0.4146351298439472,
+          -0.4724023999953248
+        ],
+        [
+          0.39549633879437934,
+          0.9069636362071072,
+          0.1449124169911739
+        ],
+        [
+          0.4885375772878595,
+          -0.07412605275660705,
+          -0.8693884999701992
+        ]
+      ],
+      "estimated_translation": [
+        0.034811796561102226,
+        2.971226579256397,
+        3.7057903967724837
+      ],
+      "multi_level_correspondences": 743,
+      "three_way_agreements": 43,
+      "sim3_ransac_inliers": 26,
+      "source_robust_extent": 5.883522870066405,
+      "target_robust_extent": 7.004222803655208,
+      "rre_deg": 88.82727306422159,
+      "rte_extent": 0.9559651893116781,
+      "rse_percent": 22.781709863198618,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_observatory",
+      "overlap": 0.8335555555555556,
+      "elapsed_seconds": 4.046545920995413,
+      "estimated_scale": 1.1086432935312511,
+      "estimated_rotation": [
+        [
+          -0.7463668691841053,
+          -0.3943888097300885,
+          -0.5360913759276498
+        ],
+        [
+          -0.23984256839005025,
+          0.9107708704818716,
+          -0.3361130224638116
+        ],
+        [
+          0.6208156239757348,
+          -0.12228609177407901,
+          -0.7743604282155958
+        ]
+      ],
+      "estimated_translation": [
+        5.149758307092373,
+        20.195992651610634,
+        -15.378778634371447
+      ],
+      "multi_level_correspondences": 815,
+      "three_way_agreements": 43,
+      "sim3_ransac_inliers": 112,
+      "source_robust_extent": 29.047612361755096,
+      "target_robust_extent": 28.770216677032753,
+      "rre_deg": 7.521858272823598,
+      "rte_extent": 0.09340816966432812,
+      "rse_percent": 4.318090514422613,
+      "strict_success": true,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_office",
+      "overlap": 0.7893333333333333,
+      "elapsed_seconds": 4.040246493997984,
+      "estimated_scale": 0.11851303243733648,
+      "estimated_rotation": [
+        [
+          -0.16193362629256264,
+          0.7686260648312843,
+          -0.6188630487738912
+        ],
+        [
+          0.45497121845811733,
+          -0.4983524142974539,
+          -0.7380013967050714
+        ],
+        [
+          -0.8756590038653618,
+          -0.40107211773679097,
+          -0.26900272363611655
+        ]
+      ],
+      "estimated_translation": [
+        -1.082208313134705,
+        -1.833430189335736,
+        -1.0035940959206497
+      ],
+      "multi_level_correspondences": 814,
+      "three_way_agreements": 54,
+      "sim3_ransac_inliers": 78,
+      "source_robust_extent": 7.601740126606415,
+      "target_robust_extent": 5.639340116729673,
+      "rre_deg": 83.5919535326065,
+      "rte_extent": 0.14913362852387316,
+      "rse_percent": 84.68279771734049,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_old_computer",
+      "overlap": 0.8862222222222222,
+      "elapsed_seconds": 4.0765485300071305,
+      "estimated_scale": 0.24531696632699937,
+      "estimated_rotation": [
+        [
+          0.3995685238141229,
+          -0.00390703470426379,
+          -0.9166950037263332
+        ],
+        [
+          -0.8487419542703823,
+          0.3762785200230387,
+          -0.37155291740284374
+        ],
+        [
+          0.3463843094574217,
+          0.9264983596580688,
+          0.14703298851826954
+        ]
+      ],
+      "estimated_translation": [
+        -5.393628434932991,
+        -0.5978604104957863,
+        -1.3665854090178273
+      ],
+      "multi_level_correspondences": 834,
+      "three_way_agreements": 51,
+      "sim3_ransac_inliers": 151,
+      "source_robust_extent": 20.492547589052293,
+      "target_robust_extent": 18.591035278824055,
+      "rre_deg": 164.2648030070174,
+      "rte_extent": 0.5727396863579558,
+      "rse_percent": 73.48742003919492,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_playground",
+      "overlap": 0.8802222222222222,
+      "elapsed_seconds": 4.170986615004949,
+      "estimated_scale": 0.8718648113283017,
+      "estimated_rotation": [
+        [
+          0.9019458874820128,
+          -0.023070638242559754,
+          0.4312323755301366
+        ],
+        [
+          -0.004139624584741999,
+          -0.9989879852393547,
+          -0.044786927285898046
+        ],
+        [
+          0.43182922499824106,
+          0.038610244734990376,
+          -0.9011286087118323
+        ]
+      ],
+      "estimated_translation": [
+        -1.7874167321256547,
+        -6.832665479767672,
+        8.620682319971653
+      ],
+      "multi_level_correspondences": 895,
+      "three_way_agreements": 49,
+      "sim3_ransac_inliers": 130,
+      "source_robust_extent": 27.306955894695523,
+      "target_robust_extent": 27.54172547651429,
+      "rre_deg": 28.4450122002614,
+      "rte_extent": 0.24103896254699422,
+      "rse_percent": 23.69754030992096,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_relief",
+      "overlap": 0.9108888888888889,
+      "elapsed_seconds": 4.014358810993144,
+      "estimated_scale": 1.0090685068266,
+      "estimated_rotation": [
+        [
+          -0.860186730524216,
+          -0.46759710722995595,
+          0.20354786645955375
+        ],
+        [
+          -0.3910996311825007,
+          0.8610004247121503,
+          0.3251451170391597
+        ],
+        [
+          -0.32729171562838444,
+          0.2000780196715119,
+          -0.9234981964927459
+        ]
+      ],
+      "estimated_translation": [
+        0.035010192143214436,
+        -0.8576577410078416,
+        13.407421212821138
+      ],
+      "multi_level_correspondences": 793,
+      "three_way_agreements": 50,
+      "sim3_ransac_inliers": 165,
+      "source_robust_extent": 16.99044364650439,
+      "target_robust_extent": 20.99596544632091,
+      "rre_deg": 4.997722444715907,
+      "rte_extent": 0.04991189794443731,
+      "rse_percent": 4.624388666103085,
+      "strict_success": true,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_relief_2",
+      "overlap": 0.8784444444444445,
+      "elapsed_seconds": 4.117499131010845,
+      "estimated_scale": 1.39959112124493,
+      "estimated_rotation": [
+        [
+          0.6588778701568825,
+          -0.02057809331528679,
+          -0.751968413095283
+        ],
+        [
+          0.4652057840398416,
+          0.7967006211456158,
+          0.38581303601882916
+        ],
+        [
+          0.5911544051374452,
+          -0.6040237266380333,
+          0.5345014564478714
+        ]
+      ],
+      "estimated_translation": [
+        7.073897516335604,
+        15.440190155324789,
+        5.668953159734488
+      ],
+      "multi_level_correspondences": 898,
+      "three_way_agreements": 74,
+      "sim3_ransac_inliers": 267,
+      "source_robust_extent": 15.153185330672873,
+      "target_robust_extent": 20.45051463906497,
+      "rre_deg": 11.078375706016985,
+      "rte_extent": 0.05864276346684542,
+      "rse_percent": 0.6109646591400675,
+      "strict_success": false,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_terrace",
+      "overlap": 0.8433333333333334,
+      "elapsed_seconds": 3.9388281669962453,
+      "estimated_scale": 0.24814468570327614,
+      "estimated_rotation": [
+        [
+          -0.01862221635544547,
+          0.9340485215629871,
+          -0.3566603039644439
+        ],
+        [
+          -0.6824666309246902,
+          0.2488197937075523,
+          0.6872612370370044
+        ],
+        [
+          0.7306794856380691,
+          0.2562070834800042,
+          0.6328233715993404
+        ]
+      ],
+      "estimated_translation": [
+        -5.320500770655318,
+        3.2713618400298596,
+        -0.8888282448265605
+      ],
+      "multi_level_correspondences": 775,
+      "three_way_agreements": 55,
+      "sim3_ransac_inliers": 203,
+      "source_robust_extent": 54.51842239417917,
+      "target_robust_extent": 41.72973416697825,
+      "rre_deg": 66.92565363798903,
+      "rte_extent": 0.3410286000616317,
+      "rse_percent": 69.24879224169248,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_terrains",
+      "overlap": 0.9008888888888889,
+      "elapsed_seconds": 3.93628063100914,
+      "estimated_scale": 0.8334300000700946,
+      "estimated_rotation": [
+        [
+          0.5096226777280003,
+          0.17276864370053874,
+          -0.842873491159391
+        ],
+        [
+          -0.6955124488777918,
+          0.6594181261532116,
+          -0.2853597174735856
+        ],
+        [
+          0.5065048467698605,
+          0.7316547892650358,
+          0.45621717366203585
+        ]
+      ],
+      "estimated_translation": [
+        -0.7575838732385285,
+        4.946419490575281,
+        -4.773720727062444
+      ],
+      "multi_level_correspondences": 729,
+      "three_way_agreements": 44,
+      "sim3_ransac_inliers": 105,
+      "source_robust_extent": 9.297728330508589,
+      "target_robust_extent": 11.410064183593414,
+      "rre_deg": 164.5524678567213,
+      "rte_extent": 0.8289919015546084,
+      "rse_percent": 34.899170498530076,
+      "strict_success": false,
+      "success": false
+    }
+  ]
+}

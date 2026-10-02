@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "radiancereg-gs"
+version = "1.0.0"
+description = "Support-constrained spherical-harmonic radiance for global 3D Gaussian map registration"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+  {name = "Jie Yang"},
+  {name = "Shaoyan Gai"},
+  {name = "Feipeng Da"},
+]
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "torch>=2.0",
+  "e3nn>=0.5.1",
+  "plyfile>=1.0",
+]
+
+[project.optional-dependencies]
+evaluation = ["matplotlib>=3.7"]
+test = ["pytest>=7"]
+
+[project.scripts]
+radiancereg-gs = "radiancereg_gs.cli:main"
+
+[tool.setuptools]
+packages = ["radiancereg_gs"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

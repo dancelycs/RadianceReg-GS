@@ -1,0 +1,1042 @@
+{
+  "experiment": "pose-conditioned native-radiance reassociation",
+  "protocol": {
+    "neighbours": 8,
+    "iterations": 2,
+    "support_retention": 0.8,
+    "ground_truth_used_for_acceptance": false
+  },
+  "accepted_refinements": 0,
+  "summary": {
+    "initial": {
+      "strict_successes": 16,
+      "successes": 17,
+      "median_rre_deg": 3.426821192282531,
+      "median_rte_extent": 0.039432138224717056,
+      "median_rse_percent": 1.2798696398914178
+    },
+    "refined_unconditionally": {
+      "strict_successes": 17,
+      "successes": 17,
+      "median_rre_deg": 1.7099076726499502,
+      "median_rte_extent": 0.023356433891359024,
+      "median_rse_percent": 1.1158950569296944
+    },
+    "output": {
+      "strict_successes": 16,
+      "successes": 17,
+      "median_rre_deg": 3.426821192282531,
+      "median_rte_extent": 0.039432138224717056,
+      "median_rse_percent": 1.2798696398914178
+    }
+  },
+  "rows": [
+    {
+      "pair": "eth3d_botanical_garden",
+      "accepted": false,
+      "local_pair_count": 784,
+      "initial_radiance_score": 0.1471540374031646,
+      "refined_radiance_score": 0.14226693732336107,
+      "initial": {
+        "rre_deg": 5.556308964919931,
+        "rte_extent": 0.03937692166666808,
+        "rse_percent": 1.2798696398914178,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 3.084469677233388,
+        "rte_extent": 0.022494413372887784,
+        "rse_percent": 0.3352198562000863,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 5.556308964919931,
+        "rte_extent": 0.03937692166666808,
+        "rse_percent": 1.2798696398914178,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.8729836969906531,
+        "rotation": [
+          [
+            0.11339549000868218,
+            0.9874008959033892,
+            -0.11036726695391286
+          ],
+          [
+            -0.99005602445982,
+            0.10298965525337773,
+            -0.09582379319149675
+          ],
+          [
+            -0.08324981247130392,
+            0.12013576353432717,
+            0.9892607679694555
+          ]
+        ],
+        "translation": [
+          3.8281951845591906,
+          -6.76635433378854,
+          -0.2971510948098639
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_boulders",
+      "accepted": false,
+      "local_pair_count": 870,
+      "initial_radiance_score": 0.12768845324490036,
+      "refined_radiance_score": 0.10091505206028414,
+      "initial": {
+        "rre_deg": 6.42980480996375,
+        "rte_extent": 0.03545266321795798,
+        "rse_percent": 0.6886754151171237,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 4.30547261513552,
+        "rte_extent": 0.021347466583211322,
+        "rse_percent": 0.512542418152584,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 6.42980480996375,
+        "rte_extent": 0.03545266321795798,
+        "rse_percent": 0.6886754151171237,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.1153911198682844,
+        "rotation": [
+          [
+            -0.5175218493284596,
+            -0.453221435812579,
+            -0.7257833461768304
+          ],
+          [
+            0.729366601012235,
+            0.2098749565035162,
+            -0.6511350581565286
+          ],
+          [
+            0.4474321141754475,
+            -0.8663387517320413,
+            0.22194970252707577
+          ]
+        ],
+        "translation": [
+          -4.182893913102395,
+          18.25975860358413,
+          -28.782069883145414
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_bridge",
+      "accepted": false,
+      "local_pair_count": 560,
+      "initial_radiance_score": 0.2737221701830067,
+      "refined_radiance_score": 0.2971976899715906,
+      "initial": {
+        "rre_deg": 1.179992872437078,
+        "rte_extent": 0.014279351794804915,
+        "rse_percent": 1.1859622147865512,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 0.6047093774183072,
+        "rte_extent": 0.013352110459385802,
+        "rse_percent": 1.1158950569296944,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 1.179992872437078,
+        "rte_extent": 0.014279351794804915,
+        "rse_percent": 1.1859622147865512,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.7340141991788827,
+        "rotation": [
+          [
+            0.053962478670296465,
+            0.4876585315967409,
+            -0.8713651401431366
+          ],
+          [
+            0.043271146309621006,
+            -0.8729588903620165,
+            -0.4858707478691924
+          ],
+          [
+            -0.9976049612911961,
+            -0.011486178599824107,
+            -0.06820856917106372
+          ]
+        ],
+        "translation": [
+          16.735247537424563,
+          -5.069701224990665,
+          -11.588266709500674
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_courtyard",
+      "accepted": false,
+      "local_pair_count": 120,
+      "initial_radiance_score": 0.10177511952123032,
+      "refined_radiance_score": 0.07744016751564124,
+      "initial": {
+        "rre_deg": 26.06088187864231,
+        "rte_extent": 0.38222976751547777,
+        "rse_percent": 67.52868754488762,
+        "strict_success": false,
+        "success": false
+      },
+      "refined_unconditionally": {
+        "rre_deg": 27.602538494220177,
+        "rte_extent": 0.37836230101562757,
+        "rse_percent": 67.28515532649911,
+        "strict_success": false,
+        "success": false
+      },
+      "output": {
+        "rre_deg": 26.06088187864231,
+        "rte_extent": 0.38222976751547777,
+        "rse_percent": 67.52868754488762,
+        "strict_success": false,
+        "success": false
+      },
+      "output_pose": {
+        "scale": 0.3663363255689927,
+        "rotation": [
+          [
+            0.00011368919901609542,
+            0.7505344416820923,
+            -0.660831324109047
+          ],
+          [
+            0.988066305333394,
+            0.10170294537453724,
+            0.11567837813075024
+          ],
+          [
+            0.1540290990026981,
+            -0.6529583162431537,
+            -0.7415662302918891
+          ]
+        ],
+        "translation": [
+          -5.9651040657903565,
+          -9.50538821378469,
+          5.318996695988876
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_delivery_area",
+      "accepted": false,
+      "local_pair_count": 692,
+      "initial_radiance_score": 0.24947076345653305,
+      "refined_radiance_score": 0.20872788347459847,
+      "initial": {
+        "rre_deg": 1.9122304222820314,
+        "rte_extent": 0.03425848474472093,
+        "rse_percent": 0.6297656236708082,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 0.49598675782095203,
+        "rte_extent": 0.013905425244926108,
+        "rse_percent": 0.2622001694598586,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 1.9122304222820314,
+        "rte_extent": 0.03425848474472093,
+        "rse_percent": 0.6297656236708082,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.1581702932925604,
+        "rotation": [
+          [
+            0.6606214713709233,
+            0.312475372703219,
+            0.6825968158566968
+          ],
+          [
+            -0.11754764293360884,
+            0.9410971437107462,
+            -0.31704686994232845
+          ],
+          [
+            -0.7414592525584052,
+            0.12921032293690515,
+            0.6584397233172307
+          ]
+        ],
+        "translation": [
+          28.859916714862564,
+          5.476770312619609,
+          4.926021351651702
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_electro",
+      "accepted": false,
+      "local_pair_count": 693,
+      "initial_radiance_score": 0.13494461367689103,
+      "refined_radiance_score": 0.08890276983213063,
+      "initial": {
+        "rre_deg": 5.040709934191661,
+        "rte_extent": 0.0474034350766982,
+        "rse_percent": 0.3756405526730844,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 2.4307393103287644,
+        "rte_extent": 0.026330733535150336,
+        "rse_percent": 1.1069762520896753,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 5.040709934191661,
+        "rte_extent": 0.0474034350766982,
+        "rse_percent": 0.3756405526730844,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.7308525515710288,
+        "rotation": [
+          [
+            -0.4510939799783704,
+            0.2863106159558368,
+            -0.8453049464058893
+          ],
+          [
+            0.7982906801525198,
+            0.5529420344437534,
+            -0.23871970284589095
+          ],
+          [
+            0.399056651628439,
+            -0.7824840814586532,
+            -0.47798791936084173
+          ]
+        ],
+        "translation": [
+          -7.922192996369716,
+          -17.964574095298367,
+          -0.4355662937492166
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_exhibition_hall",
+      "accepted": false,
+      "local_pair_count": 904,
+      "initial_radiance_score": 0.16207171865205028,
+      "refined_radiance_score": 0.14884426616903942,
+      "initial": {
+        "rre_deg": 178.09885699411768,
+        "rte_extent": 0.1593341126534931,
+        "rse_percent": 3.5439421200823884,
+        "strict_success": false,
+        "success": false
+      },
+      "refined_unconditionally": {
+        "rre_deg": 178.5952372090066,
+        "rte_extent": 0.17447169608373234,
+        "rse_percent": 2.0772421420932052,
+        "strict_success": false,
+        "success": false
+      },
+      "output": {
+        "rre_deg": 178.09885699411768,
+        "rte_extent": 0.1593341126534931,
+        "rse_percent": 3.5439421200823884,
+        "strict_success": false,
+        "success": false
+      },
+      "output_pose": {
+        "scale": 0.6932818391189468,
+        "rotation": [
+          [
+            0.2076831079444894,
+            0.811648504832973,
+            0.5459802480648148
+          ],
+          [
+            0.507905259504567,
+            -0.5664901923881258,
+            0.6489384480023228
+          ],
+          [
+            0.8360023768160687,
+            0.14253268583193254,
+            -0.529890988248923
+          ]
+        ],
+        "translation": [
+          2.349391041405292,
+          0.16183153407606699,
+          2.2568713043692776
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_facade",
+      "accepted": false,
+      "local_pair_count": 642,
+      "initial_radiance_score": 0.0774145034873654,
+      "refined_radiance_score": 0.020808970808993514,
+      "initial": {
+        "rre_deg": 11.475661785080707,
+        "rte_extent": 0.06446557376543324,
+        "rse_percent": 3.323763147258485,
+        "strict_success": false,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 7.462184553262271,
+        "rte_extent": 0.04062868614682031,
+        "rse_percent": 1.0217112693326702,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 11.475661785080707,
+        "rte_extent": 0.06446557376543324,
+        "rse_percent": 3.323763147258485,
+        "strict_success": false,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.7168839716781245,
+        "rotation": [
+          [
+            0.6296371457889817,
+            -0.547867295799452,
+            0.5508162042243315
+          ],
+          [
+            -0.7732061265011381,
+            -0.5108765272868233,
+            0.3757092756486884
+          ],
+          [
+            0.07556024473101827,
+            -0.6624549796482411,
+            -0.7452811881132094
+          ]
+        ],
+        "translation": [
+          40.319169316902446,
+          -24.593780386673593,
+          19.070981936174697
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_kicker",
+      "accepted": false,
+      "local_pair_count": 663,
+      "initial_radiance_score": 0.11524970672297102,
+      "refined_radiance_score": 0.0805089949356083,
+      "initial": {
+        "rre_deg": 3.1203607290016775,
+        "rte_extent": 0.025986459724251943,
+        "rse_percent": 1.5139869891019786,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 1.1856982335056407,
+        "rte_extent": 0.008705351580566748,
+        "rse_percent": 0.6721933909165201,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 3.1203607290016775,
+        "rte_extent": 0.025986459724251943,
+        "rse_percent": 1.5139869891019786,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.7902535557164182,
+        "rotation": [
+          [
+            -0.25890100484858003,
+            -0.6318375498239124,
+            -0.7305830413586881
+          ],
+          [
+            0.7155051466317462,
+            0.3826523361946037,
+            -0.5844908679768194
+          ],
+          [
+            0.648862585476986,
+            -0.6740611991780323,
+            0.35301394438576206
+          ]
+        ],
+        "translation": [
+          -0.7262848806290183,
+          5.049324514707538,
+          0.30744230154806107
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_lecture_room",
+      "accepted": false,
+      "local_pair_count": 804,
+      "initial_radiance_score": 0.17765935112833253,
+      "refined_radiance_score": 0.06088417427117707,
+      "initial": {
+        "rre_deg": 3.0734070145286685,
+        "rte_extent": 0.05176783974390575,
+        "rse_percent": 0.9280721749980514,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 1.6850225932865461,
+        "rte_extent": 0.028830803157088823,
+        "rse_percent": 1.3165553565565036,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 3.0734070145286685,
+        "rte_extent": 0.05176783974390575,
+        "rse_percent": 0.9280721749980514,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.5013147204598212,
+        "rotation": [
+          [
+            -0.7434826975060448,
+            0.3238682088597835,
+            -0.5851007279085292
+          ],
+          [
+            -0.4924506117019506,
+            -0.8570821339595913,
+            0.15133608519334635
+          ],
+          [
+            -0.4524664336097317,
+            0.4006489722153653,
+            0.7967148345043296
+          ]
+        ],
+        "translation": [
+          -22.537449091783994,
+          -2.0254727256648866,
+          1.3740076369650915
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_living_room",
+      "accepted": false,
+      "local_pair_count": 624,
+      "initial_radiance_score": 0.159833105907134,
+      "refined_radiance_score": 0.15131284073410783,
+      "initial": {
+        "rre_deg": 0.7675894011267164,
+        "rte_extent": 0.013501157455378481,
+        "rse_percent": 0.17438760720940305,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 0.19993027119670714,
+        "rte_extent": 0.01382823208803577,
+        "rse_percent": 1.0761486031328649,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 0.7675894011267164,
+        "rte_extent": 0.013501157455378481,
+        "rse_percent": 0.17438760720940305,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.18196304947702,
+        "rotation": [
+          [
+            -0.8925164974538694,
+            0.29308158334924034,
+            0.3428082368820501
+          ],
+          [
+            0.35242457661909454,
+            -0.02111134519604521,
+            0.935602067600786
+          ],
+          [
+            0.28144487838212584,
+            0.9558543281303465,
+            -0.08444692905579577
+          ]
+        ],
+        "translation": [
+          -3.479704773148081,
+          -2.441475788972679,
+          5.215638168014777
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_observatory",
+      "accepted": false,
+      "local_pair_count": 906,
+      "initial_radiance_score": 0.14445876323987208,
+      "refined_radiance_score": 0.09611651340694115,
+      "initial": {
+        "rre_deg": 2.995547368367917,
+        "rte_extent": 0.03987679103818521,
+        "rse_percent": 0.6959328857598646,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 2.096520072797975,
+        "rte_extent": 0.023356433891359024,
+        "rse_percent": 0.8147450985272919,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 2.995547368367917,
+        "rte_extent": 0.03987679103818521,
+        "rse_percent": 0.6959328857598646,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.1667395778352236,
+        "rotation": [
+          [
+            -0.6581539543574256,
+            -0.4435590377905497,
+            -0.608349202644342
+          ],
+          [
+            -0.27286355883675767,
+            0.8936206029474502,
+            -0.3563533306239407
+          ],
+          [
+            0.7016971217146498,
+            -0.06853902524954697,
+            -0.7091710311308679
+          ]
+        ],
+        "translation": [
+          1.9027329715498205,
+          21.798442430156882,
+          -16.03595114458711
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_office",
+      "accepted": false,
+      "local_pair_count": 493,
+      "initial_radiance_score": 0.18978163155371697,
+      "refined_radiance_score": 0.1369187640156341,
+      "initial": {
+        "rre_deg": 4.277158491645678,
+        "rte_extent": 0.009373254925867134,
+        "rse_percent": 1.813319384096268,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 1.7099076726499502,
+        "rte_extent": 0.0026642379775350354,
+        "rse_percent": 1.8129113573089772,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 4.277158491645678,
+        "rte_extent": 0.009373254925867134,
+        "rse_percent": 1.813319384096268,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.7596949527734891,
+        "rotation": [
+          [
+            -0.9538115638759499,
+            0.27036845194650033,
+            0.1309366289796984
+          ],
+          [
+            -0.25792187438109476,
+            -0.5135791129517353,
+            -0.8183598239499849
+          ],
+          [
+            -0.15401236097228366,
+            -0.8143324842665687,
+            0.5595916347980744
+          ]
+        ],
+        "translation": [
+          -1.8296113269116459,
+          -2.1688611863208354,
+          -0.783361533047237
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_old_computer",
+      "accepted": false,
+      "local_pair_count": 705,
+      "initial_radiance_score": 0.18151202957752743,
+      "refined_radiance_score": 0.1794613558940546,
+      "initial": {
+        "rre_deg": 1.8511729337497158,
+        "rte_extent": 0.01974171786304157,
+        "rse_percent": 1.105452489918901,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 0.6179547799676629,
+        "rte_extent": 0.009942576254002551,
+        "rse_percent": 1.092618704607029,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 1.8511729337497158,
+        "rte_extent": 0.01974171786304157,
+        "rse_percent": 1.105452489918901,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.9150565662534529,
+        "rotation": [
+          [
+            -0.638513639580204,
+            -0.2998500434897301,
+            0.7087949516533321
+          ],
+          [
+            0.6866616562494455,
+            0.19395528993942462,
+            0.7006262308401546
+          ],
+          [
+            -0.34755733614298867,
+            0.9340617200826298,
+            0.0820524293940706
+          ]
+        ],
+        "translation": [
+          3.7351127828680246,
+          3.0449188098363704,
+          -4.477824261771685
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_playground",
+      "accepted": false,
+      "local_pair_count": 859,
+      "initial_radiance_score": 0.062495587592785125,
+      "refined_radiance_score": 0.007755701517176511,
+      "initial": {
+        "rre_deg": 6.777371732548464,
+        "rte_extent": 0.057003203888847394,
+        "rse_percent": 6.923592636860154,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 4.797449611729579,
+        "rte_extent": 0.0391811175273278,
+        "rse_percent": 5.173910844302054,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 6.777371732548464,
+        "rte_extent": 0.057003203888847394,
+        "rse_percent": 6.923592636860154,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.0635311715296032,
+        "rotation": [
+          [
+            0.7875001924645953,
+            -0.41408669151849314,
+            0.4564818274318183
+          ],
+          [
+            -0.33372163138787253,
+            -0.9091845020498506,
+            -0.24902492641537163
+          ],
+          [
+            0.5181441108533812,
+            0.043769317331122465,
+            -0.8541726565796434
+          ]
+        ],
+        "translation": [
+          -6.857684265432525,
+          -4.543648302038036,
+          9.978073441408199
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_relief",
+      "accepted": false,
+      "local_pair_count": 986,
+      "initial_radiance_score": 0.0690363635878739,
+      "refined_radiance_score": 0.06987881364939878,
+      "initial": {
+        "rre_deg": 3.9020155697335275,
+        "rte_extent": 0.039432138224717056,
+        "rse_percent": 0.6268235370547326,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 1.6674409034375475,
+        "rte_extent": 0.01747000473604508,
+        "rse_percent": 1.1501380544157058,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 3.9020155697335275,
+        "rte_extent": 0.039432138224717056,
+        "rse_percent": 0.6268235370547326,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.9584222576639817,
+        "rotation": [
+          [
+            -0.8423473302758099,
+            -0.5165743700565317,
+            0.1536290837631799
+          ],
+          [
+            -0.47539738932579656,
+            0.8464883614318619,
+            0.2396972594391077
+          ],
+          [
+            -0.2538666921820067,
+            0.12887348121743075,
+            -0.9586153182791658
+          ]
+        ],
+        "translation": [
+          0.23885998078600212,
+          0.21331833024267244,
+          12.104868893865689
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_relief_2",
+      "accepted": false,
+      "local_pair_count": 869,
+      "initial_radiance_score": 0.13375386340842593,
+      "refined_radiance_score": 0.10511213632136238,
+      "initial": {
+        "rre_deg": 1.7943913734451051,
+        "rte_extent": 0.055189339416690464,
+        "rse_percent": 6.379197201734388,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 1.049463947777852,
+        "rte_extent": 0.03441897481935689,
+        "rse_percent": 3.6887646117291117,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 1.7943913734451051,
+        "rte_extent": 0.055189339416690464,
+        "rse_percent": 6.379197201734388,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.4980262096124974,
+        "rotation": [
+          [
+            0.5797840185749978,
+            0.040759441600398336,
+            -0.8137500597391384
+          ],
+          [
+            0.5661209037336988,
+            0.6981278220161244,
+            0.43832027842978427
+          ],
+          [
+            0.5859672466621045,
+            -0.7148120116838051,
+            0.3816885822130203
+          ]
+        ],
+        "translation": [
+          6.932966747282769,
+          17.270862381584127,
+          5.139109333800558
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_terrace",
+      "accepted": false,
+      "local_pair_count": 759,
+      "initial_radiance_score": 0.087207422869028,
+      "refined_radiance_score": 0.04087142860668393,
+      "initial": {
+        "rre_deg": 3.426821192282531,
+        "rte_extent": 0.02904334766041783,
+        "rse_percent": 2.117352769629699,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 2.466300832905609,
+        "rte_extent": 0.02371412534752845,
+        "rse_percent": 1.243538010170897,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 3.426821192282531,
+        "rte_extent": 0.02904334766041783,
+        "rse_percent": 2.117352769629699,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.7898570658976195,
+        "rotation": [
+          [
+            -0.6432020382750997,
+            0.5758957525564518,
+            0.5046139317797269
+          ],
+          [
+            -0.004749547834222767,
+            -0.6620141093163038,
+            0.7494763244169296
+          ],
+          [
+            0.7656817744690853,
+            0.4796680114970965,
+            0.4285440689034139
+          ]
+        ],
+        "translation": [
+          -1.8727851655707548,
+          16.883749233648068,
+          -0.6041854183787336
+        ]
+      }
+    },
+    {
+      "pair": "eth3d_terrains",
+      "accepted": false,
+      "local_pair_count": 861,
+      "initial_radiance_score": 0.12065081824869384,
+      "refined_radiance_score": 0.09707122699455928,
+      "initial": {
+        "rre_deg": 1.8373583104983682,
+        "rte_extent": 0.05499569090053358,
+        "rse_percent": 5.015933039397325,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 0.868583453380215,
+        "rte_extent": 0.038827954915968625,
+        "rse_percent": 3.372918375362177,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 1.8373583104983682,
+        "rte_extent": 0.05499569090053358,
+        "rse_percent": 5.015933039397325,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.2159994202815116,
+        "rotation": [
+          [
+            -0.021508209460556316,
+            -0.22666724473849095,
+            0.9737347467808998
+          ],
+          [
+            0.04547598636060829,
+            -0.9731737644053731,
+            -0.2255321682989051
+          ],
+          [
+            0.9987338642452906,
+            0.03943075494759202,
+            0.031239141696473183
+          ]
+        ],
+        "translation": [
+          -7.579574996884773,
+          0.04089704124707705,
+          -7.854889059759682
+        ]
+      }
+    }
+  ]
+}

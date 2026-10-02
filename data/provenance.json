@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "purpose": "Released predictions and measurements used to reproduce the paper tables and full-dataset gallery",
+  "datasets": {
+    "scannet": {
+      "evaluation_scope": "complete released ScanNet-GSReg evaluation split",
+      "cases": 24,
+      "directory": "data/scannet"
+    },
+    "objaverse": {
+      "evaluation_scope": "complete released Objaverse evaluation split",
+      "cases": 13,
+      "directory": "data/objaverse"
+    },
+    "eth3d": {
+      "evaluation_scope": "complete released ETH3D evaluation split",
+      "cases": 19,
+      "directory": "data/eth3d"
+    }
+  },
+  "raw_data": "Raw benchmark data are governed by their original licenses and are not redistributed."
+}

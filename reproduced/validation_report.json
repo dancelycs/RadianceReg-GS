@@ -1,0 +1,60 @@
+{
+  "datasets": {
+    "scannet": {
+      "expected": 24,
+      "method_counts": {
+        "icp": 24,
+        "fpfh_ransac": 24,
+        "fcgf": 24,
+        "predator": 24,
+        "cofinet": 24,
+        "geotransformer": 24,
+        "splatreg": 24,
+        "parenet": 24,
+        "bufferx": 24,
+        "randpcr": 24,
+        "refreshreg": 24,
+        "radiancereg_gs": 24
+      },
+      "complete": true
+    },
+    "objaverse": {
+      "expected": 13,
+      "method_counts": {
+        "icp": 13,
+        "fpfh_ransac": 13,
+        "fcgf": 13,
+        "predator": 13,
+        "cofinet": 13,
+        "geotransformer": 13,
+        "splatreg": 13,
+        "radiancereg_gs": 13
+      },
+      "complete": true
+    },
+    "eth3d": {
+      "expected": 19,
+      "method_counts": {
+        "icp": 19,
+        "fpfh_ransac": 19,
+        "fcgf": 19,
+        "predator": 19,
+        "cofinet": 19,
+        "geotransformer": 19,
+        "splatreg": 19,
+        "parenet": 19,
+        "cast": 19,
+        "bufferx": 19,
+        "randpcr": 19,
+        "refreshreg": 19,
+        "radiancereg_gs": 19
+      },
+      "complete": true
+    }
+  },
+  "gallery": {
+    "records": 56,
+    "missing_images": [],
+    "complete": true
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "dataset": "scannet",
+  "rows": [
+    {
+      "pair": "reserve_036_scene0305_00",
+      "elapsed_seconds": 4.26306253101211
+    },
+    {
+      "pair": "reserve_037_scene0267_00",
+      "elapsed_seconds": 1.910534581009415
+    },
+    {
+      "pair": "reserve_038_scene0646_01",
+      "elapsed_seconds": 2.8576221950061154
+    },
+    {
+      "pair": "reserve_039_scene0256_02",
+      "elapsed_seconds": 1.9087189699930605
+    },
+    {
+      "pair": "reserve_040_scene0073_02",
+      "elapsed_seconds": 2.585255126003176
+    },
+    {
+      "pair": "reserve_041_scene0247_01",
+      "elapsed_seconds": 3.6364290280034766
+    },
+    {
+      "pair": "reserve_042_scene0279_02",
+      "elapsed_seconds": 3.132768224008032
+    },
+    {
+      "pair": "reserve_043_scene0442_00",
+      "elapsed_seconds": 2.2447866989969043
+    },
+    {
+      "pair": "reserve_044_scene0166_01",
+      "elapsed_seconds": 2.6921090230025584
+    },
+    {
+      "pair": "reserve_045_scene0647_01",
+      "elapsed_seconds": 2.2093231290054973
+    },
+    {
+      "pair": "reserve_046_scene0177_02",
+      "elapsed_seconds": 4.139448324000114
+    },
+    {
+      "pair": "reserve_047_scene0395_00",
+      "elapsed_seconds": 4.591828352000448
+    },
+    {
+      "pair": "reserve_048_scene0475_01",
+      "elapsed_seconds": 2.5903642600023886
+    },
+    {
+      "pair": "reserve_049_scene0092_02",
+      "elapsed_seconds": 4.143571644992335
+    },
+    {
+      "pair": "reserve_050_scene0054_00",
+      "elapsed_seconds": 2.4484696029976476
+    },
+    {
+      "pair": "reserve_051_scene0095_01",
+      "elapsed_seconds": 2.2989853489998495
+    },
+    {
+      "pair": "reserve_052_scene0666_00",
+      "elapsed_seconds": 4.360018184001092
+    },
+    {
+      "pair": "reserve_053_scene0404_01",
+      "elapsed_seconds": 3.2443154089996824
+    },
+    {
+      "pair": "reserve_054_scene0550_00",
+      "elapsed_seconds": 2.3813700460013933
+    },
+    {
+      "pair": "reserve_055_scene0520_00",
+      "elapsed_seconds": 2.453545306008891
+    },
+    {
+      "pair": "reserve_056_scene0197_02",
+      "elapsed_seconds": 3.1308874649985228
+    },
+    {
+      "pair": "reserve_057_scene0033_00",
+      "elapsed_seconds": 2.02501651601051
+    },
+    {
+      "pair": "reserve_058_scene0412_01",
+      "elapsed_seconds": 2.892548521995195
+    },
+    {
+      "pair": "reserve_059_scene0325_01",
+      "elapsed_seconds": 3.021243212002446
+    }
+  ]
+}

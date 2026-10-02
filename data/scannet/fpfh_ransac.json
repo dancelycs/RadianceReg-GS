@@ -1,0 +1,945 @@
+{
+  "schema_version": 2,
+  "method": "FPFH + Sim(3) RANSAC",
+  "implementation": "Open3D 0.19 FPFH; project common Umeyama solver",
+  "protocol": {
+    "dataset": "ScanNet-GSReg official test",
+    "gaussians_per_map": 4500,
+    "input_to_method": "source_means and target_means only",
+    "transform": "source-to-target Sim(3)",
+    "gt_used_for_registration": false,
+    "gt_opened_only_after_pose_frozen": true,
+    "all_attempted_pairs_remain_in_denominator": true,
+    "strict_gate": "RRE < 10 deg, RTE/target_extent < 0.10, RSE < 10%",
+    "loose_gate": "RRE < 15 deg, RTE/target_extent < 0.30, RSE < 20%",
+    "parameters": {
+      "per_cloud_normalization": "robust bounding-box center and extent; observable only",
+      "voxel_over_extent": 0.025,
+      "normal_radius_over_extent": 0.05,
+      "fpfh_radius_over_extent": 0.125,
+      "mutual_matching": true,
+      "ratio_threshold": 0.95,
+      "ransac_iterations": 100000,
+      "inlier_threshold_over_target_extent": 0.04,
+      "seed": 20260914,
+      "pose_refit": "weighted Umeyama Sim(3) on original-coordinate inliers"
+    }
+  },
+  "attempted_pairs": 24,
+  "valid_pairs": 23,
+  "failed_pairs": 1,
+  "strict_successes": 0,
+  "successes": 0,
+  "median_rre_deg": 127.02465253982983,
+  "median_rte_extent": 1.9434243455469584,
+  "median_rse_percent": 54.636187426721406,
+  "median_elapsed_seconds": 6.274002851001569,
+  "rows": [
+    {
+      "status": "failed",
+      "pair": "reserve_036_scene0305_00",
+      "overlap": 0.42733333333333334,
+      "elapsed_seconds": 5.950841452999157,
+      "error": "RuntimeError: RANSAC found no valid Sim(3) hypothesis",
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_037_scene0267_00",
+      "overlap": 0.396,
+      "elapsed_seconds": 6.181843262005714,
+      "estimated_scale": 0.5079029736019294,
+      "estimated_rotation": [
+        [
+          -0.14935202552395127,
+          -0.44680658746074126,
+          -0.8820758730821173
+        ],
+        [
+          0.9887795044109162,
+          -0.07020432698154039,
+          -0.13185766617823666
+        ],
+        [
+          -0.0030106691607495275,
+          -0.8918717541635429,
+          0.45227835455220355
+        ]
+      ],
+      "estimated_translation": [
+        1.7954940774966779,
+        2.7109381022539205,
+        1.845394183548281
+      ],
+      "source_downsampled": 1306,
+      "target_downsampled": 1672,
+      "mutual_feature_correspondences": 109,
+      "ransac_inliers": 8,
+      "ransac_threshold": 0.08737348465132687,
+      "rre_deg": 121.90642495768556,
+      "rte_extent": 1.671998515875621,
+      "rse_percent": 32.555713261671,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_038_scene0646_01",
+      "overlap": 0.24822222222222223,
+      "elapsed_seconds": 6.274002851001569,
+      "estimated_scale": 0.37002034604676853,
+      "estimated_rotation": [
+        [
+          -0.8561652028217687,
+          -0.5143863621887576,
+          0.048865282884437096
+        ],
+        [
+          0.21812205251177472,
+          -0.44553582627748106,
+          -0.8682860114681641
+        ],
+        [
+          0.46840571696469524,
+          -0.732737673316623,
+          0.49365128017390064
+        ]
+      ],
+      "estimated_translation": [
+        6.13301762786271,
+        5.791707114304995,
+        3.0329240468859755
+      ],
+      "source_downsampled": 1392,
+      "target_downsampled": 1764,
+      "mutual_feature_correspondences": 130,
+      "ransac_inliers": 8,
+      "ransac_threshold": 0.1056441906722943,
+      "rre_deg": 175.48705915758248,
+      "rte_extent": 3.35475205965784,
+      "rse_percent": 67.05501934190285,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_039_scene0256_02",
+      "overlap": 0.426,
+      "elapsed_seconds": 7.054927057004534,
+      "estimated_scale": 1.5987441679593977,
+      "estimated_rotation": [
+        [
+          0.605869713519048,
+          -0.1297736160185518,
+          0.784908083042732
+        ],
+        [
+          0.539764594355461,
+          -0.6577370908240541,
+          -0.5253913798632358
+        ],
+        [
+          0.5844450982946406,
+          0.741984317852999,
+          -0.3284557795801269
+        ]
+      ],
+      "estimated_translation": [
+        -0.639462438283561,
+        1.94592834823129,
+        -1.2457760109868872
+      ],
+      "source_downsampled": 1629,
+      "target_downsampled": 1399,
+      "mutual_feature_correspondences": 129,
+      "ransac_inliers": 6,
+      "ransac_threshold": 0.06589682128725348,
+      "rre_deg": 175.96153502230905,
+      "rte_extent": 1.4099232900250234,
+      "rse_percent": 51.32170567223015,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_040_scene0073_02",
+      "overlap": 0.28,
+      "elapsed_seconds": 6.087325474989484,
+      "estimated_scale": 0.19040779498521201,
+      "estimated_rotation": [
+        [
+          0.8930025836491293,
+          -0.34616702826731827,
+          0.28760176309708935
+        ],
+        [
+          0.24448311424190305,
+          -0.1633955220608961,
+          -0.9557875863501409
+        ],
+        [
+          0.377854988648504,
+          0.9238345587338793,
+          -0.061280630238419544
+        ]
+      ],
+      "estimated_translation": [
+        1.8912092406306373,
+        1.747387498965409,
+        1.4688494035574389
+      ],
+      "source_downsampled": 1441,
+      "target_downsampled": 1551,
+      "mutual_feature_correspondences": 140,
+      "ransac_inliers": 9,
+      "ransac_threshold": 0.11850340484496971,
+      "rre_deg": 173.67774107282057,
+      "rte_extent": 0.8258442006233369,
+      "rse_percent": 63.35815023435736,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_041_scene0247_01",
+      "overlap": 0.4,
+      "elapsed_seconds": 6.249222002006718,
+      "estimated_scale": 0.548275035396921,
+      "estimated_rotation": [
+        [
+          0.04107016533307667,
+          0.3755040583119055,
+          -0.9259103324354916
+        ],
+        [
+          -0.9817723451360605,
+          -0.15694519937322945,
+          -0.10719732608482857
+        ],
+        [
+          -0.18557021271085908,
+          0.91343577036647,
+          0.3622137346504968
+        ]
+      ],
+      "estimated_translation": [
+        2.7873116150315935,
+        1.230773608069811,
+        -1.4037048944701391
+      ],
+      "source_downsampled": 1508,
+      "target_downsampled": 1948,
+      "mutual_feature_correspondences": 136,
+      "ransac_inliers": 8,
+      "ransac_threshold": 0.16678888908401923,
+      "rre_deg": 82.85755462601256,
+      "rte_extent": 0.6319757875401177,
+      "rse_percent": 24.518976332347787,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_042_scene0279_02",
+      "overlap": 0.09933333333333333,
+      "elapsed_seconds": 5.814353762005339,
+      "estimated_scale": 0.21041137655796002,
+      "estimated_rotation": [
+        [
+          -0.4445237832633332,
+          0.8002814014232326,
+          -0.4024279869110996
+        ],
+        [
+          -0.2257265158795437,
+          0.3346813123172712,
+          0.9148966931924455
+        ],
+        [
+          0.8668599345581357,
+          0.49753200673088005,
+          0.031870929327654264
+        ]
+      ],
+      "estimated_translation": [
+        4.121465868223067,
+        4.590554533358442,
+        2.0002929595154737
+      ],
+      "source_downsampled": 1675,
+      "target_downsampled": 1819,
+      "mutual_feature_correspondences": 137,
+      "ransac_inliers": 4,
+      "ransac_threshold": 0.1631125993560999,
+      "rre_deg": 148.8308165637474,
+      "rte_extent": 1.0104772914961746,
+      "rse_percent": 61.263926308193994,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_043_scene0442_00",
+      "overlap": 0.2813333333333333,
+      "elapsed_seconds": 6.105347331002122,
+      "estimated_scale": 0.5849292537551147,
+      "estimated_rotation": [
+        [
+          -0.8992039117412383,
+          -0.3690499696960827,
+          0.2350200948356874
+        ],
+        [
+          -0.28955201737383135,
+          0.9046414615965225,
+          0.31270346207749417
+        ],
+        [
+          -0.3280121253002694,
+          0.21313363373204905,
+          -0.9203163042281566
+        ]
+      ],
+      "estimated_translation": [
+        9.218713861256333,
+        -1.6646679251760252,
+        0.7851372639784788
+      ],
+      "source_downsampled": 1243,
+      "target_downsampled": 1328,
+      "mutual_feature_correspondences": 101,
+      "ransac_inliers": 7,
+      "ransac_threshold": 0.24972504877722299,
+      "rre_deg": 176.78742299042966,
+      "rte_extent": 1.1685392953508342,
+      "rse_percent": 8.950614679355029,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_044_scene0166_01",
+      "overlap": 0.7162222222222222,
+      "elapsed_seconds": 7.22294191000401,
+      "estimated_scale": 2.558287817871564,
+      "estimated_rotation": [
+        [
+          0.890950185753919,
+          -0.07007699287594067,
+          0.44866132168320655
+        ],
+        [
+          0.20942908759677212,
+          -0.8132593465361491,
+          -0.5429076279994414
+        ],
+        [
+          0.40292334726774015,
+          0.5776663832533978,
+          -0.7098974051829585
+        ]
+      ],
+      "estimated_translation": [
+        6.001942344785402,
+        9.498193480296322,
+        0.28377050136885096
+      ],
+      "source_downsampled": 1503,
+      "target_downsampled": 1516,
+      "mutual_feature_correspondences": 160,
+      "ransac_inliers": 6,
+      "ransac_threshold": 0.15156783803870535,
+      "rre_deg": 177.42669154054198,
+      "rte_extent": 3.2884085568355985,
+      "rse_percent": 108.85865946803173,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_045_scene0647_01",
+      "overlap": 0.9271111111111111,
+      "elapsed_seconds": 7.023901209991891,
+      "estimated_scale": 1.8485984888467841,
+      "estimated_rotation": [
+        [
+          0.17517592449286662,
+          -0.34401448446581945,
+          0.9224789590856728
+        ],
+        [
+          0.8533043154414224,
+          -0.41432653625656457,
+          -0.31655215463282416
+        ],
+        [
+          0.49110603817008325,
+          0.8426075930297294,
+          0.220969010138369
+        ]
+      ],
+      "estimated_translation": [
+        -0.5442947953567865,
+        5.716521585005917,
+        -14.206624062090091
+      ],
+      "source_downsampled": 1190,
+      "target_downsampled": 1495,
+      "mutual_feature_correspondences": 97,
+      "ransac_inliers": 7,
+      "ransac_threshold": 0.27830288312326507,
+      "rre_deg": 68.915700383553,
+      "rte_extent": 2.138557651884428,
+      "rse_percent": 53.23921956678166,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_046_scene0177_02",
+      "overlap": 0.3622222222222222,
+      "elapsed_seconds": 7.099097640006221,
+      "estimated_scale": 0.8706192789812619,
+      "estimated_rotation": [
+        [
+          0.4087811413687696,
+          -0.8040493529507275,
+          -0.4317436930410934
+        ],
+        [
+          0.7351496608104517,
+          0.009781296190266232,
+          0.677834273591352
+        ],
+        [
+          -0.5407891961490388,
+          -0.5944820975137554,
+          0.5950950185173136
+        ]
+      ],
+      "estimated_translation": [
+        7.174476230636705,
+        4.334421970002166,
+        1.4966177395696287
+      ],
+      "source_downsampled": 1551,
+      "target_downsampled": 1484,
+      "mutual_feature_correspondences": 119,
+      "ransac_inliers": 7,
+      "ransac_threshold": 0.08592780999074164,
+      "rre_deg": 146.31141266346566,
+      "rte_extent": 3.797597621744387,
+      "rse_percent": 54.636187426721406,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_047_scene0395_00",
+      "overlap": 0.4726666666666667,
+      "elapsed_seconds": 7.111306193008204,
+      "estimated_scale": 0.4713223856140231,
+      "estimated_rotation": [
+        [
+          0.43439001126999893,
+          -0.3953169764751273,
+          -0.8093391169462985
+        ],
+        [
+          0.18191183117677398,
+          0.9185297698390611,
+          -0.35101445496918604
+        ],
+        [
+          0.8821640458479155,
+          0.005248812243302802,
+          0.47091299215807525
+        ]
+      ],
+      "estimated_translation": [
+        6.8012665523134235,
+        6.107626698716201,
+        6.977312555562704
+      ],
+      "source_downsampled": 1655,
+      "target_downsampled": 1791,
+      "mutual_feature_correspondences": 144,
+      "ransac_inliers": 7,
+      "ransac_threshold": 0.2373980528041064,
+      "rre_deg": 126.09676809318029,
+      "rte_extent": 2.0132549858295055,
+      "rse_percent": 8.309929082113266,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_048_scene0475_01",
+      "overlap": 0.23133333333333334,
+      "elapsed_seconds": 6.117283945000963,
+      "estimated_scale": 0.2624161881208453,
+      "estimated_rotation": [
+        [
+          0.8051065451141757,
+          0.4969864389684387,
+          0.32374052958470756
+        ],
+        [
+          -0.5339537314462366,
+          0.3696409134976217,
+          0.7604334341303544
+        ],
+        [
+          0.2582573594090904,
+          -0.7850923987341332,
+          0.5629680823642929
+        ]
+      ],
+      "estimated_translation": [
+        7.4400267615117555,
+        3.624739921252996,
+        -1.6751520358586762
+      ],
+      "source_downsampled": 1147,
+      "target_downsampled": 771,
+      "mutual_feature_correspondences": 74,
+      "ransac_inliers": 9,
+      "ransac_threshold": 0.20227070889094895,
+      "rre_deg": 111.67416158376682,
+      "rte_extent": 2.8825154228966112,
+      "rse_percent": 83.64981952579481,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_049_scene0092_02",
+      "overlap": 0.36644444444444446,
+      "elapsed_seconds": 6.282268298004055,
+      "estimated_scale": 0.4084859701496771,
+      "estimated_rotation": [
+        [
+          0.9061084143106765,
+          0.38242553514755956,
+          0.1808818719012321
+        ],
+        [
+          -0.23597058465929813,
+          0.811764945746393,
+          -0.5341868175394305
+        ],
+        [
+          -0.3511202424966981,
+          0.44134836911951786,
+          0.825788224900671
+        ]
+      ],
+      "estimated_translation": [
+        2.959167572758058,
+        1.1244381283518736,
+        2.6862736271587706
+      ],
+      "source_downsampled": 1835,
+      "target_downsampled": 1264,
+      "mutual_feature_correspondences": 138,
+      "ransac_inliers": 11,
+      "ransac_threshold": 0.14988966204983598,
+      "rre_deg": 116.18556180188695,
+      "rte_extent": 1.434849991694546,
+      "rse_percent": 42.86838067906904,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_050_scene0054_00",
+      "overlap": 0.116,
+      "elapsed_seconds": 7.041337435002788,
+      "estimated_scale": 0.6848663298153223,
+      "estimated_rotation": [
+        [
+          -0.27908993088783335,
+          0.08869498675211865,
+          -0.9561600335728669
+        ],
+        [
+          0.6939249821139585,
+          0.7068990305937652,
+          -0.1369740111982469
+        ],
+        [
+          0.6637596927165486,
+          -0.7017314015138816,
+          -0.2588360686886517
+        ]
+      ],
+      "estimated_translation": [
+        3.3762291379077727,
+        4.900505257017032,
+        1.2039787481275919
+      ],
+      "source_downsampled": 1715,
+      "target_downsampled": 1311,
+      "mutual_feature_correspondences": 127,
+      "ransac_inliers": 6,
+      "ransac_threshold": 0.10106736097884811,
+      "rre_deg": 165.63223449312764,
+      "rte_extent": 2.315097210851082,
+      "rse_percent": 37.53290983058738,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_051_scene0095_01",
+      "overlap": 0.29777777777777775,
+      "elapsed_seconds": 7.012332079000771,
+      "estimated_scale": 1.8963950391010727,
+      "estimated_rotation": [
+        [
+          0.19748300384093634,
+          0.45191092536545013,
+          0.8699292952472075
+        ],
+        [
+          -0.6494539210524183,
+          -0.6044084353220175,
+          0.4614109315363359
+        ],
+        [
+          0.7343092452254703,
+          -0.656099808601506,
+          0.17413492909082587
+        ]
+      ],
+      "estimated_translation": [
+        5.161068128191125,
+        15.09895778725418,
+        -5.318652636139951
+      ],
+      "source_downsampled": 1430,
+      "target_downsampled": 1414,
+      "mutual_feature_correspondences": 116,
+      "ransac_inliers": 4,
+      "ransac_threshold": 0.18905423062843674,
+      "rre_deg": 99.74834692309491,
+      "rte_extent": 3.7940424450968466,
+      "rse_percent": 89.13572096012803,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_052_scene0666_00",
+      "overlap": 0.18222222222222223,
+      "elapsed_seconds": 6.167675718999817,
+      "estimated_scale": 0.21963284109626385,
+      "estimated_rotation": [
+        [
+          0.9188618476786558,
+          0.3704137542115809,
+          -0.13596527340262068
+        ],
+        [
+          0.390576944497234,
+          -0.8048818616406981,
+          0.446782765143206
+        ],
+        [
+          0.0560584989789385,
+          -0.4636365381337917,
+          -0.8842503068699167
+        ]
+      ],
+      "estimated_translation": [
+        3.7084254777550774,
+        2.9732264742651644,
+        0.29305935913611736
+      ],
+      "source_downsampled": 1752,
+      "target_downsampled": 1955,
+      "mutual_feature_correspondences": 133,
+      "ransac_inliers": 8,
+      "ransac_threshold": 0.0907132481695933,
+      "rre_deg": 127.02465253982983,
+      "rte_extent": 1.668890814566245,
+      "rse_percent": 70.87023746289589,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_053_scene0404_01",
+      "overlap": 0.482,
+      "elapsed_seconds": 6.351691755990032,
+      "estimated_scale": 0.40973948039693747,
+      "estimated_rotation": [
+        [
+          0.33389971099008364,
+          -0.7402009946566853,
+          0.5836209990310434
+        ],
+        [
+          -0.9133047426642802,
+          -0.10086707660083889,
+          0.39458874779310854
+        ],
+        [
+          -0.2332068395816721,
+          -0.6647768951815751,
+          -0.709708566670203
+        ]
+      ],
+      "estimated_translation": [
+        4.370203959181026,
+        1.3278331734841853,
+        -0.10059559478018087
+      ],
+      "source_downsampled": 1562,
+      "target_downsampled": 2136,
+      "mutual_feature_correspondences": 196,
+      "ransac_inliers": 8,
+      "ransac_threshold": 0.06344600113040275,
+      "rre_deg": 89.53741468561257,
+      "rte_extent": 3.178709484886625,
+      "rse_percent": 54.500142781089366,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_054_scene0550_00",
+      "overlap": 0.266,
+      "elapsed_seconds": 7.106913936993806,
+      "estimated_scale": 0.9799212391051308,
+      "estimated_rotation": [
+        [
+          0.8247100302201255,
+          -0.4001510453428305,
+          -0.39966549383873373
+        ],
+        [
+          -0.26685581283665893,
+          0.34773524954379004,
+          -0.8988148704711132
+        ],
+        [
+          0.49863949022275056,
+          0.8479146992096305,
+          0.17999811569746227
+        ]
+      ],
+      "estimated_translation": [
+        -1.5377588116210026,
+        2.376892776747556,
+        -0.4730559625532131
+      ],
+      "source_downsampled": 1580,
+      "target_downsampled": 1288,
+      "mutual_feature_correspondences": 136,
+      "ransac_inliers": 5,
+      "ransac_threshold": 0.09641063279392324,
+      "rre_deg": 32.89935820215354,
+      "rte_extent": 1.3778203027797178,
+      "rse_percent": 83.11326353381804,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_055_scene0520_00",
+      "overlap": 0.29333333333333333,
+      "elapsed_seconds": 6.12737307100906,
+      "estimated_scale": 0.3040474342661098,
+      "estimated_rotation": [
+        [
+          -0.49144374726775464,
+          0.721713475761007,
+          0.48745533351928105
+        ],
+        [
+          0.6721850418481758,
+          0.6702127310906386,
+          -0.3146143108626702
+        ],
+        [
+          -0.5537601581795074,
+          0.17304494788636135,
+          -0.8144968589405445
+        ]
+      ],
+      "estimated_translation": [
+        4.905692261453874,
+        4.2457695690583925,
+        1.3756870729202137
+      ],
+      "source_downsampled": 1175,
+      "target_downsampled": 934,
+      "mutual_feature_correspondences": 79,
+      "ransac_inliers": 9,
+      "ransac_threshold": 0.157636022299101,
+      "rre_deg": 129.50713266941338,
+      "rte_extent": 2.4287689622479958,
+      "rse_percent": 75.85718868841619,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_056_scene0197_02",
+      "overlap": 0.39311111111111113,
+      "elapsed_seconds": 7.181262009995407,
+      "estimated_scale": 0.5890615625761934,
+      "estimated_rotation": [
+        [
+          0.3767411914366327,
+          -0.8940146664237465,
+          0.2424950533395344
+        ],
+        [
+          -0.8958774133351248,
+          -0.41821355841442687,
+          -0.15000359940450878
+        ],
+        [
+          0.23552013703900615,
+          -0.16073330637294728,
+          -0.9584858211113759
+        ]
+      ],
+      "estimated_translation": [
+        1.0492546348164589,
+        -0.024112878471924226,
+        0.06417008013609549
+      ],
+      "source_downsampled": 1750,
+      "target_downsampled": 1987,
+      "mutual_feature_correspondences": 154,
+      "ransac_inliers": 6,
+      "ransac_threshold": 0.09219741644071201,
+      "rre_deg": 144.83780613400862,
+      "rte_extent": 1.0283810871862125,
+      "rse_percent": 41.28182731313781,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_057_scene0033_00",
+      "overlap": 0.41355555555555557,
+      "elapsed_seconds": 6.0992773750040215,
+      "estimated_scale": 0.2092340931870856,
+      "estimated_rotation": [
+        [
+          0.7620175084855135,
+          -0.2509834624661064,
+          -0.5969393757577527
+        ],
+        [
+          -0.3658214774348166,
+          0.5937941857763792,
+          -0.7166471318477284
+        ],
+        [
+          0.5343257091034816,
+          0.7644709062526133,
+          0.36066642494744355
+        ]
+      ],
+      "estimated_translation": [
+        4.103727776087403,
+        5.32833089460385,
+        0.17041453997761224
+      ],
+      "source_downsampled": 1389,
+      "target_downsampled": 963,
+      "mutual_feature_correspondences": 99,
+      "ransac_inliers": 9,
+      "ransac_threshold": 0.20611686695160536,
+      "rre_deg": 90.71712261144845,
+      "rte_extent": 1.1464984765786805,
+      "rse_percent": 61.06569337373393,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_058_scene0412_01",
+      "overlap": 0.20866666666666667,
+      "elapsed_seconds": 6.111963795992779,
+      "estimated_scale": 0.25046996216978845,
+      "estimated_rotation": [
+        [
+          0.4037322868093169,
+          0.6633656115041741,
+          0.6300367497705301
+        ],
+        [
+          -0.355180479639491,
+          0.7482915143879798,
+          -0.5602737155873059
+        ],
+        [
+          -0.8431174695561591,
+          0.0024238334592130563,
+          0.5377239603742628
+        ]
+      ],
+      "estimated_translation": [
+        4.516692639199415,
+        2.001908317522841,
+        2.2801873680253957
+      ],
+      "source_downsampled": 1498,
+      "target_downsampled": 1340,
+      "mutual_feature_correspondences": 139,
+      "ransac_inliers": 6,
+      "ransac_threshold": 0.10995114116428091,
+      "rre_deg": 118.0018295574709,
+      "rte_extent": 1.9434243455469584,
+      "rse_percent": 76.12244920960926,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_059_scene0325_01",
+      "overlap": 0.14044444444444446,
+      "elapsed_seconds": 5.795114830005332,
+      "estimated_scale": 0.32546388181431296,
+      "estimated_rotation": [
+        [
+          -0.7354299448749051,
+          0.6372898006299823,
+          0.23022707528501377
+        ],
+        [
+          0.3202342270634935,
+          0.027457715606487496,
+          0.946940396049678
+        ],
+        [
+          0.5971539466488865,
+          0.7701349127696204,
+          -0.22427523299505975
+        ]
+      ],
+      "estimated_translation": [
+        6.57999835868563,
+        3.943633583808916,
+        0.2765239147633646
+      ],
+      "source_downsampled": 1156,
+      "target_downsampled": 1517,
+      "mutual_feature_correspondences": 107,
+      "ransac_inliers": 6,
+      "ransac_threshold": 0.11267427118288907,
+      "rre_deg": 135.97781870154822,
+      "rte_extent": 2.3917288977845597,
+      "rse_percent": 50.607445507579655,
+      "strict_success": false,
+      "success": false
+    }
+  ]
+}

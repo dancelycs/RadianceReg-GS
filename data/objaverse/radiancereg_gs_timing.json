@@ -1,0 +1,57 @@
+{
+  "dataset": "objaverse",
+  "rows": [
+    {
+      "pair": "gsa_objaverse_1983_Chevrolet_C101431",
+      "elapsed_seconds": 1.4214816540043103
+    },
+    {
+      "pair": "gsa_objaverse_4b05",
+      "elapsed_seconds": 1.3702453639998566
+    },
+    {
+      "pair": "gsa_objaverse_Elephant1608",
+      "elapsed_seconds": 1.3456746059964644
+    },
+    {
+      "pair": "gsa_objaverse_F1110000",
+      "elapsed_seconds": 1.2729884839936858
+    },
+    {
+      "pair": "gsa_objaverse_Figura_San_Juan260d",
+      "elapsed_seconds": 1.0919868700002553
+    },
+    {
+      "pair": "gsa_objaverse_Hl_Maximilian09f0",
+      "elapsed_seconds": 1.3327634900051635
+    },
+    {
+      "pair": "gsa_objaverse_Hunter_Boy_With_Rabbit_Figurine0a5b",
+      "elapsed_seconds": 1.394384473998798
+    },
+    {
+      "pair": "gsa_objaverse_MiG_23_Desert_Camo089f",
+      "elapsed_seconds": 1.2684665959968697
+    },
+    {
+      "pair": "gsa_objaverse_Park_Bench0b05",
+      "elapsed_seconds": 1.4314191230077995
+    },
+    {
+      "pair": "gsa_objaverse_Teddy1b47",
+      "elapsed_seconds": 1.3565592349914368
+    },
+    {
+      "pair": "gsa_objaverse_Tolix_Industrial_Chairs3f2d",
+      "elapsed_seconds": 1.4238366080098785
+    },
+    {
+      "pair": "gsa_objaverse_chair_teacher4659",
+      "elapsed_seconds": 1.3864523629890755
+    },
+    {
+      "pair": "gsa_objaverse_elephant_android1a39",
+      "elapsed_seconds": 1.3246410880092299
+    }
+  ]
+}

@@ -1,0 +1,948 @@
+{
+  "schema_version": 2,
+  "method": "FCGF-3DMatch + common Sim(3) solver",
+  "implementation": "official chrischoy/FCGF commit 499813ea35f5, maintained WarpConvNet path",
+  "protocol": {
+    "dataset": "ScanNet-GSReg official test",
+    "gaussians_per_map": 4500,
+    "input_to_method": "source_means and target_means only",
+    "transform": "source-to-target Sim(3)",
+    "gt_used_for_registration": false,
+    "gt_opened_only_after_pose_frozen": true,
+    "all_attempted_pairs_remain_in_denominator": true,
+    "strict_gate": "RRE < 10 deg, RTE/target_extent < 0.10, RSE < 10%",
+    "loose_gate": "RRE < 15 deg, RTE/target_extent < 0.30, RSE < 20%",
+    "parameters": {
+      "checkpoint": "fcgf-3dmatch.pth",
+      "kernel_permutation": "reverse (official converter)",
+      "canonical_extent_m": 4.0,
+      "voxel_m": 0.025,
+      "matching": "mutual nearest descriptor with ratio < 0.95; mutual fallback",
+      "pose_refit": "common 20000-iteration Sim(3) RANSAC",
+      "seed": 20260914
+    }
+  },
+  "attempted_pairs": 24,
+  "valid_pairs": 24,
+  "failed_pairs": 0,
+  "strict_successes": 0,
+  "successes": 0,
+  "median_rre_deg": 96.11692264570898,
+  "median_rte_extent": 1.550004405930298,
+  "median_rse_percent": 59.02563428463698,
+  "median_elapsed_seconds": 1.383819439499348,
+  "rows": [
+    {
+      "status": "ok",
+      "pair": "reserve_036_scene0305_00",
+      "overlap": 0.42733333333333334,
+      "elapsed_seconds": 1.4342410469980678,
+      "estimated_scale": 0.28511668671467144,
+      "estimated_rotation": [
+        [
+          -0.9272246419142783,
+          0.21688791954853148,
+          0.3053098324339518
+        ],
+        [
+          -0.14302164303347523,
+          0.5483728253281672,
+          -0.8239126495361071
+        ],
+        [
+          -0.3461203158598799,
+          -0.8076180253037407,
+          -0.47744512999248795
+        ]
+      ],
+      "estimated_translation": [
+        0.16399497330035828,
+        6.820069549846619,
+        0.7451586455615533
+      ],
+      "source_voxels": 2973,
+      "target_voxels": 3211,
+      "mutual_descriptor_correspondences": 388,
+      "sim3_ransac_inliers": 12,
+      "rre_deg": 134.24106919326186,
+      "rte_extent": 1.2699422603776471,
+      "rse_percent": 46.12335207263043,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_037_scene0267_00",
+      "overlap": 0.396,
+      "elapsed_seconds": 1.3473100999981398,
+      "estimated_scale": 0.24632467084719686,
+      "estimated_rotation": [
+        [
+          0.7735733620657187,
+          0.5189549294165028,
+          -0.36368947570235366
+        ],
+        [
+          -0.48921913980130055,
+          0.8538469124233549,
+          0.17779224785456638
+        ],
+        [
+          0.40280129934549114,
+          0.04038850553581279,
+          0.9143959108975538
+        ]
+      ],
+      "estimated_translation": [
+        0.0850102611296979,
+        4.078018384278233,
+        -0.09253777635636296
+      ],
+      "source_voxels": 3282,
+      "target_voxels": 3675,
+      "mutual_descriptor_correspondences": 460,
+      "sim3_ransac_inliers": 14,
+      "rre_deg": 102.94533959277427,
+      "rte_extent": 1.8827605526376916,
+      "rse_percent": 67.2906192820137,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_038_scene0646_01",
+      "overlap": 0.24822222222222223,
+      "elapsed_seconds": 1.4013584740023362,
+      "estimated_scale": 0.34263419352838925,
+      "estimated_rotation": [
+        [
+          0.7570144902228914,
+          0.568084603766071,
+          0.3228141021648872
+        ],
+        [
+          -0.34322691444380127,
+          0.7661352443479829,
+          -0.5433526226763282
+        ],
+        [
+          -0.555989520399408,
+          0.30052732044159136,
+          0.7749574071355361
+        ]
+      ],
+      "estimated_translation": [
+        1.7319028766786588,
+        3.8991974241934075,
+        2.374658100545749
+      ],
+      "source_voxels": 3461,
+      "target_voxels": 3648,
+      "mutual_descriptor_correspondences": 527,
+      "sim3_ransac_inliers": 16,
+      "rre_deg": 79.71411624758794,
+      "rte_extent": 2.101140353040401,
+      "rse_percent": 69.49336165106783,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_039_scene0256_02",
+      "overlap": 0.426,
+      "elapsed_seconds": 1.4020774929958861,
+      "estimated_scale": 0.39064374087455694,
+      "estimated_rotation": [
+        [
+          0.8913892440705736,
+          0.07107200595660892,
+          -0.44763152874277623
+        ],
+        [
+          0.07074084747738368,
+          0.9537087868650651,
+          0.29229314455619154
+        ],
+        [
+          0.447683982350801,
+          -0.29221279887381507,
+          0.8450980606538261
+        ]
+      ],
+      "estimated_translation": [
+        1.9123143744261117,
+        1.8351899936446832,
+        0.3667655904555869
+      ],
+      "source_voxels": 3764,
+      "target_voxels": 3582,
+      "mutual_descriptor_correspondences": 523,
+      "sim3_ransac_inliers": 17,
+      "rre_deg": 31.952621435886684,
+      "rte_extent": 0.9271532238628475,
+      "rse_percent": 63.02543060734411,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_040_scene0073_02",
+      "overlap": 0.28,
+      "elapsed_seconds": 1.3712693019915605,
+      "estimated_scale": 0.30679794585260284,
+      "estimated_rotation": [
+        [
+          0.5172785309517531,
+          0.7711198260177324,
+          -0.37121036534393465
+        ],
+        [
+          -0.8484400596781245,
+          0.5188962571491085,
+          -0.10438457477054294
+        ],
+        [
+          0.11212665405592456,
+          0.368945644016876,
+          0.9226628448199243
+        ]
+      ],
+      "estimated_translation": [
+        2.0064471678581652,
+        1.1985026781466421,
+        1.660074878564465
+      ],
+      "source_voxels": 3750,
+      "target_voxels": 3767,
+      "mutual_descriptor_correspondences": 502,
+      "sim3_ransac_inliers": 17,
+      "rre_deg": 102.07343694305364,
+      "rte_extent": 0.6854446663740971,
+      "rse_percent": 40.96016793213787,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_041_scene0247_01",
+      "overlap": 0.4,
+      "elapsed_seconds": 1.445301005995134,
+      "estimated_scale": 0.2817279056242389,
+      "estimated_rotation": [
+        [
+          0.9967196222706156,
+          -0.07655907386974861,
+          -0.02624314746610165
+        ],
+        [
+          -0.011219664301842024,
+          0.19042058971426448,
+          -0.9816384864836064
+        ],
+        [
+          0.08015056901654012,
+          0.9787127807590329,
+          0.1889369711444714
+        ]
+      ],
+      "estimated_translation": [
+        3.7000250968670487,
+        3.199116279455731,
+        -0.15706650408420642
+      ],
+      "source_voxels": 3658,
+      "target_voxels": 3927,
+      "mutual_descriptor_correspondences": 595,
+      "sim3_ransac_inliers": 15,
+      "rre_deg": 143.7948518850358,
+      "rte_extent": 1.1340749439754734,
+      "rse_percent": 61.21451946673717,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_042_scene0279_02",
+      "overlap": 0.09933333333333333,
+      "elapsed_seconds": 1.3938061740045669,
+      "estimated_scale": 0.23930292457151434,
+      "estimated_rotation": [
+        [
+          -0.0572990515330545,
+          0.021861531004184927,
+          -0.9981176745031446
+        ],
+        [
+          0.9903287539249707,
+          0.127777964953654,
+          -0.05405322212151361
+        ],
+        [
+          0.12635575904099955,
+          -0.991561831221057,
+          -0.028971658956934824
+        ]
+      ],
+      "estimated_translation": [
+        2.019159475262872,
+        3.8332190749627584,
+        -0.5127597982129775
+      ],
+      "source_voxels": 3516,
+      "target_voxels": 3654,
+      "mutual_descriptor_correspondences": 611,
+      "sim3_ransac_inliers": 13,
+      "rre_deg": 90.16040834836433,
+      "rte_extent": 0.5592166534874465,
+      "rse_percent": 55.94508304396055,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_043_scene0442_00",
+      "overlap": 0.2813333333333333,
+      "elapsed_seconds": 1.383167534993845,
+      "estimated_scale": 0.315754858609515,
+      "estimated_rotation": [
+        [
+          0.3166687785893014,
+          0.1731134548995962,
+          0.9326052843510408
+        ],
+        [
+          0.05657422230184398,
+          0.9780073417555156,
+          -0.20075108179846007
+        ],
+        [
+          -0.9468475284002709,
+          0.11633301855034993,
+          0.2999106312841588
+        ]
+      ],
+      "estimated_translation": [
+        2.4808690938156044,
+        0.5792465330817094,
+        1.228743485957788
+      ],
+      "source_voxels": 3260,
+      "target_voxels": 3379,
+      "mutual_descriptor_correspondences": 502,
+      "sim3_ransac_inliers": 17,
+      "rre_deg": 89.10354602561348,
+      "rte_extent": 0.5144301110363148,
+      "rse_percent": 41.186586732244315,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_044_scene0166_01",
+      "overlap": 0.7162222222222222,
+      "elapsed_seconds": 1.3607615559885744,
+      "estimated_scale": 0.6853508046800582,
+      "estimated_rotation": [
+        [
+          0.7107156208912142,
+          -0.2317298804944987,
+          0.6642172601696085
+        ],
+        [
+          -0.540968404555505,
+          0.42355228304406656,
+          0.7266062543089141
+        ],
+        [
+          -0.44970711745967207,
+          -0.8757309666867811,
+          0.1756666800846077
+        ]
+      ],
+      "estimated_translation": [
+        2.719095747096317,
+        1.187024343059476,
+        0.891382323611287
+      ],
+      "source_voxels": 3467,
+      "target_voxels": 3531,
+      "mutual_descriptor_correspondences": 405,
+      "sim3_ransac_inliers": 14,
+      "rre_deg": 48.91620917612293,
+      "rte_extent": 1.002025121918235,
+      "rse_percent": 44.04794904980466,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_045_scene0647_01",
+      "overlap": 0.9271111111111111,
+      "elapsed_seconds": 1.332033473008778,
+      "estimated_scale": 0.26037713543137053,
+      "estimated_rotation": [
+        [
+          -0.596389689382241,
+          -0.5753816410879564,
+          -0.559692152435144
+        ],
+        [
+          -0.5616760733061975,
+          -0.19898930416493416,
+          0.8030711335263433
+        ],
+        [
+          -0.5734451386783969,
+          0.7933090343156852,
+          -0.20450293151744614
+        ]
+      ],
+      "estimated_translation": [
+        5.711741559682119,
+        0.5296962894135089,
+        -0.35040857352557964
+      ],
+      "source_voxels": 2986,
+      "target_voxels": 3473,
+      "mutual_descriptor_correspondences": 391,
+      "sim3_ransac_inliers": 18,
+      "rre_deg": 152.92228119317366,
+      "rte_extent": 1.6165790994083544,
+      "rse_percent": 78.41608696141023,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_046_scene0177_02",
+      "overlap": 0.3622222222222222,
+      "elapsed_seconds": 1.4156428650021553,
+      "estimated_scale": 0.6735728770245089,
+      "estimated_rotation": [
+        [
+          0.8638372537529304,
+          -0.4750036840442813,
+          -0.16779958037181142
+        ],
+        [
+          0.3827774194869623,
+          0.8354329068164406,
+          -0.39437711056694885
+        ],
+        [
+          0.32751587161464074,
+          0.276447749769452,
+          0.9034987523444119
+        ]
+      ],
+      "estimated_translation": [
+        6.926341218184674,
+        1.4741516502514052,
+        2.021757889421041
+      ],
+      "source_voxels": 3459,
+      "target_voxels": 3481,
+      "mutual_descriptor_correspondences": 544,
+      "sim3_ransac_inliers": 17,
+      "rre_deg": 161.1023272568278,
+      "rte_extent": 3.194626863887469,
+      "rse_percent": 64.90333434433228,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_047_scene0395_00",
+      "overlap": 0.4726666666666667,
+      "elapsed_seconds": 1.4587415409914684,
+      "estimated_scale": 0.4180584435077086,
+      "estimated_rotation": [
+        [
+          -0.20402763082010283,
+          -0.2842823641281432,
+          0.9367797304103292
+        ],
+        [
+          -0.9382061709413495,
+          0.33002144284954615,
+          -0.10418746597875582
+        ],
+        [
+          -0.27953873912126476,
+          -0.9001496457285406,
+          -0.3340489614192441
+        ]
+      ],
+      "estimated_translation": [
+        2.5247826828902133,
+        -1.6705054174470906,
+        0.5129458785496742
+      ],
+      "source_voxels": 3471,
+      "target_voxels": 3580,
+      "mutual_descriptor_correspondences": 602,
+      "sim3_ransac_inliers": 12,
+      "rre_deg": 87.10644532796627,
+      "rte_extent": 0.7610209599739013,
+      "rse_percent": 18.671784954356152,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_048_scene0475_01",
+      "overlap": 0.23133333333333334,
+      "elapsed_seconds": 1.2837519009917742,
+      "estimated_scale": 0.1995830452152524,
+      "estimated_rotation": [
+        [
+          -0.06422341983240328,
+          -0.6906853260869646,
+          0.7202979471532426
+        ],
+        [
+          0.3477910678599819,
+          -0.6920267138658408,
+          -0.6325665185676997
+        ],
+        [
+          0.9353698335213965,
+          0.20988760712388368,
+          0.28465850929484954
+        ]
+      ],
+      "estimated_translation": [
+        6.375805428307634,
+        5.165622703819691,
+        -0.07253688124136992
+      ],
+      "source_voxels": 2973,
+      "target_voxels": 2405,
+      "mutual_descriptor_correspondences": 283,
+      "sim3_ransac_inliers": 18,
+      "rre_deg": 67.46143134134797,
+      "rte_extent": 3.044189040777771,
+      "rse_percent": 87.56471987407238,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_049_scene0092_02",
+      "overlap": 0.36644444444444446,
+      "elapsed_seconds": 1.3802926790085621,
+      "estimated_scale": 0.4018422114868673,
+      "estimated_rotation": [
+        [
+          0.8289180154616441,
+          0.02447374485145988,
+          0.5588344651648421
+        ],
+        [
+          -0.12346818722967032,
+          0.9824067496103196,
+          0.14011632689414205
+        ],
+        [
+          -0.5455735792588826,
+          -0.1851432259982329,
+          0.8173563821746418
+        ]
+      ],
+      "estimated_translation": [
+        4.741582706126018,
+        2.9885761348669853,
+        2.671591244004939
+      ],
+      "source_voxels": 3714,
+      "target_voxels": 3142,
+      "mutual_descriptor_correspondences": 485,
+      "sim3_ransac_inliers": 19,
+      "rre_deg": 154.71284382336748,
+      "rte_extent": 1.9858764700889466,
+      "rse_percent": 43.79758931417763,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_050_scene0054_00",
+      "overlap": 0.116,
+      "elapsed_seconds": 1.4081207229901338,
+      "estimated_scale": 0.2915616907520335,
+      "estimated_rotation": [
+        [
+          -0.669396410951983,
+          0.7416155589510847,
+          -0.04375851604288062
+        ],
+        [
+          -0.7424316135383199,
+          -0.6699113263737277,
+          0.0037568623982859603
+        ],
+        [
+          -0.026528177915025306,
+          0.03500253587761118,
+          0.9990350735878324
+        ]
+      ],
+      "estimated_translation": [
+        5.901198487046351,
+        0.2466616754542259,
+        1.6998146023332015
+      ],
+      "source_voxels": 3689,
+      "target_voxels": 3189,
+      "mutual_descriptor_correspondences": 541,
+      "sim3_ransac_inliers": 30,
+      "rre_deg": 69.22361158791712,
+      "rte_extent": 2.23115665412408,
+      "rse_percent": 73.40647417859643,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_051_scene0095_01",
+      "overlap": 0.29777777777777775,
+      "elapsed_seconds": 1.592792538998765,
+      "estimated_scale": 0.9394851497869056,
+      "estimated_rotation": [
+        [
+          0.7314670016657295,
+          0.03904697309499609,
+          -0.6807579300796037
+        ],
+        [
+          0.5599590650913081,
+          0.5353028312990258,
+          0.632373880094138
+        ],
+        [
+          0.38910393328288995,
+          -0.8437572000850515,
+          0.36969165044455454
+        ]
+      ],
+      "estimated_translation": [
+        -0.33587974871247006,
+        -1.5270969640169099,
+        0.586258796156327
+      ],
+      "source_voxels": 3292,
+      "target_voxels": 3229,
+      "mutual_descriptor_correspondences": 528,
+      "sim3_ransac_inliers": 11,
+      "rre_deg": 31.074317477860227,
+      "rte_extent": 0.8220786421135918,
+      "rse_percent": 6.301062029507943,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_052_scene0666_00",
+      "overlap": 0.18222222222222223,
+      "elapsed_seconds": 1.3844713440048508,
+      "estimated_scale": 0.28335222917946873,
+      "estimated_rotation": [
+        [
+          0.8673962156518829,
+          -0.4766250266191102,
+          -0.1430118494150874
+        ],
+        [
+          0.4936032873743431,
+          0.7876668249235623,
+          0.36869603687601077
+        ],
+        [
+          -0.06308406903516024,
+          -0.3903966661168705,
+          0.9184829031173085
+        ]
+      ],
+      "estimated_translation": [
+        3.3349138193518755,
+        2.542208271878886,
+        -0.24431483007630767
+      ],
+      "source_voxels": 3837,
+      "target_voxels": 3904,
+      "mutual_descriptor_correspondences": 489,
+      "sim3_ransac_inliers": 20,
+      "rre_deg": 19.642662908648852,
+      "rte_extent": 1.4834297124522415,
+      "rse_percent": 62.41917597951869,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_053_scene0404_01",
+      "overlap": 0.482,
+      "elapsed_seconds": 1.4120328680000966,
+      "estimated_scale": 0.2541863905858718,
+      "estimated_rotation": [
+        [
+          0.49688253263767784,
+          -0.6910504883192501,
+          0.5249352068144154
+        ],
+        [
+          0.009898241968421347,
+          0.6093646717071118,
+          0.7928283052976973
+        ],
+        [
+          -0.8677613574972679,
+          -0.3887466005883653,
+          0.30962284632353637
+        ]
+      ],
+      "estimated_translation": [
+        4.067217628143334,
+        2.852217903569473,
+        0.49638345830129804
+      ],
+      "source_voxels": 3627,
+      "target_voxels": 3950,
+      "mutual_descriptor_correspondences": 549,
+      "sim3_ransac_inliers": 11,
+      "rre_deg": 143.1005203544067,
+      "rte_extent": 3.6159353645503782,
+      "rse_percent": 71.77366343257104,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_054_scene0550_00",
+      "overlap": 0.266,
+      "elapsed_seconds": 1.3806307220074814,
+      "estimated_scale": 0.2901305893093147,
+      "estimated_rotation": [
+        [
+          0.8747509899469009,
+          0.02324678009994992,
+          0.4840147650660073
+        ],
+        [
+          -0.3948867834891146,
+          0.6131077243889311,
+          0.6842246316234519
+        ],
+        [
+          -0.2808471716299435,
+          -0.7896572075968229,
+          0.5454964350734569
+        ]
+      ],
+      "estimated_translation": [
+        1.5932253054205188,
+        1.70202522278439,
+        2.012949201620445
+      ],
+      "source_voxels": 3518,
+      "target_voxels": 2891,
+      "mutual_descriptor_correspondences": 503,
+      "sim3_ransac_inliers": 10,
+      "rre_deg": 111.31013688956304,
+      "rte_extent": 1.26911712923102,
+      "rse_percent": 45.784664175730995,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_055_scene0520_00",
+      "overlap": 0.29333333333333333,
+      "elapsed_seconds": 1.333690845000092,
+      "estimated_scale": 0.26474031735241804,
+      "estimated_rotation": [
+        [
+          0.9142204482354368,
+          0.07838792801746297,
+          -0.39756295698835514
+        ],
+        [
+          -0.3343496393393919,
+          0.7002206166625792,
+          -0.6307942665198335
+        ],
+        [
+          0.22893512334679963,
+          0.7096100483658652,
+          0.6663649814901592
+        ]
+      ],
+      "estimated_translation": [
+        0.8233771455718464,
+        5.547713093608636,
+        0.44679762646696924
+      ],
+      "source_voxels": 3122,
+      "target_voxels": 2465,
+      "mutual_descriptor_correspondences": 386,
+      "sim3_ransac_inliers": 17,
+      "rre_deg": 146.96571968172617,
+      "rte_extent": 2.1833200888721964,
+      "rse_percent": 78.97836058430876,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_056_scene0197_02",
+      "overlap": 0.39311111111111113,
+      "elapsed_seconds": 1.455545061005978,
+      "estimated_scale": 0.649325261941616,
+      "estimated_rotation": [
+        [
+          0.5361203450493471,
+          -0.8314387548798444,
+          0.14589233190275092
+        ],
+        [
+          0.8439238828669022,
+          0.5239918525140167,
+          -0.11500008011205687
+        ],
+        [
+          0.01916913015813839,
+          0.18477590585025494,
+          0.9825937151570827
+        ]
+      ],
+      "estimated_translation": [
+        1.1735570085076379,
+        6.375479401861453,
+        3.0351705189462796
+      ],
+      "source_voxels": 3741,
+      "target_voxels": 3900,
+      "mutual_descriptor_correspondences": 623,
+      "sim3_ransac_inliers": 14,
+      "rre_deg": 174.036149180175,
+      "rte_extent": 3.5153815040132277,
+      "rse_percent": 35.2746889580014,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_057_scene0033_00",
+      "overlap": 0.41355555555555557,
+      "elapsed_seconds": 1.3399663740128744,
+      "estimated_scale": 0.3492847846042057,
+      "estimated_rotation": [
+        [
+          0.9441528767467805,
+          0.21206947909413226,
+          0.2521941342845281
+        ],
+        [
+          -0.22030949861147206,
+          0.9754193772424845,
+          0.0045566787736194955
+        ],
+        [
+          -0.245028712914101,
+          -0.05986296464950233,
+          0.9676659316680691
+        ]
+      ],
+      "estimated_translation": [
+        2.943675012615878,
+        4.51368001117994,
+        1.0144752030816635
+      ],
+      "source_voxels": 3100,
+      "target_voxels": 2788,
+      "mutual_descriptor_correspondences": 439,
+      "sim3_ransac_inliers": 18,
+      "rre_deg": 66.10997235238835,
+      "rte_extent": 0.919531115730856,
+      "rse_percent": 35.00504293289421,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_058_scene0412_01",
+      "overlap": 0.20866666666666667,
+      "elapsed_seconds": 1.360773109990987,
+      "estimated_scale": 0.3186060930054744,
+      "estimated_rotation": [
+        [
+          0.6721948766673886,
+          -0.6857432720770213,
+          0.27912400932777975
+        ],
+        [
+          0.4795509793925111,
+          0.690496509935802,
+          0.5415214011746531
+        ],
+        [
+          -0.5640788118213601,
+          -0.23015371943024612,
+          0.7929970740719197
+        ]
+      ],
+      "estimated_translation": [
+        5.217494971658751,
+        2.3678064522112487,
+        1.8960365545866176
+      ],
+      "source_voxels": 3500,
+      "target_voxels": 3267,
+      "mutual_descriptor_correspondences": 475,
+      "sim3_ransac_inliers": 19,
+      "rre_deg": 118.69171877335981,
+      "rte_extent": 2.160930060033025,
+      "rse_percent": 69.62696404006647,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_059_scene0325_01",
+      "overlap": 0.14044444444444446,
+      "elapsed_seconds": 1.2941394109948305,
+      "estimated_scale": 0.28441693962132064,
+      "estimated_rotation": [
+        [
+          0.6275130315850803,
+          -0.5554878323738536,
+          0.5455828656359168
+        ],
+        [
+          0.6994803754121953,
+          0.7099709023807373,
+          -0.08166101999054329
+        ],
+        [
+          -0.3419862564550161,
+          0.4328678618900682,
+          0.8340688308159012
+        ]
+      ],
+      "estimated_translation": [
+        3.9498224021568014,
+        4.145871519330125,
+        1.147470464960782
+      ],
+      "source_voxels": 3287,
+      "target_voxels": 3626,
+      "mutual_descriptor_correspondences": 465,
+      "sim3_ransac_inliers": 12,
+      "rre_deg": 46.89117652987179,
+      "rte_extent": 1.7325772589601947,
+      "rse_percent": 56.83674910253678,
+      "strict_success": false,
+      "success": false
+    }
+  ]
+}

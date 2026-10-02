@@ -1,0 +1,81 @@
+{
+  "dataset": "eth3d",
+  "rows": [
+    {
+      "pair": "eth3d_botanical_garden",
+      "elapsed_seconds": 5.444788057997357
+    },
+    {
+      "pair": "eth3d_boulders",
+      "elapsed_seconds": 2.718144646001747
+    },
+    {
+      "pair": "eth3d_bridge",
+      "elapsed_seconds": 2.4301629130059155
+    },
+    {
+      "pair": "eth3d_courtyard",
+      "elapsed_seconds": 4.042566798001644
+    },
+    {
+      "pair": "eth3d_delivery_area",
+      "elapsed_seconds": 2.8345268730045063
+    },
+    {
+      "pair": "eth3d_electro",
+      "elapsed_seconds": 3.128569595006411
+    },
+    {
+      "pair": "eth3d_exhibition_hall",
+      "elapsed_seconds": 3.6241942960041342
+    },
+    {
+      "pair": "eth3d_facade",
+      "elapsed_seconds": 4.598467192001408
+    },
+    {
+      "pair": "eth3d_kicker",
+      "elapsed_seconds": 2.124174636002863
+    },
+    {
+      "pair": "eth3d_lecture_room",
+      "elapsed_seconds": 2.182540961992345
+    },
+    {
+      "pair": "eth3d_living_room",
+      "elapsed_seconds": 2.3324282039975515
+    },
+    {
+      "pair": "eth3d_observatory",
+      "elapsed_seconds": 2.5599457289936254
+    },
+    {
+      "pair": "eth3d_office",
+      "elapsed_seconds": 1.812075587004074
+    },
+    {
+      "pair": "eth3d_old_computer",
+      "elapsed_seconds": 1.9086798490025103
+    },
+    {
+      "pair": "eth3d_playground",
+      "elapsed_seconds": 4.01019000299857
+    },
+    {
+      "pair": "eth3d_relief",
+      "elapsed_seconds": 2.109815414005425
+    },
+    {
+      "pair": "eth3d_relief_2",
+      "elapsed_seconds": 2.0505684399977326
+    },
+    {
+      "pair": "eth3d_terrace",
+      "elapsed_seconds": 2.4830846269906033
+    },
+    {
+      "pair": "eth3d_terrains",
+      "elapsed_seconds": 2.5846736029925523
+    }
+  ]
+}

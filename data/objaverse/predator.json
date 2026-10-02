@@ -1,0 +1,530 @@
+{
+  "schema_version": 2,
+  "method": "PREDATOR-indoor + common Sim(3) solver",
+  "implementation": "official prs-eth/OverlapPredator commit 8c78f125fc58",
+  "protocol": {
+    "dataset": "ScanNet-GSReg official test",
+    "gaussians_per_map": 4500,
+    "input_to_method": "source_means and target_means only",
+    "transform": "source-to-target Sim(3)",
+    "gt_used_for_registration": false,
+    "gt_opened_only_after_pose_frozen": true,
+    "all_attempted_pairs_remain_in_denominator": true,
+    "strict_gate": "RRE < 10 deg, RTE/target_extent < 0.10, RSE < 10%",
+    "loose_gate": "RRE < 15 deg, RTE/target_extent < 0.30, RSE < 20%",
+    "parameters": {
+      "checkpoint": "indoor.pth",
+      "canonical_extent_m": 4.0,
+      "model_voxel_m": 0.025,
+      "interest_sampling": "deterministic top-1000 overlap*saliency",
+      "compatibility_backend": "NumPy/SciPy voxel-radius ops",
+      "pose_refit": "common 20000-iteration Sim(3) RANSAC",
+      "seed": 20260914
+    }
+  },
+  "attempted_pairs": 13,
+  "valid_pairs": 13,
+  "failed_pairs": 0,
+  "strict_successes": 0,
+  "successes": 0,
+  "median_rre_deg": 127.55101537683377,
+  "median_rte_extent": 0.34315890626732615,
+  "median_rse_percent": 76.71975405853294,
+  "median_elapsed_seconds": 1.729859013998066,
+  "rows": [
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_1983_Chevrolet_C101431",
+      "overlap": 0.212,
+      "elapsed_seconds": 1.9381450720102293,
+      "estimated_scale": 0.41592711141896965,
+      "estimated_rotation": [
+        [
+          -0.2376667515470393,
+          0.9702328049610487,
+          0.046506122032414006
+        ],
+        [
+          0.49443211520849456,
+          0.0796264265342735,
+          0.865561387567535
+        ],
+        [
+          0.8360929366162186,
+          0.22870928353435468,
+          -0.49863881213326183
+        ]
+      ],
+      "estimated_translation": [
+        -0.03973860304288347,
+        -0.24195215313361856,
+        -0.14883521451705303
+      ],
+      "sampled_source_points": 1000,
+      "sampled_target_points": 1000,
+      "descriptor_correspondences": 1000,
+      "sim3_ransac_inliers": 201,
+      "rre_deg": 166.14147279127332,
+      "rte_extent": 0.34315890626732615,
+      "rse_percent": 58.40728929539385,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_4b05",
+      "overlap": 0.31044444444444447,
+      "elapsed_seconds": 1.7160424430039711,
+      "estimated_scale": 0.23280243511438195,
+      "estimated_rotation": [
+        [
+          -0.3410897194459668,
+          0.49218424291234275,
+          -0.8008823099039436
+        ],
+        [
+          0.40039476699812976,
+          0.8468937935176678,
+          0.3499356127372115
+        ],
+        [
+          0.8504950522188743,
+          -0.20130964589422512,
+          -0.48593476169250993
+        ]
+      ],
+      "estimated_translation": [
+        -0.4129431595616071,
+        0.40795502629548513,
+        0.287110672942845
+      ],
+      "sampled_source_points": 1000,
+      "sampled_target_points": 1000,
+      "descriptor_correspondences": 1000,
+      "sim3_ransac_inliers": 163,
+      "rre_deg": 126.44437354859618,
+      "rte_extent": 0.30914607981827996,
+      "rse_percent": 76.71975405853294,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Elephant1608",
+      "overlap": 0.316,
+      "elapsed_seconds": 1.8053369139961433,
+      "estimated_scale": 0.18836499570067114,
+      "estimated_rotation": [
+        [
+          0.2520948537677207,
+          -0.7957613471907691,
+          -0.5506469495247969
+        ],
+        [
+          -0.6334838697852354,
+          -0.5658616636665721,
+          0.5277298213237742
+        ],
+        [
+          -0.7315369925203749,
+          0.21578798833492127,
+          -0.6467527909987042
+        ]
+      ],
+      "estimated_translation": [
+        -0.5017882944967279,
+        0.2936090284924487,
+        0.5897337098311871
+      ],
+      "sampled_source_points": 1000,
+      "sampled_target_points": 1000,
+      "descriptor_correspondences": 1000,
+      "sim3_ransac_inliers": 86,
+      "rre_deg": 179.03336889339616,
+      "rte_extent": 0.3630835357854429,
+      "rse_percent": 81.1635032425695,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_F1110000",
+      "overlap": 0.3366564417177914,
+      "elapsed_seconds": 1.709905569005059,
+      "estimated_scale": 0.13665265273476432,
+      "estimated_rotation": [
+        [
+          0.1733364700637721,
+          -0.34879682708082793,
+          0.9210294466325045
+        ],
+        [
+          -0.656509472744851,
+          -0.7380235357504541,
+          -0.1559377211410896
+        ],
+        [
+          0.7341319910902319,
+          -0.5776348622588021,
+          -0.35691481555287935
+        ]
+      ],
+      "estimated_translation": [
+        0.23768676142750927,
+        0.5639198513502643,
+        -0.3280591091685777
+      ],
+      "sampled_source_points": 1000,
+      "sampled_target_points": 1000,
+      "descriptor_correspondences": 1000,
+      "sim3_ransac_inliers": 216,
+      "rre_deg": 85.17247176293901,
+      "rte_extent": 0.542494441390178,
+      "rse_percent": 86.33473497253748,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Figura_San_Juan260d",
+      "overlap": 0.1565486954275381,
+      "elapsed_seconds": 1.7072580189997097,
+      "estimated_scale": 0.1823746229838802,
+      "estimated_rotation": [
+        [
+          0.4221537819205454,
+          -0.7274269531663488,
+          0.5409586049018019
+        ],
+        [
+          0.8842714243625186,
+          0.4618432416610659,
+          -0.06902802465579434
+        ],
+        [
+          -0.19962523003383947,
+          0.5074946777446254,
+          0.8382117391177577
+        ]
+      ],
+      "estimated_translation": [
+        0.34832290069971444,
+        -0.05917495106681034,
+        0.1955871604276797
+      ],
+      "sampled_source_points": 1000,
+      "sampled_target_points": 1000,
+      "descriptor_correspondences": 1000,
+      "sim3_ransac_inliers": 106,
+      "rre_deg": 127.55101537683377,
+      "rte_extent": 0.27773171747056613,
+      "rse_percent": 81.7625368007984,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Hl_Maximilian09f0",
+      "overlap": 0.3313333333333333,
+      "elapsed_seconds": 1.755268396998872,
+      "estimated_scale": 0.3307331219351302,
+      "estimated_rotation": [
+        [
+          0.12939075476560158,
+          -0.9215499617866177,
+          -0.36606515883415053
+        ],
+        [
+          0.9832344655846432,
+          0.071403003856667,
+          0.16778437569311314
+        ],
+        [
+          -0.12848353306035315,
+          -0.3816376278242601,
+          0.9153385727483586
+        ]
+      ],
+      "estimated_translation": [
+        -0.1521447058921102,
+        -0.4587436629449599,
+        -0.3694829896083349
+      ],
+      "sampled_source_points": 1000,
+      "sampled_target_points": 1000,
+      "descriptor_correspondences": 1000,
+      "sim3_ransac_inliers": 72,
+      "rre_deg": 99.32705807112163,
+      "rte_extent": 0.35222328521954294,
+      "rse_percent": 66.92668723795592,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Hunter_Boy_With_Rabbit_Figurine0a5b",
+      "overlap": 0.3322222222222222,
+      "elapsed_seconds": 1.772575886992854,
+      "estimated_scale": 0.2952422860734546,
+      "estimated_rotation": [
+        [
+          -0.6875640842301227,
+          0.6959387796593766,
+          0.20718311958991725
+        ],
+        [
+          0.009241276382362119,
+          -0.27691769853463444,
+          0.9608492009931145
+        ],
+        [
+          0.7260648930279011,
+          0.6625600374339663,
+          0.18396730119204288
+        ]
+      ],
+      "estimated_translation": [
+        0.24431614144451463,
+        -0.17863772308340892,
+        0.04067356959216625
+      ],
+      "sampled_source_points": 1000,
+      "sampled_target_points": 1000,
+      "descriptor_correspondences": 1000,
+      "sim3_ransac_inliers": 113,
+      "rre_deg": 164.9802099626122,
+      "rte_extent": 0.303413256352229,
+      "rse_percent": 70.4757712297856,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_MiG_23_Desert_Camo089f",
+      "overlap": 0.20933333333333334,
+      "elapsed_seconds": 1.7200661069946364,
+      "estimated_scale": 0.3431296262132167,
+      "estimated_rotation": [
+        [
+          -0.8140694511010214,
+          -0.4631266114197619,
+          -0.350434973395821
+        ],
+        [
+          -0.5631402367964266,
+          0.7770008531079957,
+          0.2813232090857628
+        ],
+        [
+          0.14200000874980834,
+          0.4263606643022971,
+          -0.8933378876163028
+        ]
+      ],
+      "estimated_translation": [
+        -0.7532369466916616,
+        0.44387323413707946,
+        -0.3395317706983503
+      ],
+      "sampled_source_points": 1000,
+      "sampled_target_points": 1000,
+      "descriptor_correspondences": 1000,
+      "sim3_ransac_inliers": 182,
+      "rre_deg": 143.02602113944948,
+      "rte_extent": 1.010254885521354,
+      "rse_percent": 65.68703575914611,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Park_Bench0b05",
+      "overlap": 0.2833333333333333,
+      "elapsed_seconds": 1.729859013998066,
+      "estimated_scale": 0.3886034713375753,
+      "estimated_rotation": [
+        [
+          -0.5468304838755806,
+          -0.7967849697352456,
+          0.25711891005603316
+        ],
+        [
+          0.1299666082886829,
+          0.2225956930277143,
+          0.9662090033607886
+        ],
+        [
+          -0.827094373475201,
+          0.5617694094995878,
+          -0.018166670475074496
+        ]
+      ],
+      "estimated_translation": [
+        0.2245179807913586,
+        -0.05643189356318122,
+        -0.27643486159549624
+      ],
+      "sampled_source_points": 1000,
+      "sampled_target_points": 1000,
+      "descriptor_correspondences": 1000,
+      "sim3_ransac_inliers": 156,
+      "rre_deg": 24.0846694818321,
+      "rte_extent": 0.14916715989896628,
+      "rse_percent": 61.13964925422116,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Teddy1b47",
+      "overlap": 0.25555555555555554,
+      "elapsed_seconds": 1.725116800997057,
+      "estimated_scale": 0.183737545111027,
+      "estimated_rotation": [
+        [
+          0.40816264329562113,
+          0.7134082694278489,
+          -0.5696067922083554
+        ],
+        [
+          0.9076560309801567,
+          -0.25029036249300873,
+          0.3369202633687476
+        ],
+        [
+          0.0977946115247644,
+          -0.6545253055116197,
+          -0.7496884942438699
+        ]
+      ],
+      "estimated_translation": [
+        0.10269754068758184,
+        0.5846680602050844,
+        -0.9758417490178803
+      ],
+      "sampled_source_points": 1000,
+      "sampled_target_points": 1000,
+      "descriptor_correspondences": 1000,
+      "sim3_ransac_inliers": 90,
+      "rre_deg": 143.41505798485852,
+      "rte_extent": 0.47778927051090725,
+      "rse_percent": 81.62624611609924,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Tolix_Industrial_Chairs3f2d",
+      "overlap": 0.22977777777777778,
+      "elapsed_seconds": 1.6937276940006996,
+      "estimated_scale": 0.28738337886040916,
+      "estimated_rotation": [
+        [
+          0.020024164787600707,
+          -0.4424586334421958,
+          -0.896565329754069
+        ],
+        [
+          -0.3265784368176638,
+          0.844661791279373,
+          -0.42413792916744936
+        ],
+        [
+          0.9449579659594862,
+          0.30129191168231767,
+          -0.12758380196766358
+        ]
+      ],
+      "estimated_translation": [
+        0.6909130444523295,
+        -0.42938210245780184,
+        0.1572450189304882
+      ],
+      "sampled_source_points": 1000,
+      "sampled_target_points": 1000,
+      "descriptor_correspondences": 1000,
+      "sim3_ransac_inliers": 221,
+      "rre_deg": 168.78846528061482,
+      "rte_extent": 0.3782981509443888,
+      "rse_percent": 71.26166395304587,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_chair_teacher4659",
+      "overlap": 0.28888888888888886,
+      "elapsed_seconds": 1.8030834210076137,
+      "estimated_scale": 0.162741589545368,
+      "estimated_rotation": [
+        [
+          0.6290815799218282,
+          0.42594590413943645,
+          0.6502510688571714
+        ],
+        [
+          0.7606069527025245,
+          -0.5099146552028077,
+          -0.4018259671922429
+        ],
+        [
+          0.16041642466915856,
+          0.7473667982699257,
+          -0.6447553330838951
+        ]
+      ],
+      "estimated_translation": [
+        0.11349533258064838,
+        -0.13255963176727875,
+        0.2308916997872266
+      ],
+      "sampled_source_points": 1000,
+      "sampled_target_points": 1000,
+      "descriptor_correspondences": 1000,
+      "sim3_ransac_inliers": 229,
+      "rre_deg": 50.43772161434546,
+      "rte_extent": 0.2729140108545781,
+      "rse_percent": 83.72584170120028,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_elephant_android1a39",
+      "overlap": 0.2591111111111111,
+      "elapsed_seconds": 1.730613938998431,
+      "estimated_scale": 0.22963435683839437,
+      "estimated_rotation": [
+        [
+          0.8159014716127239,
+          0.45267595467538646,
+          0.3597071985364197
+        ],
+        [
+          -0.26674828756066765,
+          0.8466636730907873,
+          -0.46044106653497824
+        ],
+        [
+          -0.5129816173155163,
+          0.2797232645439853,
+          0.8115446725653571
+        ]
+      ],
+      "estimated_translation": [
+        0.3820944949154455,
+        -0.3495311904386025,
+        0.41163559047215864
+      ],
+      "sampled_source_points": 1000,
+      "sampled_target_points": 1000,
+      "descriptor_correspondences": 1000,
+      "sim3_ransac_inliers": 100,
+      "rre_deg": 117.46098342073348,
+      "rte_extent": 0.27059128592251713,
+      "rse_percent": 77.03656208301386,
+      "strict_success": false,
+      "success": false
+    }
+  ]
+}

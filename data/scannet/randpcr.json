@@ -1,0 +1,1166 @@
+{
+  "schema_version": 2,
+  "method": "RandPCR (official random co-ensemble + common Sim(3) solver)",
+  "implementation": "official phdymz/RandPCR commit cb8be808e829 with protocol adapter",
+  "protocol": {
+    "dataset": "ScanNet-GSReg official test",
+    "gaussians_per_map": 4500,
+    "input_to_method": "source_means and target_means only",
+    "transform": "source-to-target Sim(3)",
+    "gt_used_for_registration": false,
+    "gt_opened_only_after_pose_frozen": true,
+    "all_attempted_pairs_remain_in_denominator": true,
+    "strict_gate": "RRE < 10 deg, RTE/target_extent < 0.10, RSE < 10%",
+    "loose_gate": "RRE < 15 deg, RTE/target_extent < 0.30, RSE < 20%",
+    "parameters": {
+      "training": "none",
+      "random_operators": 6,
+      "keypoints_per_map_per_operator": 1000,
+      "canonical_extent_m": 4.0,
+      "map_normalization": "independent robust 5--95% extent",
+      "coensemble_consistency_threshold": 0.1,
+      "correspondence_solver": "fixed 50000-iteration scored Sim(3) RANSAC + Umeyama",
+      "inlier_threshold_over_target_extent": 0.04,
+      "seed": 20260914
+    }
+  },
+  "attempted_pairs": 24,
+  "valid_pairs": 24,
+  "failed_pairs": 0,
+  "strict_successes": 0,
+  "successes": 0,
+  "median_rre_deg": 107.5389428234155,
+  "median_rte_extent": 1.930555643865027,
+  "median_rse_percent": 51.337621766645334,
+  "median_elapsed_seconds": 3.331793427991215,
+  "rows": [
+    {
+      "status": "ok",
+      "pair": "reserve_036_scene0305_00",
+      "overlap": 0.42733333333333334,
+      "elapsed_seconds": 3.467683622002369,
+      "estimated_scale": 0.2641547291665844,
+      "estimated_rotation": [
+        [
+          0.20420531102324618,
+          0.5490913683991762,
+          -0.8104312803066152
+        ],
+        [
+          0.17350507930286857,
+          -0.8350702480987403,
+          -0.5220667277239693
+        ],
+        [
+          -0.9634293842342594,
+          -0.03400514504936303,
+          -0.2657959211578823
+        ]
+      ],
+      "estimated_translation": [
+        7.198451648549211,
+        3.1555796195379546,
+        0.4946366529472811
+      ],
+      "operator_mutual_correspondences": [
+        395,
+        355,
+        389,
+        387,
+        367,
+        375
+      ],
+      "coensemble_correspondences": 206,
+      "coensemble_compatibility_mean": 0.48542463779449463,
+      "sim3_ransac_inliers": 19,
+      "source_robust_extent": 6.440494451953849,
+      "target_robust_extent": 4.3902884514989395,
+      "rre_deg": 162.49339650298106,
+      "rte_extent": 2.035685045942044,
+      "rse_percent": 50.084397003742964,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_037_scene0267_00",
+      "overlap": 0.396,
+      "elapsed_seconds": 3.3615418690023944,
+      "estimated_scale": 0.7144328387308262,
+      "estimated_rotation": [
+        [
+          0.9203513423762101,
+          0.00352196018381859,
+          0.3910767218625668
+        ],
+        [
+          -0.08571427571422476,
+          0.9774644622434331,
+          0.1929152352457986
+        ],
+        [
+          -0.3815841578539312,
+          -0.21107065368643652,
+          0.8999126122170343
+        ]
+      ],
+      "estimated_translation": [
+        -1.5850072076078785,
+        2.246163862857457,
+        3.3558482362083133
+      ],
+      "operator_mutual_correspondences": [
+        372,
+        388,
+        380,
+        374,
+        387,
+        376
+      ],
+      "coensemble_correspondences": 186,
+      "coensemble_compatibility_mean": 0.48235902190208435,
+      "sim3_ransac_inliers": 15,
+      "source_robust_extent": 3.6501520056757193,
+      "target_robust_extent": 2.1843371162831717,
+      "rre_deg": 72.03604679067776,
+      "rte_extent": 2.1328695210465924,
+      "rse_percent": 5.13067311079598,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_038_scene0646_01",
+      "overlap": 0.24822222222222223,
+      "elapsed_seconds": 3.2854622400191147,
+      "estimated_scale": 0.4438194515178223,
+      "estimated_rotation": [
+        [
+          0.843818489232349,
+          -0.1787700884869257,
+          -0.505975901295717
+        ],
+        [
+          -0.10381172674135833,
+          -0.9794481959977709,
+          0.17292876206024943
+        ],
+        [
+          -0.526491673837881,
+          -0.09339425474347654,
+          -0.8450349286037219
+        ]
+      ],
+      "estimated_translation": [
+        3.54627541098648,
+        7.597004316095457,
+        3.2511290143338405
+      ],
+      "operator_mutual_correspondences": [
+        411,
+        413,
+        431,
+        414,
+        419,
+        415
+      ],
+      "coensemble_correspondences": 159,
+      "coensemble_compatibility_mean": 0.47219589352607727,
+      "sim3_ransac_inliers": 17,
+      "source_robust_extent": 2.990512439244993,
+      "target_robust_extent": 2.6411047668073575,
+      "rre_deg": 160.1266033651559,
+      "rte_extent": 3.623353818458896,
+      "rse_percent": 60.484272278114524,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_039_scene0256_02",
+      "overlap": 0.426,
+      "elapsed_seconds": 3.346278582001105,
+      "estimated_scale": 0.18524662753084453,
+      "estimated_rotation": [
+        [
+          0.1943124385593465,
+          0.327746075421029,
+          0.9245675671724776
+        ],
+        [
+          -0.4769523702646493,
+          0.8551859807525655,
+          -0.20291223428666338
+        ],
+        [
+          -0.8571809101467744,
+          -0.40154632157496645,
+          0.3224925408587937
+        ]
+      ],
+      "estimated_translation": [
+        2.192042985294947,
+        2.2493237796771766,
+        1.2459651028752994
+      ],
+      "operator_mutual_correspondences": [
+        398,
+        425,
+        419,
+        410,
+        430,
+        411
+      ],
+      "coensemble_correspondences": 199,
+      "coensemble_compatibility_mean": 0.45175305008888245,
+      "sim3_ransac_inliers": 19,
+      "source_robust_extent": 1.3377632857838015,
+      "target_robust_extent": 1.6474205321813369,
+      "rre_deg": 105.84244891666502,
+      "rte_extent": 1.379566109437184,
+      "rse_percent": 82.4663406379928,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_040_scene0073_02",
+      "overlap": 0.28,
+      "elapsed_seconds": 3.247334518004209,
+      "estimated_scale": 0.43058052276912623,
+      "estimated_rotation": [
+        [
+          0.6235456684199352,
+          -0.4459005256875121,
+          0.6421553710639949
+        ],
+        [
+          -0.5216671451335175,
+          0.3744698890354018,
+          0.7665739963591643
+        ],
+        [
+          -0.5822835985007496,
+          -0.8129852541082245,
+          0.000887423012779831
+        ]
+      ],
+      "estimated_translation": [
+        1.053784675633679,
+        1.7526246691282412,
+        -1.881538925154141
+      ],
+      "operator_mutual_correspondences": [
+        430,
+        413,
+        409,
+        407,
+        430,
+        422
+      ],
+      "coensemble_correspondences": 180,
+      "coensemble_compatibility_mean": 0.4895404279232025,
+      "sim3_ransac_inliers": 15,
+      "source_robust_extent": 6.904721953072998,
+      "target_robust_extent": 2.962585121124243,
+      "rre_deg": 164.31737336132426,
+      "rte_extent": 1.263098793874912,
+      "rse_percent": 17.13959594698562,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_041_scene0247_01",
+      "overlap": 0.4,
+      "elapsed_seconds": 3.3687580570112914,
+      "estimated_scale": 0.39281190558471374,
+      "estimated_rotation": [
+        [
+          0.5065471878850932,
+          -0.8389910816515448,
+          0.19875590898102924
+        ],
+        [
+          0.8069631106080367,
+          0.5425108328085887,
+          0.23343636049924277
+        ],
+        [
+          -0.3036782582989859,
+          0.042142154602036686,
+          0.9518421897783227
+        ]
+      ],
+      "estimated_translation": [
+        3.77259539165896,
+        4.556517109799143,
+        -0.7706345276022929
+      ],
+      "operator_mutual_correspondences": [
+        395,
+        397,
+        385,
+        408,
+        399,
+        398
+      ],
+      "coensemble_correspondences": 194,
+      "coensemble_compatibility_mean": 0.47139447927474976,
+      "sim3_ransac_inliers": 15,
+      "source_robust_extent": 4.259777962074453,
+      "target_robust_extent": 4.169722227100482,
+      "rre_deg": 148.75911419310046,
+      "rte_extent": 1.4200021097651736,
+      "rse_percent": 45.921585284454025,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_042_scene0279_02",
+      "overlap": 0.09933333333333333,
+      "elapsed_seconds": 3.2158832129789516,
+      "estimated_scale": 0.23624962351130768,
+      "estimated_rotation": [
+        [
+          -0.6236214927910873,
+          -0.37036797673703925,
+          -0.6884212340832668
+        ],
+        [
+          0.764858993477822,
+          -0.4710372680362484,
+          -0.4394480768157264
+        ],
+        [
+          -0.16151456226950128,
+          -0.8005944378576832,
+          0.57702824215651
+        ]
+      ],
+      "estimated_translation": [
+        0.10819918446416388,
+        0.713238050929792,
+        0.0976822240152932
+      ],
+      "operator_mutual_correspondences": [
+        386,
+        403,
+        418,
+        397,
+        401,
+        403
+      ],
+      "coensemble_correspondences": 198,
+      "coensemble_compatibility_mean": 0.4591256380081177,
+      "sim3_ransac_inliers": 16,
+      "source_robust_extent": 9.585219843001434,
+      "target_robust_extent": 4.077814983902497,
+      "rre_deg": 50.139859897225705,
+      "rte_extent": 0.44077573147931715,
+      "rse_percent": 56.50718618118733,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_043_scene0442_00",
+      "overlap": 0.2813333333333333,
+      "elapsed_seconds": 3.2039549259934574,
+      "estimated_scale": 0.3441886870964017,
+      "estimated_rotation": [
+        [
+          0.7438393171904114,
+          0.6305657365556904,
+          0.22156245639476618
+        ],
+        [
+          0.0509290611594555,
+          0.2770629189560369,
+          -0.9595011045689197
+        ],
+        [
+          -0.6664152616283027,
+          0.7249986143583591,
+          0.17397617149293876
+        ]
+      ],
+      "estimated_translation": [
+        3.591678783083456,
+        2.6696197038944027,
+        -1.6199612693772154
+      ],
+      "operator_mutual_correspondences": [
+        409,
+        393,
+        404,
+        421,
+        384,
+        412
+      ],
+      "coensemble_correspondences": 147,
+      "coensemble_compatibility_mean": 0.4489249885082245,
+      "sim3_ransac_inliers": 15,
+      "source_robust_extent": 10.10080945149287,
+      "target_robust_extent": 6.243126219430574,
+      "rre_deg": 84.58569441651748,
+      "rte_extent": 0.2975236729496182,
+      "rse_percent": 35.89041959502909,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_044_scene0166_01",
+      "overlap": 0.7162222222222222,
+      "elapsed_seconds": 3.2417859429842792,
+      "estimated_scale": 0.18175471511110433,
+      "estimated_rotation": [
+        [
+          -0.3041189193472813,
+          -0.7533711661713927,
+          0.5830467981874162
+        ],
+        [
+          0.14990722874250625,
+          -0.6422574649310471,
+          -0.7516868839557376
+        ],
+        [
+          0.9407653829014879,
+          -0.14119927309267735,
+          0.30825842991281827
+        ]
+      ],
+      "estimated_translation": [
+        2.0589271926781962,
+        3.9670260460848827,
+        1.265869245898697
+      ],
+      "operator_mutual_correspondences": [
+        406,
+        395,
+        397,
+        387,
+        387,
+        405
+      ],
+      "coensemble_correspondences": 164,
+      "coensemble_compatibility_mean": 0.5033547282218933,
+      "sim3_ransac_inliers": 16,
+      "source_robust_extent": 1.526158661547027,
+      "target_robust_extent": 3.789195950967634,
+      "rre_deg": 154.4361020273055,
+      "rte_extent": 1.5223299254154443,
+      "rse_percent": 85.16154207321287,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_045_scene0647_01",
+      "overlap": 0.9271111111111111,
+      "elapsed_seconds": 3.302782297017984,
+      "estimated_scale": 0.9940615055411379,
+      "estimated_rotation": [
+        [
+          0.6188059530096439,
+          0.6945818094988735,
+          -0.36692683525888026
+        ],
+        [
+          0.42051900674428316,
+          -0.6874365018675718,
+          -0.5921104802879931
+        ],
+        [
+          -0.6635080688933847,
+          0.21210178173072172,
+          -0.7174746523048918
+        ]
+      ],
+      "estimated_translation": [
+        -0.43060157585921566,
+        9.200719248584308,
+        3.920631795374883
+      ],
+      "operator_mutual_correspondences": [
+        378,
+        393,
+        408,
+        382,
+        398,
+        376
+      ],
+      "coensemble_correspondences": 177,
+      "coensemble_compatibility_mean": 0.5025656223297119,
+      "sim3_ransac_inliers": 16,
+      "source_robust_extent": 2.478795614579543,
+      "target_robust_extent": 6.957572078081627,
+      "rre_deg": 79.17080469553878,
+      "rte_extent": 1.3689680123151868,
+      "rse_percent": 17.59746087127233,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_046_scene0177_02",
+      "overlap": 0.3622222222222222,
+      "elapsed_seconds": 3.3080022080102935,
+      "estimated_scale": 0.2844511172923528,
+      "estimated_rotation": [
+        [
+          0.46352868044216794,
+          -0.5770380297780154,
+          -0.6724345875975208
+        ],
+        [
+          0.7680041468366641,
+          -0.11686397733961781,
+          0.6296923385607072
+        ],
+        [
+          -0.44193980681675354,
+          -0.8083130105288858,
+          0.38899779454451827
+        ]
+      ],
+      "estimated_translation": [
+        5.096179287800476,
+        3.372733231871465,
+        1.0878973449788139
+      ],
+      "operator_mutual_correspondences": [
+        412,
+        402,
+        385,
+        402,
+        388,
+        372
+      ],
+      "coensemble_correspondences": 177,
+      "coensemble_compatibility_mean": 0.5000657439231873,
+      "sim3_ransac_inliers": 19,
+      "source_robust_extent": 1.6176340193607675,
+      "target_robust_extent": 2.148195249768541,
+      "rre_deg": 139.6544386220819,
+      "rte_extent": 2.748179793466551,
+      "rse_percent": 85.17861080883817,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_047_scene0395_00",
+      "overlap": 0.4726666666666667,
+      "elapsed_seconds": 3.3595509199949447,
+      "estimated_scale": 0.34447641709027194,
+      "estimated_rotation": [
+        [
+          -0.9820819492758053,
+          0.18787550671057546,
+          0.014759366005308305
+        ],
+        [
+          -0.15575723896186486,
+          -0.7651078248933688,
+          -0.6247797202197859
+        ],
+        [
+          -0.10608830009765735,
+          -0.6158837635992541,
+          0.7806615542712523
+        ]
+      ],
+      "estimated_translation": [
+        0.0016292643319255617,
+        2.245501877501887,
+        1.3221606430846817
+      ],
+      "operator_mutual_correspondences": [
+        388,
+        419,
+        421,
+        413,
+        421,
+        398
+      ],
+      "coensemble_correspondences": 213,
+      "coensemble_compatibility_mean": 0.49051398038864136,
+      "sim3_ransac_inliers": 19,
+      "source_robust_extent": 9.913848683380314,
+      "target_robust_extent": 5.93495132010266,
+      "rre_deg": 153.39112963545816,
+      "rte_extent": 0.45961512336891935,
+      "rse_percent": 32.986278444214804,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_048_scene0475_01",
+      "overlap": 0.23133333333333334,
+      "elapsed_seconds": 3.414182664011605,
+      "estimated_scale": 0.20467692927111478,
+      "estimated_rotation": [
+        [
+          0.16200449279601753,
+          0.7457916469313174,
+          -0.6461805968004447
+        ],
+        [
+          -0.08231055362708825,
+          0.6627618223906329,
+          0.7442927781075463
+        ],
+        [
+          0.9833511667128416,
+          -0.06739129134332505,
+          0.16875691623033334
+        ]
+      ],
+      "estimated_translation": [
+        10.355053946893424,
+        3.045896544924788,
+        -0.14035631087309086
+      ],
+      "operator_mutual_correspondences": [
+        374,
+        376,
+        373,
+        397,
+        379,
+        384
+      ],
+      "coensemble_correspondences": 291,
+      "coensemble_compatibility_mean": 0.46377694606781006,
+      "sim3_ransac_inliers": 41,
+      "source_robust_extent": 5.142164831331905,
+      "target_robust_extent": 5.056767722273723,
+      "rre_deg": 109.23543673016597,
+      "rte_extent": 3.2874409134064595,
+      "rse_percent": 87.24733883053068,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_049_scene0092_02",
+      "overlap": 0.36644444444444446,
+      "elapsed_seconds": 3.331684306001989,
+      "estimated_scale": 0.24949468954815454,
+      "estimated_rotation": [
+        [
+          0.8767592278729721,
+          0.017746805159526757,
+          -0.48060202584489803
+        ],
+        [
+          -0.4571223770287691,
+          0.3412722210589666,
+          -0.8213235681222406
+        ],
+        [
+          0.14944025146913453,
+          0.9397969578797916,
+          0.30732603078934284
+        ]
+      ],
+      "estimated_translation": [
+        3.3977985153590176,
+        1.5213973820237467,
+        1.3775820104451832
+      ],
+      "operator_mutual_correspondences": [
+        410,
+        388,
+        407,
+        395,
+        404,
+        397
+      ],
+      "coensemble_correspondences": 188,
+      "coensemble_compatibility_mean": 0.48714977502822876,
+      "sim3_ransac_inliers": 18,
+      "source_robust_extent": 3.150743589513118,
+      "target_robust_extent": 3.7472415512458994,
+      "rre_deg": 95.74032080113244,
+      "rte_extent": 1.3541083488315497,
+      "rse_percent": 65.10520148186224,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_050_scene0054_00",
+      "overlap": 0.116,
+      "elapsed_seconds": 3.331902549980441,
+      "estimated_scale": 0.7194435423646156,
+      "estimated_rotation": [
+        [
+          0.41131141452481623,
+          0.22847684098017731,
+          0.882395179847053
+        ],
+        [
+          0.6020226115216692,
+          0.6587788726060665,
+          -0.45119748694392003
+        ],
+        [
+          -0.6843914782478107,
+          0.716804527150602,
+          0.13341504547155741
+        ]
+      ],
+      "estimated_translation": [
+        9.342687738631541,
+        4.308363537061023,
+        0.7875604120171578
+      ],
+      "operator_mutual_correspondences": [
+        394,
+        401,
+        381,
+        391,
+        402,
+        395
+      ],
+      "coensemble_correspondences": 216,
+      "coensemble_compatibility_mean": 0.46425938606262207,
+      "sim3_ransac_inliers": 18,
+      "source_robust_extent": 3.085498252223289,
+      "target_robust_extent": 2.5266840244712028,
+      "rre_deg": 178.30267194583968,
+      "rte_extent": 3.9743958338500733,
+      "rse_percent": 34.37910045189286,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_051_scene0095_01",
+      "overlap": 0.29777777777777775,
+      "elapsed_seconds": 3.4120645920047536,
+      "estimated_scale": 0.5505585982924623,
+      "estimated_rotation": [
+        [
+          -0.630688415256837,
+          -0.5560287397049521,
+          0.541354009390289
+        ],
+        [
+          -0.5776450056730494,
+          -0.12947625007032082,
+          -0.8059541848571232
+        ],
+        [
+          0.5182261767624263,
+          -0.8210164074425373,
+          -0.23952805353099735
+        ]
+      ],
+      "estimated_translation": [
+        8.965397829787216,
+        2.881681845871051,
+        0.039833402506304516
+      ],
+      "operator_mutual_correspondences": [
+        404,
+        416,
+        402,
+        387,
+        392,
+        396
+      ],
+      "coensemble_correspondences": 274,
+      "coensemble_compatibility_mean": 0.5280646085739136,
+      "sim3_ransac_inliers": 20,
+      "source_robust_extent": 3.3533136160609063,
+      "target_robust_extent": 4.7263557657109185,
+      "rre_deg": 176.4694187921029,
+      "rte_extent": 2.7082832343208056,
+      "rse_percent": 45.090397690450544,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_052_scene0666_00",
+      "overlap": 0.18222222222222223,
+      "elapsed_seconds": 3.2968311049917247,
+      "estimated_scale": 0.21618505863366688,
+      "estimated_rotation": [
+        [
+          -0.002244279723595144,
+          0.43180642052829893,
+          0.9019635127869975
+        ],
+        [
+          -0.6599024660847219,
+          0.677052312584842,
+          -0.3257743103420219
+        ],
+        [
+          -0.7513479210484477,
+          -0.595939075085747,
+          0.2834306270008937
+        ]
+      ],
+      "estimated_translation": [
+        4.113803674430138,
+        4.718023667711606,
+        1.3961332747938489
+      ],
+      "operator_mutual_correspondences": [
+        386,
+        419,
+        379,
+        393,
+        406,
+        398
+      ],
+      "coensemble_correspondences": 165,
+      "coensemble_compatibility_mean": 0.461612731218338,
+      "sim3_ransac_inliers": 16,
+      "source_robust_extent": 3.0451699688144203,
+      "target_robust_extent": 2.2678312042398323,
+      "rre_deg": 102.33466884312264,
+      "rte_extent": 2.3296170753257743,
+      "rse_percent": 71.32751463471476,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_053_scene0404_01",
+      "overlap": 0.482,
+      "elapsed_seconds": 3.284370328008663,
+      "estimated_scale": 1.0468585648831512,
+      "estimated_rotation": [
+        [
+          -0.3472044445007594,
+          -0.5396950583509963,
+          -0.7669278438747895
+        ],
+        [
+          0.3942032608768621,
+          0.6580497584833914,
+          -0.641540571183147
+        ],
+        [
+          0.850912958435214,
+          -0.5250711945550475,
+          -0.01572824896699393
+        ]
+      ],
+      "estimated_translation": [
+        -1.5033880899332601,
+        1.248323291673216,
+        4.342453316513867
+      ],
+      "operator_mutual_correspondences": [
+        407,
+        406,
+        406,
+        394,
+        396,
+        408
+      ],
+      "coensemble_correspondences": 163,
+      "coensemble_compatibility_mean": 0.45798173546791077,
+      "sim3_ransac_inliers": 16,
+      "source_robust_extent": 2.4616615154094617,
+      "target_robust_extent": 1.5861500282600685,
+      "rre_deg": 75.1377706847587,
+      "rte_extent": 3.2766928898863,
+      "rse_percent": 16.24926937583213,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_054_scene0550_00",
+      "overlap": 0.266,
+      "elapsed_seconds": 3.387035037012538,
+      "estimated_scale": 0.19758756535918906,
+      "estimated_rotation": [
+        [
+          0.20162848420991283,
+          0.14260371193332255,
+          0.9690253534856819
+        ],
+        [
+          0.15848838166121143,
+          0.9715563949319724,
+          -0.1759534152700658
+        ],
+        [
+          -0.9665543891750858,
+          0.18905648047508974,
+          0.17329241171138735
+        ]
+      ],
+      "estimated_translation": [
+        2.9163429783087205,
+        1.4930887163782671,
+        1.9269088824881102
+      ],
+      "operator_mutual_correspondences": [
+        373,
+        390,
+        396,
+        390,
+        386,
+        385
+      ],
+      "coensemble_correspondences": 262,
+      "coensemble_compatibility_mean": 0.4873903691768646,
+      "sim3_ransac_inliers": 17,
+      "source_robust_extent": 4.715515715674297,
+      "target_robust_extent": 2.410265819848081,
+      "rre_deg": 104.69963210266583,
+      "rte_extent": 1.4274154106848573,
+      "rse_percent": 63.07774290139555,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_055_scene0520_00",
+      "overlap": 0.29333333333333333,
+      "elapsed_seconds": 3.483508471021196,
+      "estimated_scale": 0.2121216728592545,
+      "estimated_rotation": [
+        [
+          0.3757073812868478,
+          -0.8873408461474112,
+          -0.2673390850679657
+        ],
+        [
+          0.9060797055434037,
+          0.29114600761523446,
+          0.3070074420141788
+        ],
+        [
+          -0.19458553607336598,
+          -0.35757548155334573,
+          0.9133872366871205
+        ]
+      ],
+      "estimated_translation": [
+        2.5485762940352754,
+        3.0631218410807115,
+        2.1179266655382545
+      ],
+      "operator_mutual_correspondences": [
+        358,
+        389,
+        370,
+        368,
+        352,
+        358
+      ],
+      "coensemble_correspondences": 270,
+      "coensemble_compatibility_mean": 0.49015897512435913,
+      "sim3_ransac_inliers": 21,
+      "source_robust_extent": 3.8243571629824316,
+      "target_robust_extent": 3.940900557477525,
+      "rre_deg": 66.13281244045008,
+      "rte_extent": 1.8254262417880105,
+      "rse_percent": 83.15653103503489,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_056_scene0197_02",
+      "overlap": 0.39311111111111113,
+      "elapsed_seconds": 3.372415280988207,
+      "estimated_scale": 0.6963559558896373,
+      "estimated_rotation": [
+        [
+          0.581785541164444,
+          0.27943753198356114,
+          -0.7638326058835995
+        ],
+        [
+          0.6253390489477939,
+          -0.754184467392924,
+          0.2003917737940367
+        ],
+        [
+          -0.5200737043468577,
+          -0.5942393918802322,
+          -0.6135168189909291
+        ]
+      ],
+      "estimated_translation": [
+        1.4320781366833153,
+        4.84690679105077,
+        -2.273495112531424
+      ],
+      "operator_mutual_correspondences": [
+        396,
+        417,
+        407,
+        416,
+        399,
+        410
+      ],
+      "coensemble_correspondences": 213,
+      "coensemble_compatibility_mean": 0.5110774040222168,
+      "sim3_ransac_inliers": 19,
+      "source_robust_extent": 2.577063569942432,
+      "target_robust_extent": 2.3049354110178,
+      "rre_deg": 132.35779355386077,
+      "rte_extent": 2.2575672224412213,
+      "rse_percent": 30.586628177485476,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_057_scene0033_00",
+      "overlap": 0.41355555555555557,
+      "elapsed_seconds": 3.270578678988386,
+      "estimated_scale": 0.25477816595982317,
+      "estimated_rotation": [
+        [
+          -0.4247793343163233,
+          0.3853532372313907,
+          -0.8191858151195422
+        ],
+        [
+          -0.9021589945717085,
+          -0.2554628183665108,
+          0.3476318410986009
+        ],
+        [
+          -0.07531046176425171,
+          0.8867026733846735,
+          0.4561652149839228
+        ]
+      ],
+      "estimated_translation": [
+        5.710089768733892,
+        5.631167197102921,
+        0.6968511757114612
+      ],
+      "operator_mutual_correspondences": [
+        381,
+        400,
+        403,
+        377,
+        400,
+        367
+      ],
+      "coensemble_correspondences": 191,
+      "coensemble_compatibility_mean": 0.46332886815071106,
+      "sim3_ransac_inliers": 17,
+      "source_robust_extent": 7.522516226052449,
+      "target_robust_extent": 5.152921673790134,
+      "rre_deg": 176.0285310311614,
+      "rte_extent": 1.3237173673777913,
+      "rse_percent": 52.590846529547704,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_058_scene0412_01",
+      "overlap": 0.20866666666666667,
+      "elapsed_seconds": 3.3643390349752735,
+      "estimated_scale": 0.6738952990893972,
+      "estimated_rotation": [
+        [
+          -0.5737399363346871,
+          0.8152570826732883,
+          0.07860263739663953
+        ],
+        [
+          -0.8187119328830608,
+          -0.5735704873161906,
+          -0.02697530416418603
+        ],
+        [
+          0.023092345258809932,
+          -0.07982972648647843,
+          0.9965409968283001
+        ]
+      ],
+      "estimated_translation": [
+        2.1224655601638496,
+        4.589157233160451,
+        2.542978299795339
+      ],
+      "operator_mutual_correspondences": [
+        385,
+        409,
+        410,
+        391,
+        398,
+        391
+      ],
+      "coensemble_correspondences": 237,
+      "coensemble_compatibility_mean": 0.46666914224624634,
+      "sim3_ransac_inliers": 19,
+      "source_robust_extent": 3.4245264703424887,
+      "target_robust_extent": 2.748778529107023,
+      "rre_deg": 105.8334805915215,
+      "rte_extent": 2.2979117955416513,
+      "rse_percent": 35.75689039907745,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "reserve_059_scene0325_01",
+      "overlap": 0.14044444444444446,
+      "elapsed_seconds": 3.1059318449988496,
+      "estimated_scale": 0.24970207313945114,
+      "estimated_rotation": [
+        [
+          0.26219415535090695,
+          -0.5581684571159338,
+          -0.7872116604704498
+        ],
+        [
+          0.8000884370633421,
+          0.5818290023920127,
+          -0.14605993582448762
+        ],
+        [
+          0.5395486241084884,
+          -0.5915428855597311,
+          0.5991362923127792
+        ]
+      ],
+      "estimated_translation": [
+        5.20007534908596,
+        4.3899962785779305,
+        0.36469472327695507
+      ],
+      "operator_mutual_correspondences": [
+        410,
+        406,
+        390,
+        404,
+        390,
+        421
+      ],
+      "coensemble_correspondences": 130,
+      "coensemble_compatibility_mean": 0.4771510660648346,
+      "sim3_ransac_inliers": 16,
+      "source_robust_extent": 9.021110966661457,
+      "target_robust_extent": 2.816856779572227,
+      "rre_deg": 67.30784415700548,
+      "rte_extent": 2.0824627312124995,
+      "rse_percent": 62.10509385662873,
+      "strict_success": false,
+      "success": false
+    }
+  ]
+}

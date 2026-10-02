@@ -1,0 +1,546 @@
+{
+  "schema_version": 2,
+  "method": "FPFH + Sim(3) RANSAC",
+  "implementation": "Open3D 0.19 FPFH; project common Umeyama solver",
+  "protocol": {
+    "dataset": "ScanNet-GSReg official test",
+    "gaussians_per_map": 4500,
+    "input_to_method": "source_means and target_means only",
+    "transform": "source-to-target Sim(3)",
+    "gt_used_for_registration": false,
+    "gt_opened_only_after_pose_frozen": true,
+    "all_attempted_pairs_remain_in_denominator": true,
+    "strict_gate": "RRE < 10 deg, RTE/target_extent < 0.10, RSE < 10%",
+    "loose_gate": "RRE < 15 deg, RTE/target_extent < 0.30, RSE < 20%",
+    "parameters": {
+      "per_cloud_normalization": "robust bounding-box center and extent; observable only",
+      "voxel_over_extent": 0.025,
+      "normal_radius_over_extent": 0.05,
+      "fpfh_radius_over_extent": 0.125,
+      "mutual_matching": true,
+      "ratio_threshold": 0.95,
+      "ransac_iterations": 100000,
+      "inlier_threshold_over_target_extent": 0.04,
+      "seed": 20260914,
+      "pose_refit": "weighted Umeyama Sim(3) on original-coordinate inliers"
+    }
+  },
+  "attempted_pairs": 13,
+  "valid_pairs": 13,
+  "failed_pairs": 0,
+  "strict_successes": 0,
+  "successes": 0,
+  "median_rre_deg": 148.82441564407432,
+  "median_rte_extent": 0.37740110901301854,
+  "median_rse_percent": 60.69923512104065,
+  "median_elapsed_seconds": 6.304018057009671,
+  "rows": [
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_1983_Chevrolet_C101431",
+      "overlap": 0.212,
+      "elapsed_seconds": 6.151142941991566,
+      "estimated_scale": 0.21284481201052186,
+      "estimated_rotation": [
+        [
+          0.4518264055308276,
+          -0.609594512274472,
+          0.6513427898349231
+        ],
+        [
+          0.08235303966251635,
+          -0.6984997155657022,
+          -0.7108559095998129
+        ],
+        [
+          0.8882966149453888,
+          0.37482352908999966,
+          -0.26539865470096474
+        ]
+      ],
+      "estimated_translation": [
+        0.20955872898486932,
+        -1.0913071210622185,
+        -0.6965486313909631
+      ],
+      "source_downsampled": 1237,
+      "target_downsampled": 1193,
+      "mutual_feature_correspondences": 104,
+      "ransac_inliers": 9,
+      "ransac_threshold": 0.06218502053652223,
+      "rre_deg": 36.193531994689614,
+      "rte_extent": 0.8385272698842073,
+      "rse_percent": 78.7155190227252,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_4b05",
+      "overlap": 0.31044444444444447,
+      "elapsed_seconds": 6.267549121999764,
+      "estimated_scale": 0.23711920250648028,
+      "estimated_rotation": [
+        [
+          0.8209091524426793,
+          -0.3301066338224386,
+          -0.465980443519103
+        ],
+        [
+          -0.5585017857208104,
+          -0.6342790062388988,
+          -0.5345707601349516
+        ],
+        [
+          -0.11909625847400705,
+          0.6990849394394169,
+          -0.7050505858918775
+        ]
+      ],
+      "estimated_translation": [
+        -0.5481155884436009,
+        0.5363351450798942,
+        -0.25503888919152723
+      ],
+      "source_downsampled": 1526,
+      "target_downsampled": 1590,
+      "mutual_feature_correspondences": 148,
+      "ransac_inliers": 9,
+      "ransac_threshold": 0.07757908600002263,
+      "rre_deg": 165.58493689873507,
+      "rte_extent": 0.37740110901301854,
+      "rse_percent": 76.288077274264,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Elephant1608",
+      "overlap": 0.316,
+      "elapsed_seconds": 7.438432388007641,
+      "estimated_scale": 1.1771905242499479,
+      "estimated_rotation": [
+        [
+          0.9977901576166375,
+          0.05755013580612231,
+          0.03320818019799607
+        ],
+        [
+          0.06551507457021204,
+          -0.9354285405781635,
+          -0.34739202707584804
+        ],
+        [
+          0.011071421201689151,
+          0.3487999818527861,
+          -0.9371317923814508
+        ]
+      ],
+      "estimated_translation": [
+        -0.1148899361467372,
+        -0.033753328232110774,
+        0.10472028877390138
+      ],
+      "source_downsampled": 2536,
+      "target_downsampled": 2593,
+      "mutual_feature_correspondences": 248,
+      "ransac_inliers": 9,
+      "ransac_threshold": 0.06670653222655296,
+      "rre_deg": 149.82173291126614,
+      "rte_extent": 0.34660542053513704,
+      "rse_percent": 17.71903484737023,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_F1110000",
+      "overlap": 0.3366564417177914,
+      "elapsed_seconds": 6.091980623008567,
+      "estimated_scale": 0.6219922644707048,
+      "estimated_rotation": [
+        [
+          0.9292064059078639,
+          0.3043967114574688,
+          0.20956645073500668
+        ],
+        [
+          0.21039988933144393,
+          -0.9019321484346705,
+          0.3771608227127189
+        ],
+        [
+          0.30382123327559785,
+          -0.3063674944799097,
+          -0.9021261644232453
+        ]
+      ],
+      "estimated_translation": [
+        0.03366337269585133,
+        -0.03703179758197932,
+        -0.6426751510832773
+      ],
+      "source_downsampled": 880,
+      "target_downsampled": 989,
+      "mutual_feature_correspondences": 44,
+      "ransac_inliers": 8,
+      "ransac_threshold": 0.05305790437490819,
+      "rre_deg": 145.60241588409656,
+      "rte_extent": 0.6330312694813314,
+      "rse_percent": 37.800774672693734,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Figura_San_Juan260d",
+      "overlap": 0.1565486954275381,
+      "elapsed_seconds": 6.31342792599753,
+      "estimated_scale": 0.8702816621371735,
+      "estimated_rotation": [
+        [
+          -0.41041739181767206,
+          -0.3011849316669565,
+          0.8607236498611798
+        ],
+        [
+          -0.7583719853950789,
+          -0.41141732555914456,
+          -0.5055766173367667
+        ],
+        [
+          0.5063886810163767,
+          -0.8602461398730789,
+          -0.05955738889476492
+        ]
+      ],
+      "estimated_translation": [
+        0.3935873335909532,
+        -0.06473613459198801,
+        -0.2815835843139005
+      ],
+      "source_downsampled": 1530,
+      "target_downsampled": 1433,
+      "mutual_feature_correspondences": 147,
+      "ransac_inliers": 7,
+      "ransac_threshold": 0.05579965325853468,
+      "rre_deg": 169.6028003940258,
+      "rte_extent": 0.2852414540489004,
+      "rse_percent": 12.971829487649867,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Hl_Maximilian09f0",
+      "overlap": 0.3313333333333333,
+      "elapsed_seconds": 6.624353591003455,
+      "estimated_scale": 0.5095087444860301,
+      "estimated_rotation": [
+        [
+          0.9121688484249811,
+          -0.33603227538097485,
+          -0.23458538288931854
+        ],
+        [
+          -0.25844303383391554,
+          -0.915921293007565,
+          0.3070755335061241
+        ],
+        [
+          -0.318049037454549,
+          -0.2194777777307622,
+          -0.9223200718062036
+        ]
+      ],
+      "estimated_translation": [
+        -0.40905217640725205,
+        -0.4058326412217079,
+        -0.12145588706175676
+      ],
+      "source_downsampled": 2343,
+      "target_downsampled": 2108,
+      "mutual_feature_correspondences": 275,
+      "ransac_inliers": 13,
+      "ransac_threshold": 0.054866691281279925,
+      "rre_deg": 70.78811017324608,
+      "rte_extent": 0.40243236008578687,
+      "rse_percent": 49.049124675550196,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Hunter_Boy_With_Rabbit_Figurine0a5b",
+      "overlap": 0.3322222222222222,
+      "elapsed_seconds": 6.403789699004847,
+      "estimated_scale": 0.199244140196013,
+      "estimated_rotation": [
+        [
+          -0.36020395583768344,
+          0.33300919977346416,
+          0.8714114889448727
+        ],
+        [
+          -0.4131283626322071,
+          -0.8944646601075773,
+          0.17104948935167297
+        ],
+        [
+          0.836407834843574,
+          -0.29839209889820045,
+          0.45976525437163146
+        ]
+      ],
+      "estimated_translation": [
+        0.17071217859973703,
+        -0.10372493624458007,
+        0.06857943232378864
+      ],
+      "source_downsampled": 1776,
+      "target_downsampled": 1618,
+      "mutual_feature_correspondences": 182,
+      "ransac_inliers": 10,
+      "ransac_threshold": 0.0775187237556438,
+      "rre_deg": 170.05001689589142,
+      "rte_extent": 0.24897924603127528,
+      "rse_percent": 80.07558587048665,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_MiG_23_Desert_Camo089f",
+      "overlap": 0.20933333333333334,
+      "elapsed_seconds": 6.281207523992634,
+      "estimated_scale": 0.3930076302400871,
+      "estimated_rotation": [
+        [
+          -0.15384596688892313,
+          0.8589686204156788,
+          -0.4883690485823189
+        ],
+        [
+          0.8023124729768198,
+          0.39708381933232895,
+          0.4456670687074276
+        ],
+        [
+          0.5767374742270811,
+          -0.3232604979975697,
+          -0.7502509821763186
+        ]
+      ],
+      "estimated_translation": [
+        -0.5896067421193796,
+        0.4230628379576794,
+        -0.027562767163219537
+      ],
+      "source_downsampled": 1212,
+      "target_downsampled": 1551,
+      "mutual_feature_correspondences": 146,
+      "ransac_inliers": 11,
+      "ransac_threshold": 0.046892102664396765,
+      "rre_deg": 139.88782303675788,
+      "rte_extent": 0.8543851074347569,
+      "rse_percent": 60.69923512104065,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Park_Bench0b05",
+      "overlap": 0.2833333333333333,
+      "elapsed_seconds": 6.410665488001541,
+      "estimated_scale": 0.24147260392823167,
+      "estimated_rotation": [
+        [
+          0.6822463846196043,
+          -0.6716330475676152,
+          0.2888752673534309
+        ],
+        [
+          0.5968994797138291,
+          0.7398386963598406,
+          0.31040250399430064
+        ],
+        [
+          -0.4221976809396738,
+          -0.03934148934152742,
+          0.9056496924449052
+        ]
+      ],
+      "estimated_translation": [
+        0.24309881588305432,
+        -0.1580804679772946,
+        0.07489912816331522
+      ],
+      "source_downsampled": 1464,
+      "target_downsampled": 1614,
+      "mutual_feature_correspondences": 176,
+      "ransac_inliers": 11,
+      "ransac_threshold": 0.0695161767561551,
+      "rre_deg": 68.63312594292915,
+      "rte_extent": 0.30933819217170766,
+      "rse_percent": 75.85273736271878,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Teddy1b47",
+      "overlap": 0.25555555555555554,
+      "elapsed_seconds": 6.380943334996118,
+      "estimated_scale": 0.7135340232106864,
+      "estimated_rotation": [
+        [
+          0.20740466001902225,
+          0.7512448531516581,
+          0.6265895607297792
+        ],
+        [
+          -0.33466396301005874,
+          0.6563587034424141,
+          -0.6761606941236643
+        ],
+        [
+          -0.9192297530350048,
+          -0.06945806669161501,
+          0.3875464334846439
+        ]
+      ],
+      "estimated_translation": [
+        -0.2582998618812797,
+        0.8499086996361573,
+        -0.08288927847836888
+      ],
+      "source_downsampled": 1870,
+      "target_downsampled": 1926,
+      "mutual_feature_correspondences": 178,
+      "ransac_inliers": 8,
+      "ransac_threshold": 0.10213095480407197,
+      "rre_deg": 174.65766808442277,
+      "rte_extent": 0.43442088658848566,
+      "rse_percent": 28.64660011463347,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Tolix_Industrial_Chairs3f2d",
+      "overlap": 0.22977777777777778,
+      "elapsed_seconds": 6.081959545990685,
+      "estimated_scale": 0.3251782106693522,
+      "estimated_rotation": [
+        [
+          0.9697977553690738,
+          -0.13045713380307222,
+          0.20609039259750542
+        ],
+        [
+          -0.007713539509022554,
+          0.8281164906119186,
+          0.5605029699161662
+        ],
+        [
+          -0.2437884636100511,
+          -0.5451642084881282,
+          0.8020992275237295
+        ]
+      ],
+      "estimated_translation": [
+        0.45655179609809055,
+        -0.13959133010940886,
+        -0.002215207728660712
+      ],
+      "source_downsampled": 940,
+      "target_downsampled": 649,
+      "mutual_feature_correspondences": 59,
+      "ransac_inliers": 9,
+      "ransac_threshold": 0.08304119759286635,
+      "rre_deg": 148.82441564407432,
+      "rte_extent": 0.197232332326872,
+      "rse_percent": 67.48218101401655,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_chair_teacher4659",
+      "overlap": 0.28888888888888886,
+      "elapsed_seconds": 6.304018057009671,
+      "estimated_scale": 0.6519838992662165,
+      "estimated_rotation": [
+        [
+          -0.9609383059184495,
+          0.27675734555929715,
+          -0.001715778992684797
+        ],
+        [
+          -0.0759873428182505,
+          -0.2578668003610041,
+          0.9631877475357543
+        ],
+        [
+          0.26612684184426355,
+          0.9256943798849327,
+          0.2688241415859978
+        ]
+      ],
+      "estimated_translation": [
+        0.1591545946510204,
+        -0.045149309586594064,
+        -0.10045522041373509
+      ],
+      "source_downsampled": 1064,
+      "target_downsampled": 1297,
+      "mutual_feature_correspondences": 131,
+      "ransac_inliers": 11,
+      "ransac_threshold": 0.07578324786582072,
+      "rre_deg": 172.38102576662172,
+      "rte_extent": 0.17819380759569944,
+      "rse_percent": 34.8016127004267,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_elephant_android1a39",
+      "overlap": 0.2591111111111111,
+      "elapsed_seconds": 6.289987198004383,
+      "estimated_scale": 0.33207040953313777,
+      "estimated_rotation": [
+        [
+          0.10166046630161205,
+          -0.6108210687146035,
+          0.7852151116768507
+        ],
+        [
+          0.6849100433230187,
+          -0.5294749465360364,
+          -0.5005542064011868
+        ],
+        [
+          0.7215007845779512,
+          0.5886882901884587,
+          0.3645308146760576
+        ]
+      ],
+      "estimated_translation": [
+        0.28239725243795466,
+        -1.2739812070043532,
+        -0.39610807309100604
+      ],
+      "source_downsampled": 1934,
+      "target_downsampled": 1690,
+      "mutual_feature_correspondences": 146,
+      "ransac_inliers": 7,
+      "ransac_threshold": 0.07232407867458025,
+      "rre_deg": 91.0651851317214,
+      "rte_extent": 0.5993036556152305,
+      "rse_percent": 66.79295581737007,
+      "strict_success": false,
+      "success": false
+    }
+  ]
+}

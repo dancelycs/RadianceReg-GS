@@ -1,0 +1,949 @@
+{
+  "schema_version": 2,
+  "method": "BUFFER-X-3DMatch (official weights; normalization-composed Sim(3))",
+  "implementation": "official MIT-SPARK/BUFFER-X commit b56af186cdfef30b",
+  "protocol": {
+    "dataset": "ScanNet-GSReg official test",
+    "gaussians_per_map": 4500,
+    "input_to_method": "source_means and target_means only",
+    "transform": "source-to-target Sim(3)",
+    "gt_used_for_registration": false,
+    "gt_opened_only_after_pose_frozen": true,
+    "all_attempted_pairs_remain_in_denominator": true,
+    "strict_gate": "RRE < 10 deg, RTE/target_extent < 0.10, RSE < 10%",
+    "loose_gate": "RRE < 15 deg, RTE/target_extent < 0.30, RSE < 20%",
+    "parameters": {
+      "checkpoint": "Hyungtae-Lim/BUFFER-X snapshot/threedmatch/{Desc,Pose}/best.pth",
+      "canonical_extent_m": 4.0,
+      "map_normalization": "independent robust 5--95% extent",
+      "se3_to_sim3": "analytic composition of normalization frames",
+      "pose_estimator": "official RANSAC",
+      "num_scales": 3,
+      "num_fps": 1500,
+      "seed": 20260914
+    }
+  },
+  "attempted_pairs": 19,
+  "valid_pairs": 19,
+  "failed_pairs": 0,
+  "strict_successes": 9,
+  "successes": 15,
+  "median_rre_deg": 1.0397471118234853,
+  "median_rte_extent": 0.06383876994720147,
+  "median_rse_percent": 6.383207731820639,
+  "median_elapsed_seconds": 0.3456392899970524,
+  "rows": [
+    {
+      "status": "ok",
+      "pair": "eth3d_botanical_garden",
+      "overlap": 0.8408888888888889,
+      "elapsed_seconds": 0.7129475269903196,
+      "estimated_scale": 1.0000603449586254,
+      "estimated_rotation": [
+        [
+          0.060146263820267554,
+          0.9981466200752482,
+          -0.009260225743574643
+        ],
+        [
+          -0.9794940040761243,
+          0.057230138812568804,
+          -0.1931740334268961
+        ],
+        [
+          -0.19228604454661896,
+          0.02068903196994179,
+          0.9811208085800458
+        ]
+      ],
+      "estimated_translation": [
+        4.074280685511717,
+        -6.932792023334111,
+        -1.9567705225883287
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0281,
+      "bufferx_sphericity": 0.05921190330873424,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3794,
+      "target_points_after_voxelization": 3761,
+      "ransac_inliers": 291,
+      "mutual_correspondences": 1025,
+      "consensus_correspondences": 5,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 5.866745040806405,
+      "rte_extent": 0.07550874019761415,
+      "rse_percent": 16.02276390565729,
+      "strict_success": false,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_boulders",
+      "overlap": 0.9282222222222222,
+      "elapsed_seconds": 0.3442868659913074,
+      "estimated_scale": 1.3001141582033786,
+      "estimated_rotation": [
+        [
+          -0.4246983836845698,
+          -0.4957069788925403,
+          -0.7575657555439957
+        ],
+        [
+          0.7823792369063375,
+          0.2200845016130949,
+          -0.5826195515150283
+        ],
+        [
+          0.4555370594732894,
+          -0.8401412995603457,
+          0.29436131576598584
+        ]
+      ],
+      "estimated_translation": [
+        -5.812912390195402,
+        19.67116394592689,
+        -34.51204587225696
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0228,
+      "bufferx_sphericity": 0.06399753633568694,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3379,
+      "target_points_after_voxelization": 3117,
+      "ransac_inliers": 434,
+      "mutual_correspondences": 1058,
+      "consensus_correspondences": 41,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 1.1900803011652443,
+      "rte_extent": 0.13480116080866458,
+      "rse_percent": 17.36400814576764,
+      "strict_success": false,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_bridge",
+      "overlap": 0.9431111111111111,
+      "elapsed_seconds": 0.3494894109899178,
+      "estimated_scale": 0.8345976778941838,
+      "estimated_rotation": [
+        [
+          0.07553773133864426,
+          0.48763418005815523,
+          -0.869774084221427
+        ],
+        [
+          0.014514201226663637,
+          -0.8727114840634131,
+          -0.4880204950067042
+        ],
+        [
+          -0.9970373057749462,
+          0.02423988495944157,
+          -0.07300026623369413
+        ]
+      ],
+      "estimated_translation": [
+        19.191487218192556,
+        -5.13574153932794,
+        -14.576500477460181
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0125,
+      "bufferx_sphericity": 0.013943145130561609,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 4012,
+      "target_points_after_voxelization": 3942,
+      "ransac_inliers": 624,
+      "mutual_correspondences": 1044,
+      "consensus_correspondences": 44,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 1.4720446716023783,
+      "rte_extent": 0.11759862174356672,
+      "rse_percent": 12.354729065382797,
+      "strict_success": false,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_courtyard",
+      "overlap": 0.9357777777777778,
+      "elapsed_seconds": 0.3456392899970524,
+      "estimated_scale": 1.1001908564559546,
+      "estimated_rotation": [
+        [
+          0.14202611337084892,
+          0.728313440904425,
+          -0.6703641658969597
+        ],
+        [
+          0.9479794581101684,
+          -0.2949904016891174,
+          -0.11964785795175809
+        ],
+        [
+          -0.2848921376976231,
+          -0.6184983384854394,
+          -0.7323225212765404
+        ]
+      ],
+      "estimated_translation": [
+        -14.921919809169735,
+        -9.610240078660532,
+        14.974159679881094
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0359,
+      "bufferx_sphericity": 0.2740851226351701,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3316,
+      "target_points_after_voxelization": 3763,
+      "ransac_inliers": 467,
+      "mutual_correspondences": 938,
+      "consensus_correspondences": 52,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 0.7865452995965044,
+      "rte_extent": 0.022953449292053202,
+      "rse_percent": 2.4813031993166867,
+      "strict_success": true,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_delivery_area",
+      "overlap": 0.9075555555555556,
+      "elapsed_seconds": 0.35718033100420143,
+      "estimated_scale": 1.239907218428738,
+      "estimated_rotation": [
+        [
+          0.6643806046142078,
+          0.2901378951263749,
+          0.688780381561566
+        ],
+        [
+          -0.10721379065566501,
+          0.9490416523068391,
+          -0.2963530753677922
+        ],
+        [
+          -0.7396645288951625,
+          0.12304447975566286,
+          0.6616316503130389
+        ]
+      ],
+      "estimated_translation": [
+        31.313621037068636,
+        7.305410707551887,
+        5.6888734186753265
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0144,
+      "bufferx_sphericity": 0.04546552129446548,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3876,
+      "target_points_after_voxelization": 4059,
+      "ransac_inliers": 394,
+      "mutual_correspondences": 908,
+      "consensus_correspondences": 25,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 3.139192673276129,
+      "rte_extent": 0.10606126463280341,
+      "rse_percent": 6.383207731820639,
+      "strict_success": false,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_electro",
+      "overlap": 0.8753333333333333,
+      "elapsed_seconds": 0.33768533400143497,
+      "estimated_scale": 0.7186423963941473,
+      "estimated_rotation": [
+        [
+          -0.41953217442054686,
+          0.3091626551590012,
+          -0.8534700974732543
+        ],
+        [
+          0.8454771235278856,
+          0.4753005106026117,
+          -0.24342937006842413
+        ],
+        [
+          0.3303955027190612,
+          -0.8237158959713806,
+          -0.4607938091023852
+        ]
+      ],
+      "estimated_translation": [
+        -8.631811244689091,
+        -16.868017560516794,
+        1.6590437944635248
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0297,
+      "bufferx_sphericity": 0.2825530902058699,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3390,
+      "target_points_after_voxelization": 3273,
+      "ransac_inliers": 362,
+      "mutual_correspondences": 924,
+      "consensus_correspondences": 27,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 0.41196901527477836,
+      "rte_extent": 0.011099328222712571,
+      "rse_percent": 2.0400376812518495,
+      "strict_success": true,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_exhibition_hall",
+      "overlap": 0.8706666666666667,
+      "elapsed_seconds": 0.3488317359879147,
+      "estimated_scale": 0.6849492339913562,
+      "estimated_rotation": [
+        [
+          0.15925437873188159,
+          0.7805612317728496,
+          0.6044519884225494
+        ],
+        [
+          0.48586296449004485,
+          -0.5949542086783541,
+          0.6402863963203178
+        ],
+        [
+          0.859403992655182,
+          0.19171242273041442,
+          -0.47399485691214704
+        ]
+      ],
+      "estimated_translation": [
+        2.7816474959854465,
+        0.014348209068521939,
+        2.6807481812965666
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0346,
+      "bufferx_sphericity": 0.8119055667495587,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3761,
+      "target_points_after_voxelization": 3777,
+      "ransac_inliers": 463,
+      "mutual_correspondences": 1075,
+      "consensus_correspondences": 16,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 179.92261791916326,
+      "rte_extent": 0.1765017734845821,
+      "rse_percent": 4.70325453406224,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_facade",
+      "overlap": 0.8673333333333333,
+      "elapsed_seconds": 0.33645761500520166,
+      "estimated_scale": 1.3941686943843636,
+      "estimated_rotation": [
+        [
+          0.3364717015444071,
+          -0.6410663134865208,
+          0.6897976339279611
+        ],
+        [
+          0.9097324859822367,
+          0.41050170183795726,
+          -0.06225075691684473
+        ],
+        [
+          -0.2432562394027971,
+          0.648476934440187,
+          0.721321057151853
+        ]
+      ],
+      "estimated_translation": [
+        41.39585784161055,
+        91.47878861472691,
+        -33.7389372049798
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0276,
+      "bufferx_sphericity": 0.03493830605303764,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3421,
+      "target_points_after_voxelization": 2637,
+      "ransac_inliers": 128,
+      "mutual_correspondences": 723,
+      "consensus_correspondences": 12,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 177.2982342876046,
+      "rte_extent": 0.983638917531047,
+      "rse_percent": 100.94012651543882,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_kicker",
+      "overlap": 0.7695555555555555,
+      "elapsed_seconds": 0.3523846399912145,
+      "estimated_scale": 0.7287897425958159,
+      "estimated_rotation": [
+        [
+          -0.2442796061644699,
+          -0.5980433375856666,
+          -0.7633293131941992
+        ],
+        [
+          0.7252925858866739,
+          0.4098091581174074,
+          -0.5531791019018374
+        ],
+        [
+          0.6436444195904705,
+          -0.688767464600715,
+          0.3336483790422921
+        ]
+      ],
+      "estimated_translation": [
+        -0.5820056741396081,
+        4.832027813299004,
+        0.24533457188632657
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0229,
+      "bufferx_sphericity": 0.11591007195826959,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3734,
+      "target_points_after_voxelization": 3805,
+      "ransac_inliers": 425,
+      "mutual_correspondences": 999,
+      "consensus_correspondences": 61,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 1.0891330713068605,
+      "rte_extent": 0.03583882633533266,
+      "rse_percent": 9.173966314607574,
+      "strict_success": true,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_lecture_room",
+      "overlap": 0.9406666666666667,
+      "elapsed_seconds": 0.3501888879982289,
+      "estimated_scale": 1.8748924461330672,
+      "estimated_rotation": [
+        [
+          -0.7768106067568625,
+          0.2681473897487933,
+          -0.5697914167490978
+        ],
+        [
+          -0.43762870635875156,
+          -0.8804885086131322,
+          0.1822665673429658
+        ],
+        [
+          -0.452820490482488,
+          0.3909436833754078,
+          0.8013218079074527
+        ]
+      ],
+      "estimated_translation": [
+        -28.57084532419672,
+        -0.34332002814259654,
+        2.083734681755627
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0102,
+      "bufferx_sphericity": 0.01738303307406167,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 4092,
+      "target_points_after_voxelization": 3963,
+      "ransac_inliers": 318,
+      "mutual_correspondences": 897,
+      "consensus_correspondences": 9,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 1.4846432283216477,
+      "rte_extent": 0.2513447445850978,
+      "rse_percent": 23.724364100050586,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_living_room",
+      "overlap": 0.738,
+      "elapsed_seconds": 0.34997298699454404,
+      "estimated_scale": 1.190481104321118,
+      "estimated_rotation": [
+        [
+          -0.8970241687904705,
+          0.29238176464420385,
+          0.3314521749955903
+        ],
+        [
+          0.3394788649630547,
+          -0.024428823561275827,
+          0.940296406896681
+        ],
+        [
+          0.2830225094390246,
+          0.9559896109701994,
+          -0.0773441844477269
+        ]
+      ],
+      "estimated_translation": [
+        -3.526354000770568,
+        -2.5517941223920833,
+        5.268084536943927
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0229,
+      "bufferx_sphericity": 0.11620306778005844,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3774,
+      "target_points_after_voxelization": 3537,
+      "ransac_inliers": 510,
+      "mutual_correspondences": 1001,
+      "consensus_correspondences": 136,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 0.45385419612072747,
+      "rte_extent": 0.011652138627068409,
+      "rse_percent": 0.8963145134605721,
+      "strict_success": true,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_observatory",
+      "overlap": 0.8335555555555556,
+      "elapsed_seconds": 0.34053314599441364,
+      "estimated_scale": 0.9904503102951219,
+      "estimated_rotation": [
+        [
+          -0.6609921667259567,
+          -0.39510033409712314,
+          -0.6379538239741703
+        ],
+        [
+          -0.23149859679941112,
+          0.9160598203852864,
+          -0.327479472876668
+        ],
+        [
+          0.713791114547407,
+          -0.06877595126218386,
+          -0.6969735384655236
+        ]
+      ],
+      "estimated_translation": [
+        3.176021742113188,
+        17.471206945336565,
+        -13.844283785800563
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0281,
+      "bufferx_sphericity": 0.21446384160577622,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3444,
+      "target_points_after_voxelization": 3475,
+      "ransac_inliers": 491,
+      "mutual_correspondences": 1026,
+      "consensus_correspondences": 60,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 0.701258203009433,
+      "rte_extent": 0.16472797386632065,
+      "rse_percent": 14.518783911311772,
+      "strict_success": false,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_office",
+      "overlap": 0.7893333333333333,
+      "elapsed_seconds": 0.3268183980108006,
+      "estimated_scale": 0.7418485797734313,
+      "estimated_rotation": [
+        [
+          -0.9715432213744335,
+          0.18688098573049522,
+          0.14553098011690385
+        ],
+        [
+          -0.2253736734476868,
+          -0.5403242838278061,
+          -0.8107134978663325
+        ],
+        [
+          -0.07287301501985288,
+          -0.8204420549181808,
+          0.5670664495485072
+        ]
+      ],
+      "estimated_translation": [
+        -1.7954560144004466,
+        -2.2298463680030487,
+        -0.7827526878588544
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0585,
+      "bufferx_sphericity": 0.2512224283040518,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 2529,
+      "target_points_after_voxelization": 2664,
+      "ransac_inliers": 338,
+      "mutual_correspondences": 998,
+      "consensus_correspondences": 24,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 1.0397471118234853,
+      "rte_extent": 0.003334371256992594,
+      "rse_percent": 4.1198716647343865,
+      "strict_success": true,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_old_computer",
+      "overlap": 0.8862222222222222,
+      "elapsed_seconds": 0.35131759000068996,
+      "estimated_scale": 0.9072095696269564,
+      "estimated_rotation": [
+        [
+          -0.6211769701277896,
+          -0.3178682239636665,
+          0.7163092655948571
+        ],
+        [
+          0.6858584874216553,
+          0.22168881973848145,
+          0.693146595198042
+        ],
+        [
+          -0.3791270328195263,
+          0.9218534912865187,
+          0.08030462993077289
+        ]
+      ],
+      "estimated_translation": [
+        3.996966454231665,
+        3.098539542097708,
+        -4.456961481528307
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0222,
+      "bufferx_sphericity": 0.055415196544583566,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3737,
+      "target_points_after_voxelization": 3770,
+      "ransac_inliers": 445,
+      "mutual_correspondences": 962,
+      "consensus_correspondences": 32,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 0.8056062099230148,
+      "rte_extent": 0.007128494661753068,
+      "rse_percent": 1.9535150133843104,
+      "strict_success": true,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_playground",
+      "overlap": 0.8802222222222222,
+      "elapsed_seconds": 0.339736477995757,
+      "estimated_scale": 1.0085974278027956,
+      "estimated_rotation": [
+        [
+          0.7360597093971215,
+          -0.47708269261735936,
+          0.4802168349893565
+        ],
+        [
+          -0.42753742772544023,
+          -0.8776607206963676,
+          -0.21661811383318286
+        ],
+        [
+          0.5248122065045165,
+          -0.04586680446359616,
+          -0.8499814022389893
+        ]
+      ],
+      "estimated_translation": [
+        -6.95682879628022,
+        -4.656178575197563,
+        8.512477321013098
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0233,
+      "bufferx_sphericity": 0.049211929637826696,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3582,
+      "target_points_after_voxelization": 3749,
+      "ransac_inliers": 411,
+      "mutual_correspondences": 1025,
+      "consensus_correspondences": 19,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 0.3583686617008626,
+      "rte_extent": 0.06383876994720147,
+      "rse_percent": 11.731195503586612,
+      "strict_success": false,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_relief",
+      "overlap": 0.9108888888888889,
+      "elapsed_seconds": 0.3286509710014798,
+      "estimated_scale": 1.2357514543559678,
+      "estimated_rotation": [
+        [
+          -0.8224013649505295,
+          -0.532544248950455,
+          0.2001315013617327
+        ],
+        [
+          -0.5141916668844987,
+          0.8463244489879037,
+          0.139075004051275
+        ],
+        [
+          -0.243439776195358,
+          0.011469522880982273,
+          -0.9698481970962446
+        ]
+      ],
+      "estimated_translation": [
+        0.14157502860374294,
+        2.357768700052253,
+        15.507715145046541
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0301,
+      "bufferx_sphericity": 0.1256184928596876,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3037,
+      "target_points_after_voxelization": 2836,
+      "ransac_inliers": 291,
+      "mutual_correspondences": 944,
+      "consensus_correspondences": 25,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 10.461940360412488,
+      "rte_extent": 0.20172942381416348,
+      "rse_percent": 28.12781251279133,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_relief_2",
+      "overlap": 0.8784444444444445,
+      "elapsed_seconds": 0.33489838599052746,
+      "estimated_scale": 1.3495851989396126,
+      "estimated_rotation": [
+        [
+          0.6058975635818946,
+          0.07363928338078282,
+          -0.7921271352432571
+        ],
+        [
+          0.5384804940969267,
+          0.6949782452056654,
+          0.4764913390272527
+        ],
+        [
+          0.5855996071742662,
+          -0.7152499525578591,
+          0.3814323078127052
+        ]
+      ],
+      "estimated_translation": [
+        6.659098898880428,
+        15.543900594861636,
+        4.633463731697422
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0273,
+      "bufferx_sphericity": 0.11993947776754162,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3062,
+      "target_points_after_voxelization": 2980,
+      "ransac_inliers": 552,
+      "mutual_correspondences": 1007,
+      "consensus_correspondences": 45,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 0.9497196310474879,
+      "rte_extent": 0.033896229275454375,
+      "rse_percent": 4.162030612484113,
+      "strict_success": true,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_terrace",
+      "overlap": 0.8433333333333334,
+      "elapsed_seconds": 0.34684700300567783,
+      "estimated_scale": 0.765424462675458,
+      "estimated_rotation": [
+        [
+          -0.6182647255443554,
+          0.619032169703427,
+          0.484301457792387
+        ],
+        [
+          -0.048089307862978915,
+          -0.644822441874027,
+          0.7628180890126272
+        ],
+        [
+          0.7844973853473464,
+          0.4483337945413939,
+          0.4284397986360422
+        ]
+      ],
+      "estimated_translation": [
+        -2.6966710076097407,
+        16.221420148682324,
+        -0.47219815741581433
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0122,
+      "bufferx_sphericity": 0.044366344883446054,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 4105,
+      "target_points_after_voxelization": 3998,
+      "ransac_inliers": 616,
+      "mutual_correspondences": 978,
+      "consensus_correspondences": 74,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 0.6100929147500626,
+      "rte_extent": 0.02688736501424506,
+      "rse_percent": 5.1451510705749826,
+      "strict_success": true,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_terrains",
+      "overlap": 0.9008888888888889,
+      "elapsed_seconds": 0.3372333580045961,
+      "estimated_scale": 1.2271883817204714,
+      "estimated_rotation": [
+        [
+          -0.043843997320063645,
+          -0.23044209968525897,
+          0.9720978050544336
+        ],
+        [
+          0.08128709108893128,
+          -0.9706301065114322,
+          -0.22642792485889535
+        ],
+        [
+          0.9957259224913738,
+          0.06909149749610885,
+          0.06128827173650053
+        ]
+      ],
+      "estimated_translation": [
+        -7.504482288604481,
+        -0.255023063170548,
+        -8.113782101201078
+      ],
+      "bufferx_voxel_in_canonical_frame": 0.0161,
+      "bufferx_sphericity": 0.022537241079671807,
+      "bufferx_aligned_z": false,
+      "source_points_after_voxelization": 3479,
+      "target_points_after_voxelization": 3527,
+      "ransac_inliers": 532,
+      "mutual_correspondences": 966,
+      "consensus_correspondences": 44,
+      "scales_used": 3,
+      "bufferx_stage_seconds": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rre_deg": 0.7404853089120302,
+      "rte_extent": 0.04230100324422074,
+      "rse_percent": 4.141941617352307,
+      "strict_success": true,
+      "success": true
+    }
+  ]
+}

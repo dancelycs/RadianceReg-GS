@@ -1,0 +1,525 @@
+{
+  "schema_version": 2,
+  "method": "ICP + observable robust-scale initialization",
+  "implementation": "Open3D 0.19 point-to-point ICP",
+  "protocol": {
+    "dataset": "ScanNet-GSReg official test",
+    "gaussians_per_map": 4500,
+    "input_to_method": "source_means and target_means only",
+    "transform": "source-to-target Sim(3)",
+    "gt_used_for_registration": false,
+    "gt_opened_only_after_pose_frozen": true,
+    "all_attempted_pairs_remain_in_denominator": true,
+    "strict_gate": "RRE < 10 deg, RTE/target_extent < 0.10, RSE < 10%",
+    "loose_gate": "RRE < 15 deg, RTE/target_extent < 0.30, RSE < 20%",
+    "parameters": {
+      "initial_rotation": "identity",
+      "initial_translation": "robust bounding-box center alignment",
+      "initial_scale": "target/source robust extent ratio",
+      "distance_thresholds_over_target_extent": [
+        0.2,
+        0.1,
+        0.05,
+        0.025
+      ],
+      "max_iterations": [
+        80,
+        60,
+        40,
+        30
+      ]
+    }
+  },
+  "attempted_pairs": 13,
+  "valid_pairs": 13,
+  "failed_pairs": 0,
+  "strict_successes": 0,
+  "successes": 0,
+  "median_rre_deg": 133.9899461832635,
+  "median_rte_extent": 0.3969407609691188,
+  "median_rse_percent": 6.84390809017833,
+  "median_elapsed_seconds": 0.032083535988931544,
+  "rows": [
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_1983_Chevrolet_C101431",
+      "overlap": 0.212,
+      "elapsed_seconds": 0.032083535988931544,
+      "estimated_scale": 0.9091534938150794,
+      "estimated_rotation": [
+        [
+          0.5797990438082696,
+          -0.6662493448756197,
+          0.4689828133864253
+        ],
+        [
+          0.07472218199294411,
+          0.6166646313898082,
+          0.7836716965101631
+        ],
+        [
+          -0.8113258681425465,
+          -0.4193286811627622,
+          0.407325168430673
+        ]
+      ],
+      "estimated_translation": [
+        0.2547776967799471,
+        -0.6104320878705847,
+        0.15927234952581004
+      ],
+      "fitness": 0.4706666666666667,
+      "inlier_rmse": 0.025825545626142067,
+      "observable_scale_initializer": 0.9091534938150794,
+      "rre_deg": 170.04579733496442,
+      "rte_extent": 0.32280387499734176,
+      "rse_percent": 9.084651574343361,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_4b05",
+      "overlap": 0.31044444444444447,
+      "elapsed_seconds": 0.03135347100032959,
+      "estimated_scale": 0.9580527725859505,
+      "estimated_rotation": [
+        [
+          0.911925363845377,
+          -0.3558133604242257,
+          -0.2044235390534265
+        ],
+        [
+          0.3967726172184481,
+          0.8916540453140352,
+          0.21800126995220803
+        ],
+        [
+          0.1047073111159589,
+          -0.27991055003120324,
+          0.954298937954004
+        ]
+      ],
+      "estimated_translation": [
+        -0.07623436235354275,
+        -0.007727574261110317,
+        -0.15083641972098794
+      ],
+      "fitness": 0.296,
+      "inlier_rmse": 0.031244112077513604,
+      "observable_scale_initializer": 0.9580527725859505,
+      "rre_deg": 147.58637054660403,
+      "rte_extent": 0.07152548701277665,
+      "rse_percent": 4.194712741097639,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Elephant1608",
+      "overlap": 0.316,
+      "elapsed_seconds": 0.03864860899921041,
+      "estimated_scale": 1.1213489292234375,
+      "estimated_rotation": [
+        [
+          0.5772998170464123,
+          0.239739730873325,
+          -0.7805445424055014
+        ],
+        [
+          0.0266596692212139,
+          0.9498823778770616,
+          0.31146866653919575
+        ],
+        [
+          0.8160969202706663,
+          -0.20061986352173541,
+          0.5419755410397505
+        ]
+      ],
+      "estimated_translation": [
+        -0.30380686188465544,
+        0.19468470332164417,
+        0.8420995276599765
+      ],
+      "fitness": 0.4117777777777778,
+      "inlier_rmse": 0.027076724885487652,
+      "observable_scale_initializer": 1.1213489292234375,
+      "rre_deg": 53.57807558812296,
+      "rte_extent": 0.49990580766247833,
+      "rse_percent": 12.134876178537146,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_F1110000",
+      "overlap": 0.3366564417177914,
+      "elapsed_seconds": 0.027096384001197293,
+      "estimated_scale": 0.9266145337873503,
+      "estimated_rotation": [
+        [
+          0.3571690517345547,
+          0.9235478764350625,
+          -0.13960511600710712
+        ],
+        [
+          -0.5928967959560767,
+          0.10868081610716653,
+          -0.797910940867043
+        ],
+        [
+          -0.721736557081665,
+          0.3677605200977934,
+          0.5863860008811117
+        ]
+      ],
+      "estimated_translation": [
+        0.15377150330269823,
+        -0.15951496875836418,
+        -0.49351676182492676
+      ],
+      "fitness": 0.6628323108384458,
+      "inlier_rmse": 0.01781198275160976,
+      "observable_scale_initializer": 0.9266145337873503,
+      "rre_deg": 173.17307035849106,
+      "rte_extent": 0.5342129153644448,
+      "rse_percent": 7.3385482894365195,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Figura_San_Juan260d",
+      "overlap": 0.1565486954275381,
+      "elapsed_seconds": 0.015230303994030692,
+      "estimated_scale": 0.741548994864123,
+      "estimated_rotation": [
+        [
+          0.8357994382941619,
+          0.2573868664721783,
+          0.484965256399695
+        ],
+        [
+          -0.26520958516491805,
+          0.9626852608971067,
+          -0.053860601446183015
+        ],
+        [
+          -0.4807319158157081,
+          -0.08360077403425406,
+          0.8728732643958412
+        ]
+      ],
+      "estimated_translation": [
+        0.04112135150070558,
+        -0.27513563468869595,
+        0.35003799408047903
+      ],
+      "fitness": 0.33660552828726426,
+      "inlier_rmse": 0.02262966213562473,
+      "observable_scale_initializer": 0.741548994864123,
+      "rre_deg": 128.10162545803016,
+      "rte_extent": 0.40009390338112943,
+      "rse_percent": 25.845096850811665,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Hl_Maximilian09f0",
+      "overlap": 0.3313333333333333,
+      "elapsed_seconds": 0.03329004600527696,
+      "estimated_scale": 1.0050434805207369,
+      "estimated_rotation": [
+        [
+          0.9679051089555792,
+          0.22132290712130973,
+          0.119062466130632
+        ],
+        [
+          -0.1925747710808772,
+          0.9575579759631065,
+          -0.21447069779483516
+        ],
+        [
+          -0.16147649240952203,
+          0.18465885695746317,
+          0.9694464652296779
+        ]
+      ],
+      "estimated_translation": [
+        -0.30000712845007765,
+        -0.21555721385021182,
+        -0.621417399381355
+      ],
+      "fitness": 0.5646666666666667,
+      "inlier_rmse": 0.022046768614089336,
+      "observable_scale_initializer": 1.0050434805207369,
+      "rre_deg": 178.4303258271983,
+      "rte_extent": 0.4379028852221086,
+      "rse_percent": 0.5043497797459162,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Hunter_Boy_With_Rabbit_Figurine0a5b",
+      "overlap": 0.3322222222222222,
+      "elapsed_seconds": 0.028870080001070164,
+      "estimated_scale": 0.9572720130875262,
+      "estimated_rotation": [
+        [
+          0.26322478070318744,
+          -0.21914710274799265,
+          0.9395143757180913
+        ],
+        [
+          0.6172696781868073,
+          0.7866808126965976,
+          0.010556672117836055
+        ],
+        [
+          -0.7414113967393196,
+          0.5771549586482055,
+          0.34234674599428727
+        ]
+      ],
+      "estimated_translation": [
+        0.17286872992106617,
+        -0.7172517430693373,
+        -0.29341341365563745
+      ],
+      "fitness": 0.41355555555555557,
+      "inlier_rmse": 0.03213796103103268,
+      "observable_scale_initializer": 0.9572720130875262,
+      "rre_deg": 130.53193331878123,
+      "rte_extent": 0.5405302512483807,
+      "rse_percent": 4.272798163172986,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_MiG_23_Desert_Camo089f",
+      "overlap": 0.20933333333333334,
+      "elapsed_seconds": 0.03893997300474439,
+      "estimated_scale": 0.9607581258369834,
+      "estimated_rotation": [
+        [
+          0.2051118992816233,
+          -0.419733973629759,
+          0.8841676878025465
+        ],
+        [
+          0.8541299367586068,
+          0.5178675553458981,
+          0.047699541432265014
+        ],
+        [
+          -0.477902877063817,
+          0.7454103477287325,
+          0.46472815020515784
+        ]
+      ],
+      "estimated_translation": [
+        -0.5246435903764962,
+        0.38555903086593424,
+        -0.10517549183273693
+      ],
+      "fitness": 0.516,
+      "inlier_rmse": 0.019297228299108918,
+      "observable_scale_initializer": 0.9607581258369834,
+      "rre_deg": 163.7661235955774,
+      "rte_extent": 0.818044448045567,
+      "rse_percent": 3.9241828816342306,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Park_Bench0b05",
+      "overlap": 0.2833333333333333,
+      "elapsed_seconds": 0.04040438699303195,
+      "estimated_scale": 0.9315608325107869,
+      "estimated_rotation": [
+        [
+          0.4721074727489753,
+          -0.6647251917945491,
+          -0.5790120495881771
+        ],
+        [
+          0.31204077923894424,
+          0.7403043140776852,
+          -0.5954662665927823
+        ],
+        [
+          0.8244665464811456,
+          0.10044870308615797,
+          0.5569245656116942
+        ]
+      ],
+      "estimated_translation": [
+        0.22518959338245853,
+        0.02580242651870928,
+        -0.31288796129023394
+      ],
+      "fitness": 0.454,
+      "inlier_rmse": 0.027059056315543575,
+      "observable_scale_initializer": 0.9315608325107869,
+      "rre_deg": 138.18389827131082,
+      "rte_extent": 0.12431921944282791,
+      "rse_percent": 6.84390809017833,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Teddy1b47",
+      "overlap": 0.25555555555555554,
+      "elapsed_seconds": 0.03568509699834976,
+      "estimated_scale": 0.9615608600932849,
+      "estimated_rotation": [
+        [
+          0.8095722009206908,
+          0.33539292831898115,
+          -0.48177218177272574
+        ],
+        [
+          -0.574456522963132,
+          0.6215366801679642,
+          -0.5326273166398039
+        ],
+        [
+          0.12079964702579445,
+          0.7079574414040882,
+          0.6958474735450683
+        ]
+      ],
+      "estimated_translation": [
+        -0.25512557260057467,
+        0.7475124300999914,
+        -0.20066617647220503
+      ],
+      "fitness": 0.37444444444444447,
+      "inlier_rmse": 0.042100586773269645,
+      "observable_scale_initializer": 0.9615608600932849,
+      "rre_deg": 133.9899461832635,
+      "rte_extent": 0.3969407609691188,
+      "rse_percent": 3.843917273031894,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Tolix_Industrial_Chairs3f2d",
+      "overlap": 0.22977777777777778,
+      "elapsed_seconds": 0.02300221500627231,
+      "estimated_scale": 0.8832798445855755,
+      "estimated_rotation": [
+        [
+          0.7556678983806814,
+          0.6521757299353063,
+          -0.06027308387923168
+        ],
+        [
+          -0.653418987470407,
+          0.7569954638621562,
+          -0.0012224996140422157
+        ],
+        [
+          0.04482916651142847,
+          0.040307381154201474,
+          0.9981811763675058
+        ]
+      ],
+      "estimated_translation": [
+        0.5880769824100389,
+        -0.26925048395628054,
+        0.45091926256283954
+      ],
+      "fitness": 0.32222222222222224,
+      "inlier_rmse": 0.029013247608311882,
+      "observable_scale_initializer": 0.8832798445855755,
+      "rre_deg": 133.5135360634312,
+      "rte_extent": 0.3789498568611726,
+      "rse_percent": 11.672021193920667,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_chair_teacher4659",
+      "overlap": 0.28888888888888886,
+      "elapsed_seconds": 0.02252221199159976,
+      "estimated_scale": 0.9009726172891804,
+      "estimated_rotation": [
+        [
+          0.6486523227997982,
+          -0.6906558950369083,
+          -0.3197570933962416
+        ],
+        [
+          0.6448576580383768,
+          0.7218841103432473,
+          -0.251081524814586
+        ],
+        [
+          0.4042385001403337,
+          -0.04333319610556003,
+          0.9136265479503046
+        ]
+      ],
+      "estimated_translation": [
+        -0.3272910194951838,
+        0.14578912362982152,
+        -0.13949990538861914
+      ],
+      "fitness": 0.368,
+      "inlier_rmse": 0.027535750607319037,
+      "observable_scale_initializer": 0.9009726172891804,
+      "rre_deg": 114.04558807588984,
+      "rte_extent": 0.10239540918162612,
+      "rse_percent": 9.902741901384227,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_elephant_android1a39",
+      "overlap": 0.2591111111111111,
+      "elapsed_seconds": 0.03640165000979323,
+      "estimated_scale": 0.9653036994060297,
+      "estimated_rotation": [
+        [
+          0.08578245802056896,
+          -0.20609076468307116,
+          0.9747655957245949
+        ],
+        [
+          -0.45376103746864305,
+          0.8629303637844445,
+          0.22237829960285774
+        ],
+        [
+          -0.8869849439372466,
+          -0.4613868051550912,
+          -0.019491671489283924
+        ]
+      ],
+      "estimated_translation": [
+        0.07914946269729874,
+        -0.567820574240484,
+        0.5728183070977773
+      ],
+      "fitness": 0.302,
+      "inlier_rmse": 0.0289841629779256,
+      "observable_scale_initializer": 0.9653036994060297,
+      "rre_deg": 129.8373111173569,
+      "rte_extent": 0.1928185794147142,
+      "rse_percent": 3.4696206720179035,
+      "strict_success": false,
+      "success": false
+    }
+  ]
+}

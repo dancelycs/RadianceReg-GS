@@ -1,0 +1,530 @@
+{
+  "schema_version": 2,
+  "method": "FCGF-3DMatch + common Sim(3) solver",
+  "implementation": "official chrischoy/FCGF commit 499813ea35f5, maintained WarpConvNet path",
+  "protocol": {
+    "dataset": "ScanNet-GSReg official test",
+    "gaussians_per_map": 4500,
+    "input_to_method": "source_means and target_means only",
+    "transform": "source-to-target Sim(3)",
+    "gt_used_for_registration": false,
+    "gt_opened_only_after_pose_frozen": true,
+    "all_attempted_pairs_remain_in_denominator": true,
+    "strict_gate": "RRE < 10 deg, RTE/target_extent < 0.10, RSE < 10%",
+    "loose_gate": "RRE < 15 deg, RTE/target_extent < 0.30, RSE < 20%",
+    "parameters": {
+      "checkpoint": "fcgf-3dmatch.pth",
+      "kernel_permutation": "reverse (official converter)",
+      "canonical_extent_m": 4.0,
+      "voxel_m": 0.025,
+      "matching": "mutual nearest descriptor with ratio < 0.95; mutual fallback",
+      "pose_refit": "common 20000-iteration Sim(3) RANSAC",
+      "seed": 20260914
+    }
+  },
+  "attempted_pairs": 13,
+  "valid_pairs": 13,
+  "failed_pairs": 0,
+  "strict_successes": 0,
+  "successes": 0,
+  "median_rre_deg": 150.40946936966972,
+  "median_rte_extent": 0.32335586478586575,
+  "median_rse_percent": 71.08277779422366,
+  "median_elapsed_seconds": 1.4375033430114854,
+  "rows": [
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_1983_Chevrolet_C101431",
+      "overlap": 0.212,
+      "elapsed_seconds": 1.463487979999627,
+      "estimated_scale": 0.24748375928637395,
+      "estimated_rotation": [
+        [
+          0.5145823143897109,
+          -0.6475082727074243,
+          0.562083693494818
+        ],
+        [
+          -0.00004935974287927805,
+          0.6555139326212164,
+          0.7551830782684968
+        ],
+        [
+          -0.8574409829725568,
+          -0.38863160050993684,
+          0.33728391572107413
+        ]
+      ],
+      "estimated_translation": [
+        0.4452154225651009,
+        -1.0745452673487288,
+        -0.38921006354383336
+      ],
+      "source_voxels": 3522,
+      "target_voxels": 3035,
+      "mutual_descriptor_correspondences": 369,
+      "sim3_ransac_inliers": 15,
+      "rre_deg": 173.9125891214095,
+      "rte_extent": 0.7077445765040496,
+      "rse_percent": 75.25162433155813,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_4b05",
+      "overlap": 0.31044444444444447,
+      "elapsed_seconds": 1.4375033430114854,
+      "estimated_scale": 0.6225229179695325,
+      "estimated_rotation": [
+        [
+          0.7020374688539235,
+          -0.7113257161242326,
+          0.034045820676312094
+        ],
+        [
+          0.6494066404210284,
+          0.6198420381550209,
+          -0.44053020681095445
+        ],
+        [
+          0.292257433955493,
+          0.3313782933690382,
+          0.8970919791089285
+        ]
+      ],
+      "estimated_translation": [
+        -0.2446746553107842,
+        0.4497708434498884,
+        0.06717901099319619
+      ],
+      "source_voxels": 3906,
+      "target_voxels": 3901,
+      "mutual_descriptor_correspondences": 575,
+      "sim3_ransac_inliers": 15,
+      "rre_deg": 173.57471542909698,
+      "rte_extent": 0.2537879889407368,
+      "rse_percent": 37.74770170505346,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Elephant1608",
+      "overlap": 0.316,
+      "elapsed_seconds": 1.5251471110095736,
+      "estimated_scale": 0.25274679789677096,
+      "estimated_rotation": [
+        [
+          0.280189974707479,
+          -0.2706850621144297,
+          0.9209903230878859
+        ],
+        [
+          0.9585422781822798,
+          0.027052949364734482,
+          -0.283663249060914
+        ],
+        [
+          0.05186789961572718,
+          0.9622877610563149,
+          0.26704304130734474
+        ]
+      ],
+      "estimated_translation": [
+        -0.522610278247527,
+        0.3755228557424077,
+        0.5847278445970662
+      ],
+      "source_voxels": 4168,
+      "target_voxels": 4230,
+      "mutual_descriptor_correspondences": 776,
+      "sim3_ransac_inliers": 18,
+      "rre_deg": 174.78305199319462,
+      "rte_extent": 0.3500980678835933,
+      "rse_percent": 74.72532398429851,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_F1110000",
+      "overlap": 0.3366564417177914,
+      "elapsed_seconds": 1.3192590559920063,
+      "estimated_scale": 0.2891722272636917,
+      "estimated_rotation": [
+        [
+          -0.16255682833773913,
+          -0.9394074584073167,
+          0.3018093846279124
+        ],
+        [
+          0.6864043038691671,
+          -0.3273984554257926,
+          -0.6493530495921989
+        ],
+        [
+          0.7088190242866359,
+          0.10160648834355775,
+          0.6980341770542698
+        ]
+      ],
+      "estimated_translation": [
+        0.11737047907526822,
+        0.027897003971554517,
+        -0.2380894851062476
+      ],
+      "source_voxels": 3168,
+      "target_voxels": 3261,
+      "mutual_descriptor_correspondences": 352,
+      "sim3_ransac_inliers": 23,
+      "rre_deg": 57.993943819032026,
+      "rte_extent": 0.31875893224788415,
+      "rse_percent": 71.08277779422366,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Figura_San_Juan260d",
+      "overlap": 0.1565486954275381,
+      "elapsed_seconds": 1.4074964949977584,
+      "estimated_scale": 0.6277669737564483,
+      "estimated_rotation": [
+        [
+          0.3171111693304114,
+          0.1771981246586852,
+          -0.9316873568442068
+        ],
+        [
+          -0.5381675838264378,
+          0.8425258451977325,
+          -0.0229314607528634
+        ],
+        [
+          0.780907265944115,
+          0.508675756048282,
+          0.36253664256788665
+        ]
+      ],
+      "estimated_translation": [
+        -0.10113492050781892,
+        -0.19464915096927893,
+        -0.19051476807208934
+      ],
+      "source_voxels": 3499,
+      "target_voxels": 2863,
+      "mutual_descriptor_correspondences": 519,
+      "sim3_ransac_inliers": 14,
+      "rre_deg": 150.40946936966972,
+      "rte_extent": 0.27153296404185034,
+      "rse_percent": 37.22329952358928,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Hl_Maximilian09f0",
+      "overlap": 0.3313333333333333,
+      "elapsed_seconds": 1.523943624997628,
+      "estimated_scale": 0.6508547293941505,
+      "estimated_rotation": [
+        [
+          0.9532779982954273,
+          0.09580478619903765,
+          -0.2865004378831191
+        ],
+        [
+          -0.18742938865141714,
+          0.9313442857156436,
+          -0.31219872795156317
+        ],
+        [
+          0.23692041329446195,
+          0.35131078037284064,
+          0.905786648918059
+        ]
+      ],
+      "estimated_translation": [
+        -0.252050930060212,
+        -0.30408601221171544,
+        -0.3929281611484368
+      ],
+      "source_voxels": 4368,
+      "target_voxels": 4256,
+      "mutual_descriptor_correspondences": 750,
+      "sim3_ransac_inliers": 13,
+      "rre_deg": 176.68521510539296,
+      "rte_extent": 0.32335586478586575,
+      "rse_percent": 34.91452594176406,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Hunter_Boy_With_Rabbit_Figurine0a5b",
+      "overlap": 0.3322222222222222,
+      "elapsed_seconds": 1.3551014399999985,
+      "estimated_scale": 0.34288043734519247,
+      "estimated_rotation": [
+        [
+          -0.9897107305817346,
+          -0.05449875964751989,
+          -0.13229722207306902
+        ],
+        [
+          -0.056900651084793634,
+          0.9982754095211948,
+          0.014440313411322616
+        ],
+        [
+          0.13128208437367084,
+          0.021819531208816433,
+          -0.9911048997862597
+        ]
+      ],
+      "estimated_translation": [
+        0.3802994574440665,
+        0.028698437231888016,
+        -0.41503578803568936
+      ],
+      "source_voxels": 4072,
+      "target_voxels": 3895,
+      "mutual_descriptor_correspondences": 405,
+      "sim3_ransac_inliers": 13,
+      "rre_deg": 158.10428461351398,
+      "rte_extent": 0.42395273927172095,
+      "rse_percent": 65.71195607633244,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_MiG_23_Desert_Camo089f",
+      "overlap": 0.20933333333333334,
+      "elapsed_seconds": 1.3445095430070069,
+      "estimated_scale": 0.27304598777484435,
+      "estimated_rotation": [
+        [
+          -0.5595420473152659,
+          -0.724995658990399,
+          0.40161423248101874
+        ],
+        [
+          0.4956486793180477,
+          -0.6810836343104747,
+          -0.5389410633498908
+        ],
+        [
+          0.6642628124293244,
+          -0.10250062204451603,
+          0.740438072024914
+        ]
+      ],
+      "estimated_translation": [
+        -0.793884874986869,
+        0.5177038021536193,
+        -0.297312720727923
+      ],
+      "source_voxels": 3895,
+      "target_voxels": 3946,
+      "mutual_descriptor_correspondences": 387,
+      "sim3_ransac_inliers": 20,
+      "rre_deg": 97.99649259030758,
+      "rte_extent": 1.0632620732255569,
+      "rse_percent": 72.69539993377003,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Park_Bench0b05",
+      "overlap": 0.2833333333333333,
+      "elapsed_seconds": 1.463738757011015,
+      "estimated_scale": 0.6740538752877733,
+      "estimated_rotation": [
+        [
+          0.7436902440287004,
+          -0.5551234721928076,
+          -0.3725087268201028
+        ],
+        [
+          0.3651078956117177,
+          0.8040345505262361,
+          -0.4692810097607365
+        ],
+        [
+          0.5600187903084285,
+          0.21299383132070937,
+          0.8006326138253488
+        ]
+      ],
+      "estimated_translation": [
+        -0.07917879794272364,
+        -0.2793778302483502,
+        -0.4277504968453782
+      ],
+      "source_voxels": 4011,
+      "target_voxels": 4059,
+      "mutual_descriptor_correspondences": 596,
+      "sim3_ransac_inliers": 15,
+      "rre_deg": 123.17109812038277,
+      "rte_extent": 0.3559462444112393,
+      "rse_percent": 32.59460620597508,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Teddy1b47",
+      "overlap": 0.25555555555555554,
+      "elapsed_seconds": 1.4581527530099265,
+      "estimated_scale": 0.24425229825843944,
+      "estimated_rotation": [
+        [
+          0.21023856916176686,
+          0.397148529013277,
+          -0.8933491982082955
+        ],
+        [
+          -0.5460840897658724,
+          0.8056404139332203,
+          0.22964252729424786
+        ],
+        [
+          0.8109204097452426,
+          0.43956406738961373,
+          0.38625318085228416
+        ]
+      ],
+      "estimated_translation": [
+        -0.3977588381230975,
+        0.7804799841321146,
+        0.16570993803840897
+      ],
+      "source_voxels": 4005,
+      "target_voxels": 3944,
+      "mutual_descriptor_correspondences": 574,
+      "sim3_ransac_inliers": 12,
+      "rre_deg": 157.30538998998972,
+      "rte_extent": 0.43343913962524294,
+      "rse_percent": 75.57477100792967,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_Tolix_Industrial_Chairs3f2d",
+      "overlap": 0.22977777777777778,
+      "elapsed_seconds": 1.2762114319921238,
+      "estimated_scale": 0.28627337354032467,
+      "estimated_rotation": [
+        [
+          0.99580395963747,
+          0.04352104944154636,
+          0.08050088338547376
+        ],
+        [
+          -0.07835848844193775,
+          0.8598968688327185,
+          0.5044178052574875
+        ],
+        [
+          -0.04726966531962999,
+          -0.5086091753273748,
+          0.8596989505131302
+        ]
+      ],
+      "estimated_translation": [
+        0.48469857455478704,
+        -0.1364242982477283,
+        -0.03739003474857386
+      ],
+      "source_voxels": 3264,
+      "target_voxels": 2898,
+      "mutual_descriptor_correspondences": 252,
+      "sim3_ransac_inliers": 31,
+      "rre_deg": 142.2558017579929,
+      "rte_extent": 0.20659715983437948,
+      "rse_percent": 71.37266447795092,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_chair_teacher4659",
+      "overlap": 0.28888888888888886,
+      "elapsed_seconds": 1.3528146790049504,
+      "estimated_scale": 0.6596725689241815,
+      "estimated_rotation": [
+        [
+          0.7579935203560516,
+          0.30231112904777435,
+          0.5779738786070696
+        ],
+        [
+          -0.2597941646904926,
+          0.9527152085764896,
+          -0.15760940117843553
+        ],
+        [
+          -0.5982915803276933,
+          -0.03068733616519648,
+          0.8006906220932495
+        ]
+      ],
+      "estimated_translation": [
+        0.035877111842053916,
+        0.22506027834618023,
+        0.1836510143927261
+      ],
+      "source_voxels": 3648,
+      "target_voxels": 3832,
+      "mutual_descriptor_correspondences": 374,
+      "sim3_ransac_inliers": 17,
+      "rre_deg": 97.030885818014,
+      "rte_extent": 0.20896719175688067,
+      "rse_percent": 34.03274576561027,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "gsa_objaverse_elephant_android1a39",
+      "overlap": 0.2591111111111111,
+      "elapsed_seconds": 1.4585598789999494,
+      "estimated_scale": 0.25046062627540616,
+      "estimated_rotation": [
+        [
+          0.1664777357924396,
+          0.9693918650744746,
+          -0.18045657486734734
+        ],
+        [
+          0.08048109706388491,
+          -0.19575827534859283,
+          -0.9773441004313367
+        ],
+        [
+          -0.9827552882080137,
+          0.14818268981219226,
+          -0.11060711522866598
+        ]
+      ],
+      "estimated_translation": [
+        -0.25687968604851685,
+        -0.6121575755781777,
+        -0.07623560986049432
+      ],
+      "source_voxels": 4139,
+      "target_voxels": 4038,
+      "mutual_descriptor_correspondences": 607,
+      "sim3_ransac_inliers": 21,
+      "rre_deg": 86.58502312368064,
+      "rte_extent": 0.22743904751226338,
+      "rse_percent": 74.95393493678152,
+      "strict_success": false,
+      "success": false
+    }
+  ]
+}

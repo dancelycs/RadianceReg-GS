@@ -1,0 +1,738 @@
+{
+  "schema_version": 2,
+  "method": "GeoTransformer-3DMatch + common Sim(3) solver",
+  "implementation": "official qinzheng93/GeoTransformer commit e7a135af4c31",
+  "protocol": {
+    "dataset": "ScanNet-GSReg official test",
+    "gaussians_per_map": 4500,
+    "input_to_method": "source_means and target_means only",
+    "transform": "source-to-target Sim(3)",
+    "gt_used_for_registration": false,
+    "gt_opened_only_after_pose_frozen": true,
+    "all_attempted_pairs_remain_in_denominator": true,
+    "strict_gate": "RRE < 10 deg, RTE/target_extent < 0.10, RSE < 10%",
+    "loose_gate": "RRE < 15 deg, RTE/target_extent < 0.30, RSE < 20%",
+    "parameters": {
+      "checkpoint": "geotransformer-3dmatch.pth.tar",
+      "canonical_extent_m": 4.0,
+      "model_voxel_m": 0.025,
+      "correspondence_solver": "fixed 20000-iteration weighted Sim(3) RANSAC + Umeyama",
+      "inlier_threshold_over_target_extent": 0.04,
+      "seed": 20260914
+    }
+  },
+  "attempted_pairs": 19,
+  "valid_pairs": 19,
+  "failed_pairs": 0,
+  "strict_successes": 3,
+  "successes": 9,
+  "median_rre_deg": 10.372111213365429,
+  "median_rte_extent": 0.25530430895419415,
+  "median_rse_percent": 15.5276762593483,
+  "median_elapsed_seconds": 1.923440700993524,
+  "rows": [
+    {
+      "status": "ok",
+      "pair": "eth3d_botanical_garden",
+      "overlap": 0.8408888888888889,
+      "elapsed_seconds": 2.22809532500105,
+      "estimated_scale": 0.0884152847190291,
+      "estimated_rotation": [
+        [
+          0.4502515613237881,
+          0.16463371099958912,
+          0.8775928855272217
+        ],
+        [
+          -0.6791812062382888,
+          0.7011850353948406,
+          0.2169157330186988
+        ],
+        [
+          -0.5796433563996006,
+          -0.6937112420458819,
+          0.4275257793875891
+        ]
+      ],
+      "estimated_translation": [
+        -3.816240360625727,
+        -1.8786189209325763,
+        0.7476254837729839
+      ],
+      "model_correspondences": 2484,
+      "sim3_ransac_inliers": 319,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 81.88855502965988,
+      "rte_extent": 0.46982816556869694,
+      "rse_percent": 89.74243328783146,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_boulders",
+      "overlap": 0.9282222222222222,
+      "elapsed_seconds": 1.9005566449923208,
+      "estimated_scale": 1.1898990776982963,
+      "estimated_rotation": [
+        [
+          -0.4445031131887437,
+          -0.46217499786140165,
+          -0.7673403767021056
+        ],
+        [
+          0.7773614886701566,
+          0.2266326121461167,
+          -0.5868106807517615
+        ],
+        [
+          0.4451135790986759,
+          -0.8573400319964308,
+          0.2585381427146196
+        ]
+      ],
+      "estimated_translation": [
+        -4.43018735451161,
+        19.0166102271998,
+        -31.070889048970308
+      ],
+      "model_correspondences": 2825,
+      "sim3_ransac_inliers": 579,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 1.844168023865259,
+      "rte_extent": 0.06585492182269571,
+      "rse_percent": 7.414663678924738,
+      "strict_success": true,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_bridge",
+      "overlap": 0.9431111111111111,
+      "elapsed_seconds": 1.7970979359961348,
+      "estimated_scale": 0.8760093785641206,
+      "estimated_rotation": [
+        [
+          -0.1136464749643315,
+          0.45915361545464206,
+          -0.8810575668723989
+        ],
+        [
+          0.7878435528665433,
+          -0.49863285200199436,
+          -0.36148003418028435
+        ],
+        [
+          -0.6052991119560673,
+          -0.7352164554192784,
+          -0.30507334977986594
+        ]
+      ],
+      "estimated_translation": [
+        20.189101936068717,
+        8.822610741301343,
+        -8.84824822610537
+      ],
+      "model_correspondences": 2564,
+      "sim3_ransac_inliers": 214,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 51.36564486217445,
+      "rte_extent": 0.4780695572392943,
+      "rse_percent": 17.929631239382626,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_courtyard",
+      "overlap": 0.9357777777777778,
+      "elapsed_seconds": 1.883482835997711,
+      "estimated_scale": 1.2530249135398348,
+      "estimated_rotation": [
+        [
+          0.09309372685477965,
+          0.7292397993448196,
+          -0.6778959161049837
+        ],
+        [
+          0.9746950373968067,
+          -0.20572260910821497,
+          -0.08745165622071505
+        ],
+        [
+          -0.20323174479968747,
+          -0.6526005847018804,
+          -0.7299378978738115
+        ]
+      ],
+      "estimated_translation": [
+        -16.311636978959125,
+        -14.33943886856807,
+        16.818820494521628
+      ],
+      "model_correspondences": 2048,
+      "sim3_ransac_inliers": 143,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 4.958790344394752,
+      "rte_extent": 0.1248319978259413,
+      "rse_percent": 11.065599127786886,
+      "strict_success": false,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_delivery_area",
+      "overlap": 0.9075555555555556,
+      "elapsed_seconds": 1.872715020988835,
+      "estimated_scale": 0.37697349070563857,
+      "estimated_rotation": [
+        [
+          -0.7716045546723093,
+          0.3039963067211544,
+          0.55875992761547
+        ],
+        [
+          -0.4523098926139075,
+          0.35542746571369543,
+          -0.8179774310211348
+        ],
+        [
+          -0.44726074302641705,
+          -0.8838877542517708,
+          -0.13674891455225388
+        ]
+      ],
+      "estimated_translation": [
+        8.788106278540392,
+        -4.042799516648047,
+        -9.425112820630615
+      ],
+      "model_correspondences": 2123,
+      "sim3_ransac_inliers": 281,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 95.86581317155621,
+      "rte_extent": 0.7536875419762035,
+      "rse_percent": 67.65592733466903,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_electro",
+      "overlap": 0.8753333333333333,
+      "elapsed_seconds": 1.9265762980066938,
+      "estimated_scale": 0.6177097348848111,
+      "estimated_rotation": [
+        [
+          0.3807239127504769,
+          0.9050631185090332,
+          -0.18949948225436275
+        ],
+        [
+          -0.19084165213108076,
+          -0.12361332108703482,
+          -0.9738065571055237
+        ],
+        [
+          -0.9047810597442052,
+          0.4069158369546921,
+          0.125661193546835
+        ]
+      ],
+      "estimated_translation": [
+        -15.03387874581342,
+        -6.949596136546988,
+        0.7389074261906803
+      ],
+      "model_correspondences": 2050,
+      "sim3_ransac_inliers": 313,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 134.01933043631865,
+      "rte_extent": 0.25530430895419415,
+      "rse_percent": 15.798424004959234,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_exhibition_hall",
+      "overlap": 0.8706666666666667,
+      "elapsed_seconds": 2.134356853013742,
+      "estimated_scale": 0.517228207819626,
+      "estimated_rotation": [
+        [
+          -0.21561194175296045,
+          -0.8496353292500065,
+          -0.48128089289286224
+        ],
+        [
+          -0.46616369832740634,
+          0.5226440982632067,
+          -0.71381689032437
+        ],
+        [
+          0.8580226669122634,
+          0.0704482351863562,
+          -0.5087574561850619
+        ]
+      ],
+      "estimated_translation": [
+        -4.835040614734883,
+        7.908886592617736,
+        4.813247659234526
+      ],
+      "model_correspondences": 1951,
+      "sim3_ransac_inliers": 120,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 8.160875278470732,
+      "rte_extent": 0.34670557729739376,
+      "rse_percent": 28.03822178008002,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_facade",
+      "overlap": 0.8673333333333333,
+      "elapsed_seconds": 1.8405306650092825,
+      "estimated_scale": 0.3258190962997957,
+      "estimated_rotation": [
+        [
+          -0.32143101627444026,
+          0.9435592618827668,
+          -0.07986251368463149
+        ],
+        [
+          0.6334497800907399,
+          0.27694405080860046,
+          0.7225256873113347
+        ],
+        [
+          0.7038632522584014,
+          0.18165327422584754,
+          -0.686715814644788
+        ]
+      ],
+      "estimated_translation": [
+        0.16325815011437506,
+        16.534497597925483,
+        22.698413233610204
+      ],
+      "model_correspondences": 1874,
+      "sim3_ransac_inliers": 205,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 142.79243356047823,
+      "rte_extent": 0.41136204528790893,
+      "rse_percent": 53.04002256302479,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_kicker",
+      "overlap": 0.7695555555555555,
+      "elapsed_seconds": 1.9353038690023823,
+      "estimated_scale": 0.7166129697502525,
+      "estimated_rotation": [
+        [
+          -0.23461075894561345,
+          -0.6109901493918068,
+          -0.7560746187600409
+        ],
+        [
+          0.7470054056237464,
+          0.3843912373892755,
+          -0.5424263089003367
+        ],
+        [
+          0.62204558977286,
+          -0.6920508752718396,
+          0.3662306244425987
+        ]
+      ],
+      "estimated_translation": [
+        -0.6471055319422506,
+        4.705704655385835,
+        0.14096461652110603
+      ],
+      "model_correspondences": 2496,
+      "sim3_ransac_inliers": 542,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 1.6560324829160205,
+      "rte_extent": 0.05236977379929049,
+      "rse_percent": 10.6915068561515,
+      "strict_success": false,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_lecture_room",
+      "overlap": 0.9406666666666667,
+      "elapsed_seconds": 1.7904609560064273,
+      "estimated_scale": 1.7506815986768933,
+      "estimated_rotation": [
+        [
+          0.9008865380992546,
+          0.12077837906800604,
+          0.4169124951608488
+        ],
+        [
+          -0.11946601417367528,
+          0.992404427925061,
+          -0.02934830305467584
+        ],
+        [
+          -0.41729044672625204,
+          -0.02336738291805314,
+          0.9084727010133911
+        ]
+      ],
+      "estimated_translation": [
+        24.352440049332873,
+        -10.532231982828549,
+        7.430131541423819
+      ],
+      "model_correspondences": 2271,
+      "sim3_ransac_inliers": 219,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 154.51561523051967,
+      "rte_extent": 2.072199005686672,
+      "rse_percent": 15.5276762593483,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_living_room",
+      "overlap": 0.738,
+      "elapsed_seconds": 1.923440700993524,
+      "estimated_scale": 0.756088930986442,
+      "estimated_rotation": [
+        [
+          -0.9923160647669149,
+          0.07019782542633474,
+          0.10188764847084325
+        ],
+        [
+          -0.11456318042384506,
+          -0.21024679209209535,
+          -0.9709127479367838
+        ],
+        [
+          -0.04673441233906736,
+          -0.9751248903193878,
+          0.21667335549837424
+        ]
+      ],
+      "estimated_translation": [
+        -2.9151167952845847,
+        -2.5927754384837405,
+        -5.194616729494498
+      ],
+      "model_correspondences": 1470,
+      "sim3_ransac_inliers": 154,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 168.99533029897304,
+      "rte_extent": 1.4891285071056761,
+      "rse_percent": 35.91953177244479,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_observatory",
+      "overlap": 0.8335555555555556,
+      "elapsed_seconds": 1.91381865600124,
+      "estimated_scale": 0.993847052274801,
+      "estimated_rotation": [
+        [
+          -0.7368106560850749,
+          -0.3279446860391372,
+          -0.5912379723750611
+        ],
+        [
+          -0.18843719117252095,
+          0.9394422271010907,
+          -0.28625116056070854
+        ],
+        [
+          0.6493084644931814,
+          -0.09950168258895667,
+          -0.7539880192015481
+        ]
+      ],
+      "estimated_translation": [
+        6.583853820384517,
+        17.61301604697978,
+        -13.616924033592479
+      ],
+      "model_correspondences": 3000,
+      "sim3_ransac_inliers": 532,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 6.469288667421328,
+      "rte_extent": 0.2051642427805165,
+      "rse_percent": 14.225626715898354,
+      "strict_success": false,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_office",
+      "overlap": 0.7893333333333333,
+      "elapsed_seconds": 1.9849835539935157,
+      "estimated_scale": 0.6651565885322638,
+      "estimated_rotation": [
+        [
+          -0.9745278663053741,
+          0.18185025167930052,
+          0.1312475666763735
+        ],
+        [
+          -0.21683552630833164,
+          -0.6146283420355225,
+          -0.7584288731959328
+        ],
+        [
+          -0.05725200716903289,
+          -0.7675692067369817,
+          0.6384040417668718
+        ]
+      ],
+      "estimated_translation": [
+        -1.5753002786014165,
+        -2.151121728239164,
+        -0.756342430311581
+      ],
+      "model_correspondences": 2601,
+      "sim3_ransac_inliers": 350,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 5.531762080866452,
+      "rte_extent": 0.041963378775208594,
+      "rse_percent": 14.031918628194195,
+      "strict_success": false,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_old_computer",
+      "overlap": 0.8862222222222222,
+      "elapsed_seconds": 1.9618346210045274,
+      "estimated_scale": 0.76488111632006,
+      "estimated_rotation": [
+        [
+          -0.8984158465087924,
+          -0.17142775641149283,
+          -0.4043037114269562
+        ],
+        [
+          -0.3083649437514978,
+          -0.4092305423668073,
+          0.8587440973068191
+        ],
+        [
+          -0.3126660010410873,
+          0.89618239634903,
+          0.3147968936744523
+        ]
+      ],
+      "estimated_translation": [
+        -4.121773916217626,
+        7.009163526705937,
+        -2.487513309752813
+      ],
+      "model_correspondences": 2035,
+      "sim3_ransac_inliers": 344,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 72.56800314325619,
+      "rte_extent": 0.4963567744758697,
+      "rse_percent": 17.33563291372905,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_playground",
+      "overlap": 0.8802222222222222,
+      "elapsed_seconds": 1.9475657360017067,
+      "estimated_scale": 0.954364645755795,
+      "estimated_rotation": [
+        [
+          0.8106497398628124,
+          -0.3445725837733157,
+          0.4734096891405338
+        ],
+        [
+          -0.35906118685104793,
+          -0.9311903023844403,
+          -0.06292602674801623
+        ],
+        [
+          0.46251709520564993,
+          -0.11897207763570615,
+          -0.8785918172766984
+        ]
+      ],
+      "estimated_translation": [
+        -5.437234208026338,
+        -5.842707229589589,
+        7.761467315478286
+      ],
+      "model_correspondences": 3386,
+      "sim3_ransac_inliers": 418,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 10.372111213365429,
+      "rte_extent": 0.12126256238954736,
+      "rse_percent": 16.477452735504983,
+      "strict_success": false,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_relief",
+      "overlap": 0.9108888888888889,
+      "elapsed_seconds": 1.909419984993292,
+      "estimated_scale": 1.0610742642411533,
+      "estimated_rotation": [
+        [
+          -0.8366319213727202,
+          -0.5123428670483862,
+          0.19378290617294006
+        ],
+        [
+          -0.45763830118222565,
+          0.8481873260376185,
+          0.2667310353899632
+        ],
+        [
+          -0.3010219484211027,
+          0.13447321864890138,
+          -0.9440883115656967
+        ]
+      ],
+      "estimated_translation": [
+        0.1462161141926912,
+        -0.0694187802732773,
+        13.61432109359544
+      ],
+      "model_correspondences": 3038,
+      "sim3_ransac_inliers": 547,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 3.3589559188360627,
+      "rte_extent": 0.06109946746982801,
+      "rse_percent": 10.016560297469134,
+      "strict_success": false,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_relief_2",
+      "overlap": 0.8784444444444445,
+      "elapsed_seconds": 1.9332539039896801,
+      "estimated_scale": 1.3418969596394859,
+      "estimated_rotation": [
+        [
+          -0.6247797720844915,
+          -0.03257516771492469,
+          0.7801212052254414
+        ],
+        [
+          -0.49699780935447324,
+          -0.7539946467482144,
+          -0.42951746201044094
+        ],
+        [
+          0.6021988159162269,
+          -0.6560723520492083,
+          0.45489081655460384
+        ]
+      ],
+      "estimated_translation": [
+        -11.27380971606538,
+        -11.987331171924021,
+        5.420524983705899
+      ],
+      "model_correspondences": 3028,
+      "sim3_ransac_inliers": 649,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 179.90692647866834,
+      "rte_extent": 1.6374353660133059,
+      "rse_percent": 4.7079948415438055,
+      "strict_success": false,
+      "success": false
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_terrace",
+      "overlap": 0.8433333333333334,
+      "elapsed_seconds": 1.8144215000065742,
+      "estimated_scale": 0.8517568183227496,
+      "estimated_rotation": [
+        [
+          -0.5604921574363291,
+          0.6696144964282199,
+          0.4873037734571235
+        ],
+        [
+          -0.03144235734890949,
+          -0.6051994249061314,
+          0.7954527228299817
+        ],
+        [
+          0.8275626378810935,
+          0.430523033375068,
+          0.3602637896275693
+        ]
+      ],
+      "estimated_translation": [
+        -6.767500329305786,
+        17.171601715584053,
+        -1.0983521794768403
+      ],
+      "model_correspondences": 2353,
+      "sim3_ransac_inliers": 209,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 5.132657552597661,
+      "rte_extent": 0.09220414902840689,
+      "rse_percent": 5.553543512586523,
+      "strict_success": true,
+      "success": true
+    },
+    {
+      "status": "ok",
+      "pair": "eth3d_terrains",
+      "overlap": 0.9008888888888889,
+      "elapsed_seconds": 1.9271950539987301,
+      "estimated_scale": 1.2196087894766388,
+      "estimated_rotation": [
+        [
+          0.023636439425101446,
+          -0.22788017697490076,
+          0.9734022517300809
+        ],
+        [
+          0.11605893575217024,
+          -0.9664653402915611,
+          -0.22907437536134645
+        ],
+        [
+          0.9929610476566427,
+          0.11838653199163066,
+          0.00360373134646165
+        ]
+      ],
+      "estimated_translation": [
+        -7.9580995204574325,
+        -0.49315697952139237,
+        -7.661566220953019
+      ],
+      "model_correspondences": 3091,
+      "sim3_ransac_inliers": 725,
+      "dummy_identity_used_for_unused_eval_diagnostic": true,
+      "rre_deg": 4.011308399563394,
+      "rte_extent": 0.0711199664709743,
+      "rse_percent": 4.733998229563186,
+      "strict_success": true,
+      "success": true
+    }
+  ]
+}

@@ -1,0 +1,1307 @@
+{
+  "experiment": "pose-conditioned native-radiance reassociation",
+  "protocol": {
+    "neighbours": 8,
+    "iterations": 2,
+    "support_retention": 0.8,
+    "ground_truth_used_for_acceptance": false
+  },
+  "accepted_refinements": 4,
+  "summary": {
+    "initial": {
+      "strict_successes": 9,
+      "successes": 17,
+      "median_rre_deg": 6.332094483518656,
+      "median_rte_extent": 0.13431244017496485,
+      "median_rse_percent": 3.0591724189240055
+    },
+    "refined_unconditionally": {
+      "strict_successes": 14,
+      "successes": 18,
+      "median_rre_deg": 4.846047168827811,
+      "median_rte_extent": 0.09280197526777553,
+      "median_rse_percent": 3.4643428271713184
+    },
+    "output": {
+      "strict_successes": 10,
+      "successes": 17,
+      "median_rre_deg": 6.332094483518656,
+      "median_rte_extent": 0.1309166773868912,
+      "median_rse_percent": 3.0591724189240055
+    }
+  },
+  "rows": [
+    {
+      "pair": "reserve_036_scene0305_00",
+      "accepted": true,
+      "local_pair_count": 267,
+      "initial_radiance_score": 0.6482385755448032,
+      "refined_radiance_score": 0.6799641438578331,
+      "initial": {
+        "rre_deg": 2.3385228025037583,
+        "rte_extent": 0.05440805799463554,
+        "rse_percent": 1.0741417089464855,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 2.555695775901684,
+        "rte_extent": 0.05554631740884674,
+        "rse_percent": 0.7752047100316295,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 2.555695775901684,
+        "rte_extent": 0.05554631740884674,
+        "rse_percent": 0.7752047100316295,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.5333051252307149,
+        "rotation": [
+          [
+            -0.533701623943112,
+            -0.2377189951753808,
+            0.811573937440879
+          ],
+          [
+            0.23519162064053345,
+            -0.9635411836076733,
+            -0.12756680239154472
+          ],
+          [
+            0.8123099643491782,
+            0.12279278001874205,
+            0.5701530101598205
+          ]
+        ],
+        "translation": [
+          -1.6290001601609694,
+          1.3846328333827387,
+          0.3353480272504943
+        ]
+      }
+    },
+    {
+      "pair": "reserve_037_scene0267_00",
+      "accepted": false,
+      "local_pair_count": 300,
+      "initial_radiance_score": 0.34058329005221694,
+      "refined_radiance_score": 0.3362323107761999,
+      "initial": {
+        "rre_deg": 7.889235409664453,
+        "rte_extent": 0.24111541489621946,
+        "rse_percent": 9.623784606388142,
+        "strict_success": false,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 6.261521634254939,
+        "rte_extent": 0.239163938379759,
+        "rse_percent": 11.307095351430164,
+        "strict_success": false,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 7.889235409664453,
+        "rte_extent": 0.24111541489621946,
+        "rse_percent": 9.623784606388142,
+        "strict_success": false,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.6805965451068718,
+        "rotation": [
+          [
+            0.5959844658081237,
+            -0.37774404534905986,
+            0.7085985836273823
+          ],
+          [
+            0.7955557357426851,
+            0.39761209905526834,
+            -0.4571604641827386
+          ],
+          [
+            -0.10905772710963224,
+            0.8361902025784504,
+            0.5374870763743906
+          ]
+        ],
+        "translation": [
+          0.43389734489113085,
+          0.44629495086286886,
+          -0.42144911095619636
+        ]
+      }
+    },
+    {
+      "pair": "reserve_038_scene0646_01",
+      "accepted": false,
+      "local_pair_count": 290,
+      "initial_radiance_score": 0.371291098204795,
+      "refined_radiance_score": 0.29128436159850685,
+      "initial": {
+        "rre_deg": 1.631600134802705,
+        "rte_extent": 0.070445902581651,
+        "rse_percent": 0.07513540926908924,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 1.354060926974473,
+        "rte_extent": 0.09818727511986673,
+        "rse_percent": 2.916315055031682,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 1.631600134802705,
+        "rte_extent": 0.070445902581651,
+        "rse_percent": 0.07513540926908924,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.1239902253733405,
+        "rotation": [
+          [
+            -0.04840137171555847,
+            0.25449576441742067,
+            0.9658619016762413
+          ],
+          [
+            0.6160705322329301,
+            0.7687527374379256,
+            -0.1716867146751031
+          ],
+          [
+            -0.7862025225921669,
+            0.5867291833335793,
+            -0.1939960280377529
+          ]
+        ],
+        "translation": [
+          1.6542413330958832,
+          -1.555877138955947,
+          1.098210931975124
+        ]
+      }
+    },
+    {
+      "pair": "reserve_039_scene0256_02",
+      "accepted": false,
+      "local_pair_count": 331,
+      "initial_radiance_score": 0.3355803741044676,
+      "refined_radiance_score": 0.2986317221606054,
+      "initial": {
+        "rre_deg": 15.554744051095279,
+        "rte_extent": 0.13609038793988032,
+        "rse_percent": 1.2356255496563051,
+        "strict_success": false,
+        "success": false
+      },
+      "refined_unconditionally": {
+        "rre_deg": 9.496443120029031,
+        "rte_extent": 0.10120473953145516,
+        "rse_percent": 0.5576596610632034,
+        "strict_success": false,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 15.554744051095279,
+        "rte_extent": 0.13609038793988032,
+        "rse_percent": 1.2356255496563051,
+        "strict_success": false,
+        "success": false
+      },
+      "output_pose": {
+        "scale": 1.0695746867128813,
+        "rotation": [
+          [
+            0.8601501633613791,
+            0.2014208853471679,
+            -0.468584382385239
+          ],
+          [
+            0.29258755728884955,
+            0.5576592693831981,
+            0.7767938340323911
+          ],
+          [
+            0.4177729261083547,
+            -0.8052613030668748,
+            0.4207374668292601
+          ]
+        ],
+        "translation": [
+          0.8788692246557106,
+          0.724322996253318,
+          -0.017030555228305766
+        ]
+      }
+    },
+    {
+      "pair": "reserve_040_scene0073_02",
+      "accepted": false,
+      "local_pair_count": 314,
+      "initial_radiance_score": 0.41367932289410614,
+      "refined_radiance_score": 0.3372308295261165,
+      "initial": {
+        "rre_deg": 1.6684631030028083,
+        "rte_extent": 0.03238883431741305,
+        "rse_percent": 0.6047374793285432,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 1.6209280341878465,
+        "rte_extent": 0.029806441775647754,
+        "rse_percent": 0.5990309894930546,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 1.6684631030028083,
+        "rte_extent": 0.03238883431741305,
+        "rse_percent": 0.6047374793285432,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.5227881875785291,
+        "rotation": [
+          [
+            -0.9080372465468995,
+            0.40113886267713383,
+            -0.12064813191102805
+          ],
+          [
+            -0.39345729651893196,
+            -0.9155940324875118,
+            -0.08293927591479544
+          ],
+          [
+            -0.1437348764202294,
+            -0.027842063920491433,
+            0.9892244966523569
+          ]
+        ],
+        "translation": [
+          1.2787378755734515,
+          -0.5895459563787409,
+          1.071190757445227
+        ]
+      }
+    },
+    {
+      "pair": "reserve_041_scene0247_01",
+      "accepted": false,
+      "local_pair_count": 395,
+      "initial_radiance_score": 0.18168144579306453,
+      "refined_radiance_score": 0.12184806514583013,
+      "initial": {
+        "rre_deg": 3.380098752483201,
+        "rte_extent": 0.07153999714811715,
+        "rse_percent": 1.3189837779933988,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 2.7977246230056814,
+        "rte_extent": 0.07123411136927574,
+        "rse_percent": 0.502774488726232,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 3.380098752483201,
+        "rte_extent": 0.07153999714811715,
+        "rse_percent": 1.3189837779933988,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.7359554324786659,
+        "rotation": [
+          [
+            -0.704771789733179,
+            -0.5084692816471044,
+            -0.49472791918141124
+          ],
+          [
+            -0.6961846449630213,
+            0.3615487716891106,
+            0.6201688687831782
+          ],
+          [
+            -0.1364685477097312,
+            0.7814995043577265,
+            -0.608797881217259
+          ]
+        ],
+        "translation": [
+          1.5135682721412411,
+          -0.8777923255240045,
+          -0.693129310699886
+        ]
+      }
+    },
+    {
+      "pair": "reserve_042_scene0279_02",
+      "accepted": false,
+      "local_pair_count": 102,
+      "initial_radiance_score": 0.15422713125307333,
+      "refined_radiance_score": 0.16315504295060723,
+      "initial": {
+        "rre_deg": 35.8607953605291,
+        "rte_extent": 0.3587498262007138,
+        "rse_percent": 25.052171323711093,
+        "strict_success": false,
+        "success": false
+      },
+      "refined_unconditionally": {
+        "rre_deg": 34.511824586477154,
+        "rte_extent": 0.36247124931971764,
+        "rse_percent": 26.446741294501074,
+        "strict_success": false,
+        "success": false
+      },
+      "output": {
+        "rre_deg": 35.8607953605291,
+        "rte_extent": 0.3587498262007138,
+        "rse_percent": 25.052171323711093,
+        "strict_success": false,
+        "success": false
+      },
+      "output_pose": {
+        "scale": 0.4071108478179078,
+        "rotation": [
+          [
+            -0.6919872417452181,
+            0.5682250413226274,
+            -0.4452796421079044
+          ],
+          [
+            0.1400180521808967,
+            -0.4994529769295285,
+            -0.8549512669735622
+          ],
+          [
+            -0.7082009618217929,
+            -0.6539625572233707,
+            0.2660533244004988
+          ]
+        ],
+        "translation": [
+          2.7930941825960955,
+          1.8969426261476108,
+          -0.0859050388923771
+        ]
+      }
+    },
+    {
+      "pair": "reserve_043_scene0442_00",
+      "accepted": false,
+      "local_pair_count": 185,
+      "initial_radiance_score": 0.03575610431660625,
+      "refined_radiance_score": 0.030568743331846934,
+      "initial": {
+        "rre_deg": 139.840058244651,
+        "rte_extent": 0.6585760157141904,
+        "rse_percent": 55.4203461542903,
+        "strict_success": false,
+        "success": false
+      },
+      "refined_unconditionally": {
+        "rre_deg": 138.90383286000497,
+        "rte_extent": 0.7302705927460984,
+        "rse_percent": 64.51056065297158,
+        "strict_success": false,
+        "success": false
+      },
+      "output": {
+        "rre_deg": 139.840058244651,
+        "rte_extent": 0.6585760157141904,
+        "rse_percent": 55.4203461542903,
+        "strict_success": false,
+        "success": false
+      },
+      "output_pose": {
+        "scale": 0.23933727894399315,
+        "rotation": [
+          [
+            -0.1429452108073879,
+            0.9363604448780769,
+            -0.3206178160598101
+          ],
+          [
+            0.3763160120981168,
+            0.3510348558549098,
+            0.8574151789031342
+          ],
+          [
+            0.9153976872080257,
+            0.0019097755505274594,
+            -0.40254617997385705
+          ]
+        ],
+        "translation": [
+          1.876286489647125,
+          4.323411164289445,
+          0.15113215992540763
+        ]
+      }
+    },
+    {
+      "pair": "reserve_044_scene0166_01",
+      "accepted": false,
+      "local_pair_count": 416,
+      "initial_radiance_score": 0.2873526039720937,
+      "refined_radiance_score": 0.25094714406989826,
+      "initial": {
+        "rre_deg": 2.138770101562552,
+        "rte_extent": 0.02661129711385238,
+        "rse_percent": 1.763756102619718,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 1.300316634819404,
+        "rte_extent": 0.029292496186443383,
+        "rse_percent": 1.9330762608947283,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 2.138770101562552,
+        "rte_extent": 0.02661129711385238,
+        "rse_percent": 1.763756102619718,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.2464935770500494,
+        "rotation": [
+          [
+            0.42331273528443203,
+            0.3958290588987883,
+            0.8149390678310322
+          ],
+          [
+            -0.7026210210276704,
+            0.7112975283950269,
+            0.019481450386445
+          ],
+          [
+            -0.5719528205683111,
+            -0.5808400659651718,
+            0.5792191198618434
+          ]
+        ],
+        "translation": [
+          -0.09160950392832007,
+          -1.4353962601751094,
+          0.8146761827486451
+        ]
+      }
+    },
+    {
+      "pair": "reserve_045_scene0647_01",
+      "accepted": false,
+      "local_pair_count": 362,
+      "initial_radiance_score": 0.29962468740437304,
+      "refined_radiance_score": 0.13770846743205473,
+      "initial": {
+        "rre_deg": 4.5024177862150605,
+        "rte_extent": 0.13253449241004936,
+        "rse_percent": 3.388256459531136,
+        "strict_success": false,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 3.290504942632086,
+        "rte_extent": 0.08127606215376781,
+        "rse_percent": 2.8219512704907856,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 4.5024177862150605,
+        "rte_extent": 0.13253449241004936,
+        "rse_percent": 3.388256459531136,
+        "strict_success": false,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.2472223181239934,
+        "rotation": [
+          [
+            0.0619200518422619,
+            0.7783240267632223,
+            0.6248020618907517
+          ],
+          [
+            0.9613766478568512,
+            -0.21471550272407158,
+            0.17219812381519473
+          ],
+          [
+            0.26818062595082354,
+            0.5900075950808027,
+            -0.7615577388560846
+          ]
+        ],
+        "translation": [
+          -5.659929165073892,
+          1.5184663825658147,
+          -0.42320646323011757
+        ]
+      }
+    },
+    {
+      "pair": "reserve_046_scene0177_02",
+      "accepted": false,
+      "local_pair_count": 367,
+      "initial_radiance_score": 0.12541966184812756,
+      "refined_radiance_score": 0.058621480203849954,
+      "initial": {
+        "rre_deg": 6.309988366512035,
+        "rte_extent": 0.29171512853321413,
+        "rse_percent": 3.6415906095226047,
+        "strict_success": false,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 4.229484146722874,
+        "rte_extent": 0.23358321903888676,
+        "rse_percent": 5.3458706265065326,
+        "strict_success": false,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 6.309988366512035,
+        "rte_extent": 0.29171512853321413,
+        "rse_percent": 3.6415906095226047,
+        "strict_success": false,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.8493041953165703,
+        "rotation": [
+          [
+            -0.6382754685786548,
+            0.7663990609631404,
+            -0.07236646713441483
+          ],
+          [
+            -0.508059786328725,
+            -0.49000996822520315,
+            -0.7083540672259501
+          ],
+          [
+            -0.5783421822124933,
+            -0.4153585323485637,
+            0.7021378852326218
+          ]
+        ],
+        "translation": [
+          0.6289704705535168,
+          -0.14848106321333976,
+          1.9235200684206721
+        ]
+      }
+    },
+    {
+      "pair": "reserve_047_scene0395_00",
+      "accepted": false,
+      "local_pair_count": 370,
+      "initial_radiance_score": 0.39118157686877697,
+      "refined_radiance_score": 0.344751589507327,
+      "initial": {
+        "rre_deg": 7.781721621151316,
+        "rte_extent": 0.1781974360823457,
+        "rse_percent": 4.570413115710759,
+        "strict_success": false,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 3.6173080890739664,
+        "rte_extent": 0.0795706749771681,
+        "rse_percent": 1.17278650028112,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 7.781721621151316,
+        "rte_extent": 0.1781974360823457,
+        "rse_percent": 4.570413115710759,
+        "strict_success": false,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.5375323203586488,
+        "rotation": [
+          [
+            -0.9039467399655952,
+            -0.42763029148407494,
+            0.0035531831951899906
+          ],
+          [
+            -0.4139398406817111,
+            0.8770333762573645,
+            0.24385705900590277
+          ],
+          [
+            -0.10739692547728141,
+            0.2189629894202539,
+            -0.9698046760364551
+          ]
+        ],
+        "translation": [
+          -1.2684522781234566,
+          -0.931793719015058,
+          1.0468492230113173
+        ]
+      }
+    },
+    {
+      "pair": "reserve_048_scene0475_01",
+      "accepted": true,
+      "local_pair_count": 188,
+      "initial_radiance_score": 0.1570195034095804,
+      "refined_radiance_score": 0.18798974580541566,
+      "initial": {
+        "rre_deg": 12.242554275912507,
+        "rte_extent": 0.7582433952850706,
+        "rse_percent": 11.260378760535449,
+        "strict_success": false,
+        "success": false
+      },
+      "refined_unconditionally": {
+        "rre_deg": 7.129477586493424,
+        "rte_extent": 0.5213207066275808,
+        "rse_percent": 12.395237974976414,
+        "strict_success": false,
+        "success": false
+      },
+      "output": {
+        "rre_deg": 7.129477586493424,
+        "rte_extent": 0.5213207066275808,
+        "rse_percent": 12.395237974976414,
+        "strict_success": false,
+        "success": false
+      },
+      "output_pose": {
+        "scale": 1.4060338812839928,
+        "rotation": [
+          [
+            -0.16543776469522023,
+            0.3289155887166792,
+            0.9297552804430895
+          ],
+          [
+            0.34361840295672413,
+            -0.8644482232559498,
+            0.3669545781961324
+          ],
+          [
+            0.9244223813615282,
+            0.3801891697678811,
+            0.02999093244782275
+          ]
+        ],
+        "translation": [
+          -2.0781961435980687,
+          -4.810170727320054,
+          -2.3001193870811507
+        ]
+      }
+    },
+    {
+      "pair": "reserve_049_scene0092_02",
+      "accepted": false,
+      "local_pair_count": 359,
+      "initial_radiance_score": 0.28262702934438977,
+      "refined_radiance_score": 0.22923465829521644,
+      "initial": {
+        "rre_deg": 5.10320374992799,
+        "rte_extent": 0.09703367273927956,
+        "rse_percent": 6.8376000767175205,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 5.4626101909327485,
+        "rte_extent": 0.0929351140810103,
+        "rse_percent": 7.723318203167628,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 5.10320374992799,
+        "rte_extent": 0.09703367273927956,
+        "rse_percent": 6.8376000767175205,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.6661028300346473,
+        "rotation": [
+          [
+            0.6157937444456275,
+            0.6066348601057137,
+            -0.5027844576020173
+          ],
+          [
+            0.22729105840355618,
+            -0.7477692627438653,
+            -0.6238428523797382
+          ],
+          [
+            -0.7544115846614659,
+            0.2698801144953395,
+            -0.5983543137043121
+          ]
+        ],
+        "translation": [
+          0.720393022045285,
+          -1.888628287803465,
+          -0.7449338913873478
+        ]
+      }
+    },
+    {
+      "pair": "reserve_050_scene0054_00",
+      "accepted": false,
+      "local_pair_count": 97,
+      "initial_radiance_score": 0.1429227888184115,
+      "refined_radiance_score": 0.09766529626641432,
+      "initial": {
+        "rre_deg": 18.982005481627283,
+        "rte_extent": 0.6930379110156132,
+        "rse_percent": 2.730088378316875,
+        "strict_success": false,
+        "success": false
+      },
+      "refined_unconditionally": {
+        "rre_deg": 15.937323659619642,
+        "rte_extent": 0.5947383708879034,
+        "rse_percent": 4.05826366603862,
+        "strict_success": false,
+        "success": false
+      },
+      "output": {
+        "rre_deg": 18.982005481627283,
+        "rte_extent": 0.6930379110156132,
+        "rse_percent": 2.730088378316875,
+        "strict_success": false,
+        "success": false
+      },
+      "output_pose": {
+        "scale": 1.0664317353847583,
+        "rotation": [
+          [
+            -0.6600942306504196,
+            -0.330733836248224,
+            -0.6744558815983175
+          ],
+          [
+            -0.24081047762461383,
+            -0.7573039361936014,
+            0.6070428832396308
+          ],
+          [
+            -0.7115377154643566,
+            0.5631215479682976,
+            0.42024778605669416
+          ]
+        ],
+        "translation": [
+          -0.039947253001572314,
+          1.633468026702085,
+          1.1020103233486163
+        ]
+      }
+    },
+    {
+      "pair": "reserve_051_scene0095_01",
+      "accepted": false,
+      "local_pair_count": 231,
+      "initial_radiance_score": 0.04621595685816445,
+      "refined_radiance_score": 0.01394131808005731,
+      "initial": {
+        "rre_deg": 44.33372794715809,
+        "rte_extent": 0.9658085024867283,
+        "rse_percent": 33.14584287042002,
+        "strict_success": false,
+        "success": false
+      },
+      "refined_unconditionally": {
+        "rre_deg": 41.727777939866016,
+        "rte_extent": 0.97513639679819,
+        "rse_percent": 35.63670304231598,
+        "strict_success": false,
+        "success": false
+      },
+      "output": {
+        "rre_deg": 44.33372794715809,
+        "rte_extent": 0.9658085024867283,
+        "rse_percent": 33.14584287042002,
+        "strict_success": false,
+        "success": false
+      },
+      "output_pose": {
+        "scale": 0.6703223023140412,
+        "rotation": [
+          [
+            0.9968442255086892,
+            0.0762342120520135,
+            -0.022134474983380475
+          ],
+          [
+            0.054968593559535026,
+            -0.46172234007412005,
+            0.8853196792111678
+          ],
+          [
+            0.05727166657316618,
+            -0.8837425109098731,
+            -0.46445573590886435
+          ]
+        ],
+        "translation": [
+          -0.8280575581462775,
+          4.096818641527507,
+          1.1107591226799587
+        ]
+      }
+    },
+    {
+      "pair": "reserve_052_scene0666_00",
+      "accepted": false,
+      "local_pair_count": 295,
+      "initial_radiance_score": 0.02250804201228429,
+      "refined_radiance_score": 0.008135238150487436,
+      "initial": {
+        "rre_deg": 155.57778404923081,
+        "rte_extent": 2.953445793027702,
+        "rse_percent": 48.28046643601836,
+        "strict_success": false,
+        "success": false
+      },
+      "refined_unconditionally": {
+        "rre_deg": 158.4605413891508,
+        "rte_extent": 2.9394425552353494,
+        "rse_percent": 51.053955419676456,
+        "strict_success": false,
+        "success": false
+      },
+      "output": {
+        "rre_deg": 155.57778404923081,
+        "rte_extent": 2.953445793027702,
+        "rse_percent": 48.28046643601836,
+        "strict_success": false,
+        "success": false
+      },
+      "output_pose": {
+        "scale": 0.38995539638752347,
+        "rotation": [
+          [
+            -0.0818181735406247,
+            0.4328099927317349,
+            -0.8977646109476766
+          ],
+          [
+            -0.04086053277898513,
+            -0.9014840359374541,
+            -0.43087927521631414
+          ],
+          [
+            -0.9958093207735577,
+            0.001429384998733435,
+            0.09144262419152115
+          ]
+        ],
+        "translation": [
+          6.186809115381139,
+          3.8031826721552,
+          3.1412635818553247
+        ]
+      }
+    },
+    {
+      "pair": "reserve_053_scene0404_01",
+      "accepted": false,
+      "local_pair_count": 520,
+      "initial_radiance_score": 0.3133683300286093,
+      "refined_radiance_score": 0.26958395852190886,
+      "initial": {
+        "rre_deg": 2.4917392694466765,
+        "rte_extent": 0.10021725781956362,
+        "rse_percent": 1.0349770630259547,
+        "strict_success": false,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 1.7668466505917595,
+        "rte_extent": 0.07582239034007007,
+        "rse_percent": 0.3389775514369364,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 2.4917392694466765,
+        "rte_extent": 0.10021725781956362,
+        "rse_percent": 1.0349770630259547,
+        "strict_success": false,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.9098494266596273,
+        "rotation": [
+          [
+            -0.38480492267677274,
+            -0.7926338424674192,
+            -0.47292363364401385
+          ],
+          [
+            -0.7876374036595414,
+            0.5491177132261631,
+            -0.2794585074348705
+          ],
+          [
+            0.4811990147955195,
+            0.26495533358776535,
+            -0.8356112609121641
+          ]
+        ],
+        "translation": [
+          -0.09072962506914717,
+          -1.075405248092284,
+          -0.19976525765482023
+        ]
+      }
+    },
+    {
+      "pair": "reserve_054_scene0550_00",
+      "accepted": false,
+      "local_pair_count": 237,
+      "initial_radiance_score": 0.5193004600078222,
+      "refined_radiance_score": 0.4722122182642777,
+      "initial": {
+        "rre_deg": 2.583220286518123,
+        "rte_extent": 0.06056048705719797,
+        "rse_percent": 1.2095478865421172,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 0.27143877564722113,
+        "rte_extent": 0.0436151476435783,
+        "rse_percent": 4.012370599310955,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 2.583220286518123,
+        "rte_extent": 0.06056048705719797,
+        "rse_percent": 1.2095478865421172,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.5286720381612176,
+        "rotation": [
+          [
+            0.8575988592907305,
+            -0.455657966371393,
+            -0.23853723865577908
+          ],
+          [
+            0.14503022086520526,
+            0.6592187746493462,
+            -0.7378325299047234
+          ],
+          [
+            0.4934474962739476,
+            0.5981692275870603,
+            0.631429444664146
+          ]
+        ],
+        "translation": [
+          1.0232680165630297,
+          0.17989469075319242,
+          -0.6432649116633988
+        ]
+      }
+    },
+    {
+      "pair": "reserve_055_scene0520_00",
+      "accepted": true,
+      "local_pair_count": 259,
+      "initial_radiance_score": 0.3403466225047047,
+      "refined_radiance_score": 0.38094804672261406,
+      "initial": {
+        "rre_deg": 5.157338174587636,
+        "rte_extent": 0.1422002169701341,
+        "rse_percent": 0.023147080273089315,
+        "strict_success": false,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 2.8658501798901233,
+        "rte_extent": 0.07206987441450723,
+        "rse_percent": 1.1508922683124534,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 2.8658501798901233,
+        "rte_extent": 0.07206987441450723,
+        "rse_percent": 1.1508922683124534,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.2448764643616075,
+        "rotation": [
+          [
+            0.009722648750379648,
+            -0.19449556332022996,
+            -0.9808552115118845
+          ],
+          [
+            0.9925031477549517,
+            -0.11763357726706027,
+            0.03316388390806228
+          ],
+          [
+            -0.12183173559376725,
+            -0.9738243257118306,
+            0.19189374886668237
+          ]
+        ],
+        "translation": [
+          -1.4759459303380376,
+          -2.6872310487125226,
+          1.1578257751628174
+        ]
+      }
+    },
+    {
+      "pair": "reserve_056_scene0197_02",
+      "accepted": false,
+      "local_pair_count": 405,
+      "initial_radiance_score": 0.2822581059211149,
+      "refined_radiance_score": 0.21664022140009473,
+      "initial": {
+        "rre_deg": 2.989367208124178,
+        "rte_extent": 0.09038120800635589,
+        "rse_percent": 1.212280276349187,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 3.2398687092217466,
+        "rte_extent": 0.08228111685104886,
+        "rse_percent": 0.33392641386964517,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 2.989367208124178,
+        "rte_extent": 0.09038120800635589,
+        "rse_percent": 1.212280276349187,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.9910398413466445,
+        "rotation": [
+          [
+            -0.6487019960390702,
+            0.6968303915077044,
+            0.30596262158333243
+          ],
+          [
+            -0.4971521314949747,
+            -0.08361666565684224,
+            -0.8636249251697379
+          ],
+          [
+            -0.5762165204894162,
+            -0.7123451822646458,
+            0.4006730123422583
+          ]
+        ],
+        "translation": [
+          -0.673935595938856,
+          0.11707332031542261,
+          -1.6708357939190015
+        ]
+      }
+    },
+    {
+      "pair": "reserve_057_scene0033_00",
+      "accepted": false,
+      "local_pair_count": 349,
+      "initial_radiance_score": 0.2895984215889186,
+      "refined_radiance_score": 0.2019073212251196,
+      "initial": {
+        "rre_deg": 6.410049777915985,
+        "rte_extent": 0.07615386835571931,
+        "rse_percent": 4.939308682592214,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 7.6668149814477164,
+        "rte_extent": 0.09266883645454076,
+        "rse_percent": 5.581639550163054,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 6.410049777915985,
+        "rte_extent": 0.07615386835571931,
+        "rse_percent": 4.939308682592214,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.510858912589881,
+        "rotation": [
+          [
+            0.48445339151616884,
+            -0.7975435277669853,
+            0.35948467667686823
+          ],
+          [
+            0.8515247719439623,
+            0.5240940360791917,
+            0.015198819428018095
+          ],
+          [
+            -0.20052549517271825,
+            0.2987469877056743,
+            0.9330272038491275
+          ]
+        ],
+        "translation": [
+          2.490112672709479,
+          -0.028273689257041656,
+          1.16893890947817
+        ]
+      }
+    },
+    {
+      "pair": "reserve_058_scene0412_01",
+      "accepted": false,
+      "local_pair_count": 214,
+      "initial_radiance_score": 0.2345291915545646,
+      "refined_radiance_score": 0.17875412664268409,
+      "initial": {
+        "rre_deg": 6.354200600525276,
+        "rte_extent": 0.12929886236373303,
+        "rse_percent": 3.4780877577669567,
+        "strict_success": false,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 6.912679922695959,
+        "rte_extent": 0.08842635222327988,
+        "rse_percent": 4.593459913757469,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 6.354200600525276,
+        "rte_extent": 0.12929886236373303,
+        "rse_percent": 3.4780877577669567,
+        "strict_success": false,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.0124924419633963,
+        "rotation": [
+          [
+            0.21096705857502454,
+            0.47129908142841115,
+            -0.8563702914282695
+          ],
+          [
+            -0.4125894246753299,
+            0.8371555866142106,
+            0.35908284621615855
+          ],
+          [
+            0.88615058925799,
+            0.2775746739984633,
+            0.3710652685342083
+          ]
+        ],
+        "translation": [
+          0.8022111133370227,
+          -0.8511893875002148,
+          -0.08486977349035763
+        ]
+      }
+    },
+    {
+      "pair": "reserve_059_scene0325_01",
+      "accepted": true,
+      "local_pair_count": 176,
+      "initial_radiance_score": 0.1357208162347675,
+      "refined_radiance_score": 0.15790537756979997,
+      "initial": {
+        "rre_deg": 10.141943127460733,
+        "rte_extent": 0.29233731552652004,
+        "rse_percent": 0.9751526176189018,
+        "strict_success": false,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 6.666394210028089,
+        "rte_extent": 0.18575355525136647,
+        "rse_percent": 2.0258412665263736,
+        "strict_success": false,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 6.666394210028089,
+        "rte_extent": 0.18575355525136647,
+        "rse_percent": 2.0258412665263736,
+        "strict_success": false,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.6455841441402126,
+        "rotation": [
+          [
+            0.1156213316610118,
+            -0.9554505638906046,
+            0.2715620143283275
+          ],
+          [
+            0.9904542303335669,
+            0.13155464859876131,
+            0.041155704907074146
+          ],
+          [
+            -0.07504748682851431,
+            0.2642112684825932,
+            0.9615405765372268
+          ]
+        ],
+        "translation": [
+          0.7318608382641112,
+          0.7418165267870105,
+          0.7490806501384383
+        ]
+      }
+    }
+  ]
+}

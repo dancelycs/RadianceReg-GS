@@ -1,0 +1,724 @@
+{
+  "experiment": "pose-conditioned native-radiance reassociation",
+  "protocol": {
+    "neighbours": 8,
+    "iterations": 2,
+    "support_retention": 0.8,
+    "ground_truth_used_for_acceptance": false
+  },
+  "accepted_refinements": 2,
+  "summary": {
+    "initial": {
+      "strict_successes": 12,
+      "successes": 12,
+      "median_rre_deg": 2.5784639710605295,
+      "median_rte_extent": 0.016084737725236265,
+      "median_rse_percent": 1.4008830496264113
+    },
+    "refined_unconditionally": {
+      "strict_successes": 12,
+      "successes": 12,
+      "median_rre_deg": 1.0709474177140959,
+      "median_rte_extent": 0.008046468319798388,
+      "median_rse_percent": 0.5144650860497313
+    },
+    "output": {
+      "strict_successes": 12,
+      "successes": 12,
+      "median_rre_deg": 1.703554853479489,
+      "median_rte_extent": 0.012253464119599246,
+      "median_rse_percent": 1.2519720965583292
+    }
+  },
+  "rows": [
+    {
+      "pair": "gsa_objaverse_1983_Chevrolet_C101431",
+      "accepted": false,
+      "local_pair_count": 296,
+      "initial_radiance_score": 0.7366007314059345,
+      "refined_radiance_score": 0.7533680040462752,
+      "initial": {
+        "rre_deg": 1.2308465068091743,
+        "rte_extent": 0.008903585782572205,
+        "rse_percent": 0.30591209572494726,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 1.6239555740778404,
+        "rte_extent": 0.00899137654999061,
+        "rse_percent": 0.30016402514499996,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 1.2308465068091743,
+        "rte_extent": 0.008903585782572205,
+        "rse_percent": 0.30591209572494726,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.0030591315030526,
+        "rotation": [
+          [
+            0.17666294179537398,
+            -0.9578679876416226,
+            0.22644894181160008
+          ],
+          [
+            -0.04473462610647527,
+            -0.2376436900217096,
+            -0.9703217455153628
+          ],
+          [
+            0.9832542998753269,
+            0.1612897853066172,
+            -0.0848326996648524
+          ]
+        ],
+        "translation": [
+          0.381544316015987,
+          -0.12811698124116855,
+          0.14811364350840583
+        ]
+      }
+    },
+    {
+      "pair": "gsa_objaverse_4b05",
+      "accepted": true,
+      "local_pair_count": 348,
+      "initial_radiance_score": 0.6330202546162633,
+      "refined_radiance_score": 0.7584007275643692,
+      "initial": {
+        "rre_deg": 2.5784639710605295,
+        "rte_extent": 0.020786412874897145,
+        "rse_percent": 1.4008830496264113,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 0.11741594833545815,
+        "rte_extent": 0.005641778259903917,
+        "rse_percent": 0.5144650860497313,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 0.11741594833545815,
+        "rte_extent": 0.005641778259903917,
+        "rse_percent": 0.5144650860497313,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.9948552452949289,
+        "rotation": [
+          [
+            -0.2821438371316459,
+            0.7058912620325117,
+            0.6497017633920804
+          ],
+          [
+            -0.4804770381783168,
+            -0.6901329060290561,
+            0.5411639195283463
+          ],
+          [
+            0.8303834481443038,
+            -0.1594807142009274,
+            0.5338812890951868
+          ]
+        ],
+        "translation": [
+          -0.13845862342048043,
+          -0.02654710986465114,
+          -0.03202375392558756
+        ]
+      }
+    },
+    {
+      "pair": "gsa_objaverse_Elephant1608",
+      "accepted": false,
+      "local_pair_count": 105,
+      "initial_radiance_score": 0.32850472980167805,
+      "refined_radiance_score": 0.31103982311816525,
+      "initial": {
+        "rre_deg": 45.416424609275666,
+        "rte_extent": 0.17045715245006499,
+        "rse_percent": 67.03941184788339,
+        "strict_success": false,
+        "success": false
+      },
+      "refined_unconditionally": {
+        "rre_deg": 52.087388436331636,
+        "rte_extent": 0.15243814150208224,
+        "rse_percent": 67.77931706109453,
+        "strict_success": false,
+        "success": false
+      },
+      "output": {
+        "rre_deg": 45.416424609275666,
+        "rte_extent": 0.17045715245006499,
+        "rse_percent": 67.03941184788339,
+        "strict_success": false,
+        "success": false
+      },
+      "output_pose": {
+        "scale": 0.3296059307374075,
+        "rotation": [
+          [
+            0.6384266995089013,
+            0.2669382534452497,
+            -0.7219108796809832
+          ],
+          [
+            0.5040249290425881,
+            0.5638590092713213,
+            0.6542338179635615
+          ],
+          [
+            0.5816959861111172,
+            -0.7815414170158638,
+            0.2254391120259542
+          ]
+        ],
+        "translation": [
+          -0.5269632621099203,
+          0.39173297327708156,
+          0.030682194464320058
+        ]
+      }
+    },
+    {
+      "pair": "gsa_objaverse_F1110000",
+      "accepted": false,
+      "local_pair_count": 282,
+      "initial_radiance_score": 0.8809279112087705,
+      "refined_radiance_score": 0.8777641054109371,
+      "initial": {
+        "rre_deg": 2.5882444421432993,
+        "rte_extent": 0.020245122381565235,
+        "rse_percent": 4.094516214956512,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 4.784270246361655,
+        "rte_extent": 0.024055263378734072,
+        "rse_percent": 1.9061458049735025,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 2.5882444421432993,
+        "rte_extent": 0.020245122381565235,
+        "rse_percent": 4.094516214956512,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.0409451808895596,
+        "rotation": [
+          [
+            -0.3651006329666146,
+            -0.9264242448421717,
+            -0.091867548002498
+          ],
+          [
+            -0.03533504508862917,
+            0.1123983070845939,
+            -0.9930347703646141
+          ],
+          [
+            0.9302972441085503,
+            -0.3593114792671272,
+            -0.0737719355236589
+          ]
+        ],
+        "translation": [
+          0.15172162959755972,
+          0.06593654068333518,
+          0.1990579522674899
+        ]
+      }
+    },
+    {
+      "pair": "gsa_objaverse_Figura_San_Juan260d",
+      "accepted": false,
+      "local_pair_count": 185,
+      "initial_radiance_score": 0.8403996645145356,
+      "refined_radiance_score": 0.8668827087199977,
+      "initial": {
+        "rre_deg": 0.7463284201180188,
+        "rte_extent": 0.007160852508281612,
+        "rse_percent": 1.6142793160522473,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 0.2883294480128257,
+        "rte_extent": 0.001438937761669469,
+        "rse_percent": 0.19025407166702868,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 0.7463284201180188,
+        "rte_extent": 0.007160852508281612,
+        "rse_percent": 1.6142793160522473,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.9838571582432492,
+        "rotation": [
+          [
+            0.6864307853448257,
+            0.7271592283063447,
+            -0.007227283016972008
+          ],
+          [
+            0.522175745436514,
+            -0.4997967863202034,
+            -0.691039552603046
+          ],
+          [
+            -0.506107960625702,
+            0.4705769109007777,
+            -0.7227808126385029
+          ]
+        ],
+        "translation": [
+          0.11384752849357743,
+          0.09769324636275167,
+          -0.06165777801319206
+        ]
+      }
+    },
+    {
+      "pair": "gsa_objaverse_Hl_Maximilian09f0",
+      "accepted": false,
+      "local_pair_count": 412,
+      "initial_radiance_score": 0.2596717532726267,
+      "refined_radiance_score": 0.6058474170033491,
+      "initial": {
+        "rre_deg": 2.710710290991966,
+        "rte_extent": 0.021069271935452532,
+        "rse_percent": 0.7011076930688587,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 0.7110302587977555,
+        "rte_extent": 0.002404291592995608,
+        "rse_percent": 0.632687908491103,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 2.710710290991966,
+        "rte_extent": 0.021069271935452532,
+        "rse_percent": 0.7011076930688587,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.0070110596201436,
+        "rotation": [
+          [
+            0.26419264949752974,
+            0.24327375376454202,
+            -0.9332845893299557
+          ],
+          [
+            0.6325508411308726,
+            -0.7741849209260294,
+            -0.022740747467566325
+          ],
+          [
+            -0.7280670829917399,
+            -0.584342013670134,
+            -0.3584169830293092
+          ]
+        ],
+        "translation": [
+          0.04958025020357329,
+          -0.06350675596698274,
+          -0.12107226331010532
+        ]
+      }
+    },
+    {
+      "pair": "gsa_objaverse_Hunter_Boy_With_Rabbit_Figurine0a5b",
+      "accepted": false,
+      "local_pair_count": 324,
+      "initial_radiance_score": 0.7125804454186222,
+      "refined_radiance_score": 0.7630264811936662,
+      "initial": {
+        "rre_deg": 7.49283609961057,
+        "rte_extent": 0.02524863602352418,
+        "rse_percent": 2.208399050082588,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 7.039554999462602,
+        "rte_extent": 0.0281131236253563,
+        "rse_percent": 0.657477881878421,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 7.49283609961057,
+        "rte_extent": 0.02524863602352418,
+        "rse_percent": 2.208399050082588,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.9779160041045486,
+        "rotation": [
+          [
+            0.8403959101731701,
+            0.08900609553740335,
+            -0.5346144677441826
+          ],
+          [
+            -0.495007745090539,
+            -0.27560532588224274,
+            -0.8240200462644846
+          ],
+          [
+            -0.22068540156654926,
+            0.9571413789522056,
+            -0.18755888204209753
+          ]
+        ],
+        "translation": [
+          -0.233741062514439,
+          0.13934532448128623,
+          0.07165249413756336
+        ]
+      }
+    },
+    {
+      "pair": "gsa_objaverse_MiG_23_Desert_Camo089f",
+      "accepted": false,
+      "local_pair_count": 209,
+      "initial_radiance_score": 0.7962748218423223,
+      "refined_radiance_score": 0.8100840868810713,
+      "initial": {
+        "rre_deg": 1.703554853479489,
+        "rte_extent": 0.012253464119599246,
+        "rse_percent": 0.11846794513106218,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 3.185724631327342,
+        "rte_extent": 0.023798441042341485,
+        "rse_percent": 0.08249252456318246,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 1.703554853479489,
+        "rte_extent": 0.012253464119599246,
+        "rse_percent": 0.11846794513106218,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.0011846321965518,
+        "rotation": [
+          [
+            -0.8497345535198225,
+            0.49508458002169187,
+            0.18122485254294962
+          ],
+          [
+            -0.318879123801786,
+            -0.20889857773617204,
+            -0.92448768981702
+          ],
+          [
+            -0.4198419857016136,
+            -0.8433579565312406,
+            0.3353804767686644
+          ]
+        ],
+        "translation": [
+          -0.1717426776235126,
+          -0.47985026941831954,
+          0.12565896813112007
+        ]
+      }
+    },
+    {
+      "pair": "gsa_objaverse_Park_Bench0b05",
+      "accepted": false,
+      "local_pair_count": 303,
+      "initial_radiance_score": 0.6199935598437999,
+      "refined_radiance_score": 0.6399983282774251,
+      "initial": {
+        "rre_deg": 3.6853845542479875,
+        "rte_extent": 0.006738181148392061,
+        "rse_percent": 1.1102554221110283,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 0.47546255548164323,
+        "rte_extent": 0.007713820397170656,
+        "rse_percent": 0.14864012761441892,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 3.6853845542479875,
+        "rte_extent": 0.006738181148392061,
+        "rse_percent": 1.1102554221110283,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.9888973538621011,
+        "rotation": [
+          [
+            -0.3570370619508812,
+            -0.8218207557730879,
+            0.443999078573405
+          ],
+          [
+            0.5174355875482665,
+            0.22172747125876413,
+            0.8264970303804933
+          ],
+          [
+            -0.7776792070848128,
+            0.5248309955306985,
+            0.34607438073078034
+          ]
+        ],
+        "translation": [
+          0.431281402012233,
+          0.07148714103232279,
+          -0.36385054637255587
+        ]
+      }
+    },
+    {
+      "pair": "gsa_objaverse_Teddy1b47",
+      "accepted": false,
+      "local_pair_count": 284,
+      "initial_radiance_score": 0.5608993661271027,
+      "refined_radiance_score": 0.6122836254584888,
+      "initial": {
+        "rre_deg": 2.5047977310447784,
+        "rte_extent": 0.013975849574216003,
+        "rse_percent": 0.6744664903203024,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 0.6059929495081982,
+        "rte_extent": 0.003558108940128204,
+        "rse_percent": 0.1482056850821145,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 2.5047977310447784,
+        "rte_extent": 0.013975849574216003,
+        "rse_percent": 0.6744664903203024,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.0067446992691913,
+        "rotation": [
+          [
+            0.32287331228747695,
+            -0.5941703593830514,
+            0.7366915285539323
+          ],
+          [
+            -0.0330286175743168,
+            -0.7849794072034271,
+            -0.6186408010208234
+          ],
+          [
+            0.945865706447613,
+            0.17541070177492507,
+            -0.2730735268552878
+          ]
+        ],
+        "translation": [
+          -0.03346279642347266,
+          -0.2599480448153858,
+          -0.10174681805874625
+        ]
+      }
+    },
+    {
+      "pair": "gsa_objaverse_Tolix_Industrial_Chairs3f2d",
+      "accepted": true,
+      "local_pair_count": 238,
+      "initial_radiance_score": 0.8892323020268592,
+      "refined_radiance_score": 0.9176518849703752,
+      "initial": {
+        "rre_deg": 2.579888986532279,
+        "rte_extent": 0.01755527223287089,
+        "rse_percent": 0.8494127882735181,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 1.531854937961524,
+        "rte_extent": 0.0031358934282582213,
+        "rse_percent": 1.2519720965583292,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 1.531854937961524,
+        "rte_extent": 0.0031358934282582213,
+        "rse_percent": 1.2519720965583292,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.9874803422274258,
+        "rotation": [
+          [
+            -0.2101511259499132,
+            0.557303936595394,
+            0.8032738178960277
+          ],
+          [
+            0.12333242089920564,
+            -0.799945941487654,
+            0.5872611043246202
+          ],
+          [
+            0.9698585557786892,
+            0.2224832869064729,
+            0.09937589662572628
+          ]
+        ],
+        "translation": [
+          0.08279252580571911,
+          -0.003937659886047544,
+          -0.08519990634913022
+        ]
+      }
+    },
+    {
+      "pair": "gsa_objaverse_chair_teacher4659",
+      "accepted": false,
+      "local_pair_count": 321,
+      "initial_radiance_score": 0.6814518955769223,
+      "refined_radiance_score": 0.7492718863953638,
+      "initial": {
+        "rre_deg": 0.6247775215827098,
+        "rte_extent": 0.011028917792188094,
+        "rse_percent": 3.2793986546401532,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 0.5107830815612433,
+        "rte_extent": 0.00963927462984813,
+        "rse_percent": 1.0169084376267623,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 0.6247775215827098,
+        "rte_extent": 0.011028917792188094,
+        "rse_percent": 3.2793986546401532,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 1.0327940281609238,
+        "rotation": [
+          [
+            0.926853142489659,
+            0.34463972714495733,
+            0.1488848908737661
+          ],
+          [
+            0.22165274711995048,
+            -0.1822680198728314,
+            -0.9579396790121057
+          ],
+          [
+            -0.30300711534751623,
+            0.9208701468747293,
+            -0.24532602928285077
+          ]
+        ],
+        "translation": [
+          -0.14319745393840863,
+          0.08968070315745724,
+          -0.1425601268343013
+        ]
+      }
+    },
+    {
+      "pair": "gsa_objaverse_elephant_android1a39",
+      "accepted": false,
+      "local_pair_count": 317,
+      "initial_radiance_score": 0.4895173326165917,
+      "refined_radiance_score": 0.5531002604221475,
+      "initial": {
+        "rre_deg": 1.0819967117906824,
+        "rte_extent": 0.016084737725236265,
+        "rse_percent": 2.1125291610882724,
+        "strict_success": true,
+        "success": true
+      },
+      "refined_unconditionally": {
+        "rre_deg": 1.0709474177140959,
+        "rte_extent": 0.008046468319798388,
+        "rse_percent": 0.1370093977935527,
+        "strict_success": true,
+        "success": true
+      },
+      "output": {
+        "rre_deg": 1.0819967117906824,
+        "rte_extent": 0.016084737725236265,
+        "rse_percent": 2.1125291610882724,
+        "strict_success": true,
+        "success": true
+      },
+      "output_pose": {
+        "scale": 0.9788746131955827,
+        "rotation": [
+          [
+            0.16692319414019322,
+            0.7222392921315879,
+            0.671198221212853
+          ],
+          [
+            0.9843854440906878,
+            -0.08349983285987755,
+            -0.15496152869261276
+          ],
+          [
+            -0.05587436550346156,
+            0.6865844323997115,
+            -0.7248999051358408
+          ]
+        ],
+        "translation": [
+          -0.06601143139555071,
+          -0.4977132016256693,
+          0.23753873451058385
+        ]
+      }
+    }
+  ]
+}
